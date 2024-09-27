@@ -6,19 +6,24 @@ on:
 jobs:
   tweet:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3  # v2'den v3'e güncellendi
+        uses: actions/checkout@v3
 
+      # Set up Python
       - name: Set up Python
-        uses: actions/setup-python@v4  # v2'den v4'e güncellendi
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Install Dependencies
+      # Install dependencies
+      - name: Install dependencies
         run: |
-          pip install pytz requests tweepy
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
+      # Run the Python script
       - name: Run Script
         run: python dovizmerkezi.py
         env:
@@ -30,6 +35,7 @@ jobs:
           EXCHANGE_RATES_API_KEY_1: ${{ secrets.EXCHANGE_RATES_API_KEY_1 }}
           EXCHANGE_RATES_API_KEY_2: ${{ secrets.EXCHANGE_RATES_API_KEY_2 }}
 
+      # Commit and push changes
       - name: Commit and push changes
         run: |-
           git config --local user.email "action@github.com"
