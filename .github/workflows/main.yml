@@ -30,18 +30,13 @@ jobs:
           EXCHANGE_RATES_API_KEY_1: ${{ secrets.EXCHANGE_RATES_API_KEY_1 }}
           EXCHANGE_RATES_API_KEY_2: ${{ secrets.EXCHANGE_RATES_API_KEY_2 }}
 
-      - name: Commit and Push Changes
-        run: |
+      - name: Commit and push changes
+        run: |-
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff-index --quiet HEAD || git commit -m "updated files"
+          timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+          git commit -m "Update Data ${timestamp}" || exit 0
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Push Changes
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const exec = require('@actions/exec');
-            await exec.exec('git push origin main');
