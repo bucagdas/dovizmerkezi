@@ -1,1 +1,5 @@
 2024-09-25 11:53:26,052 - INFO - Tweet successfully sent with image: ./images/default.webp
+2024-09-27 13:54:38,889 - INFO - Script başlatıldı.
+2024-09-27 13:54:39,043 - INFO - API yanıtı başarılı şekilde alındı.
+2024-09-27 13:54:39,044 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-09-27 13:54:40,180 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default (1).webp
