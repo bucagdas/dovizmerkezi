@@ -7,7 +7,9 @@ import tweepy
 import logging
 
 # Loglama yapılandırması
-logging.basicConfig(filename='app.log', filemode='w', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='app.log', filemode='a', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.info("Script başlatıldı.")
 
 # Şu anki yerel saat (Türkiye için)
 current_local_time = datetime.now(pytz.timezone('Europe/Istanbul'))
@@ -67,10 +69,10 @@ else:
             if images:
                 return choice(images)  # Rastgele bir resim seçer
             else:
-                logging.warning(f"No images found in {image_folder}. Using default images.")
+                logging.info(f"{image_folder} içinde resim bulunamadı. Varsayılan resimler kullanılacak.")
                 return get_random_image(default_images_folder)  # Eğer klasör boşsa default klasörden resim seç
         except Exception as e:
-            logging.error(f"Error accessing the image folder {image_folder}: {e}")
+            logging.error(f"{image_folder} klasörüne erişilirken hata oluştu: {e}")
             return get_random_image(default_images_folder)  # Hata durumunda default resimlerden biri seçilir
 
     # X üzerinden yeni bir gönderi için tweet fonksiyonu
@@ -80,11 +82,11 @@ else:
             if image_path:
                 media_id = api.media_upload(filename=image_path).media_id_string
                 client.create_tweet(text=message, media_ids=[media_id])
-                logging.info(f"Tweet successfully sent with image: {image_path}")
+                logging.info(f"Tweet başarıyla gönderildi. Kullanılan resim: {image_path}")
             else:
-                logging.error("No image found to tweet.")
+                logging.error("Tweet için resim bulunamadı.")
         except Exception as e:
-            logging.error(f"Error occurred when sending tweet: {e}")
+            logging.error(f"Tweet gönderimi sırasında hata oluştu: {e}")
 
     def process_data(data, current_local_time):
         # Euro bazında döviz kurları
@@ -136,9 +138,11 @@ else:
         response = requests.get(url)
 
         if response.status_code == 200:
+            logging.info("API yanıtı başarılı şekilde alındı.")
             data = response.json()
 
             if "rates" in data and all(key in data["rates"] for key in ["USD", "TRY", "XAU", "XAG", "GBP"]):
+                logging.info("API yanıtında tüm gerekli anahtarlar bulundu.")
                 tweet_content, image_folder = process_data(data, current_local_time_str)
                 tweet(tweet_content, image_folder)
                 break  # İşlem başarılı, döngüden çık
