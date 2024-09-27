@@ -2,7 +2,7 @@ import os
 import requests
 from datetime import datetime
 import pytz
-from random import choice, random
+from random import choice
 import tweepy
 import logging
 
@@ -17,7 +17,6 @@ weekday = current_local_time.weekday()  # Haftanın günü (Pazartesi=0, Salı=1
 if weekday == 5 or weekday == 6:
     logging.info("Hafta sonu olduğu için tweet gönderilmiyor.")
 else:  
-
     # X API anahtarları (v1 için)
     consumer_key = os.environ.get('CONSUMER_KEY')
     consumer_secret = os.environ.get('CONSUMER_SECRET')
@@ -41,31 +40,52 @@ else:
 
     # API keys listesi
     api_keys = [
-    os.environ.get('EXCHANGE_RATES_API_KEY_1'),
-    os.environ.get('EXCHANGE_RATES_API_KEY_2'),
+        os.environ.get('EXCHANGE_RATES_API_KEY_1'),
+        os.environ.get('EXCHANGE_RATES_API_KEY_2'),
     ]
 
-    # Özel saatler ve karşılık gelen mesaj/görsel
+    # Özel saatler ve karşılık gelen mesaj/görsel klasörü (klasörler içinde birden fazla resim var)
     special_times = {
-        "01:30": ("Şangay borsa açılışı", "./images/shanghai.webp"),
-        "07:00": ("Türkiye borsa açılışı", "./images/turkiye.webp"),
-        "07:49": ("Şangay borsa kapanışı", "./images/shanghai.webp"),
-        "08:00": ("Londra borsa açılışı", "./images/london.webp"),
-        "13:30": ("New York borsa açılışı", "./images/newyork.webp"),
-        "15:00": ("Türkiye borsa kapanışı", "./images/turkiye.webp"),
-        "16:30": ("Londra borsa kapanışı", "./images/london.webp"),
-        "20:00": ("New York borsa kapanışı", "./images/newyork.webp"),
+        "01:30": ("Şangay borsa açılışı", "./images/shanghai/"),
+        "07:00": ("Türkiye borsa açılışı", "./images/turkiye/"),
+        "07:49": ("Şangay borsa kapanışı", "./images/shanghai/"),
+        "08:00": ("Londra borsa açılışı", "./images/london/"),
+        "13:30": ("New York borsa açılışı", "./images/newyork/"),
+        "15:00": ("Türkiye borsa kapanışı", "./images/turkiye/"),
+        "16:30": ("Londra borsa kapanışı", "./images/london/"),
+        "20:00": ("New York borsa kapanışı", "./images/newyork/"),
     }
 
-    # X üzerinden yeni bir gönderi için tweet fonksiyonu
-    def tweet(message, image_path):
+    # Default resimlerin bulunduğu klasör
+    default_images_folder = "./images/"
+
+    # Klasördeki resimlerden rastgele birini seçme fonksiyonu
+    def get_random_image(image_folder):
         try:
-            media_id = api.media_upload(filename=image_path).media_id_string
-            client.create_tweet(text=message, media_ids=[media_id])
-            logging.info(f"Tweet successfully sent with image: {image_path}")
+            # Belirtilen klasördeki resimleri tarar
+            images = [os.path.join(image_folder, img) for img in os.listdir(image_folder) if img.endswith(('.png', '.jpg', '.webp'))]
+            if images:
+                return choice(images)  # Rastgele bir resim seçer
+            else:
+                logging.warning(f"No images found in {image_folder}. Using default images.")
+                return get_random_image(default_images_folder)  # Eğer klasör boşsa default klasörden resim seç
+        except Exception as e:
+            logging.error(f"Error accessing the image folder {image_folder}: {e}")
+            return get_random_image(default_images_folder)  # Hata durumunda default resimlerden biri seçilir
+
+    # X üzerinden yeni bir gönderi için tweet fonksiyonu
+    def tweet(message, image_folder):
+        try:
+            image_path = get_random_image(image_folder)
+            if image_path:
+                media_id = api.media_upload(filename=image_path).media_id_string
+                client.create_tweet(text=message, media_ids=[media_id])
+                logging.info(f"Tweet successfully sent with image: {image_path}")
+            else:
+                logging.error("No image found to tweet.")
         except Exception as e:
             logging.error(f"Error occurred when sending tweet: {e}")
-        
+
     def process_data(data, current_local_time):
         # Euro bazında döviz kurları
         eur_to_usd = data["rates"]["USD"]
@@ -88,8 +108,8 @@ else:
         current_utc_time = datetime.utcnow().strftime('%H:%M')
 
         # Özel mesaj varsa onu kullan, yoksa genel mesajı kullan
-        special_message, image_path = special_times.get(current_utc_time, (None, "./images/default.webp"))
-    
+        special_message, image_folder = special_times.get(current_utc_time, (None, default_images_folder))
+
         if special_message:
             tweet_content = f"Saat {current_local_time} itibarıyla {special_message} güncel kurları:\n"
         else:
@@ -102,32 +122,32 @@ else:
         tweet_content += f"🥈 1 XAG = {xag_to_usd:.6f} USD ({xag_to_try:.6f} TL)\n"
         tweet_content += f"🥇 1 XAU = {xau_to_usd:.6f} USD ({xau_to_try:.6f} TL)\n"
         tweet_content += "#döviz #dolar #euro #gümüş #altın"
-    
-        return tweet_content, image_path
+
+        return tweet_content, image_folder
 
     # Başarılı bir yanıt alana kadar maksimum deneme sayısı
     max_tries = 3
     tries = 0
 
     while tries < max_tries:
-        current_local_time = datetime.now(pytz.timezone('Europe/Istanbul')).strftime('%H:%M') # Zaman her döngüde güncellenir
+        current_local_time_str = datetime.now(pytz.timezone('Europe/Istanbul')).strftime('%H:%M')  # Zaman her döngüde güncellenir
         api_key = choice(api_keys)
         url = f"http://api.exchangeratesapi.io/latest?symbols=USD,TRY,XAU,XAG,GBP&base=EUR&access_key={api_key}"
         response = requests.get(url)
-    
+
         if response.status_code == 200:
             data = response.json()
-        
+
             if "rates" in data and all(key in data["rates"] for key in ["USD", "TRY", "XAU", "XAG", "GBP"]):
-                tweet_content, image_path = process_data(data, current_local_time)
-                tweet(tweet_content, image_path)
+                tweet_content, image_folder = process_data(data, current_local_time_str)
+                tweet(tweet_content, image_folder)
                 break  # İşlem başarılı, döngüden çık
             else:
-                print("API'den gelen yanıtta beklenen anahtarlar bulunamadı.")
+                logging.error("API'den gelen yanıtta beklenen anahtarlar bulunamadı.")
                 break  # Beklenen anahtarlar yok, döngüden çık
         else:
-            print(f"Hata: API'den yanıt alınamadı. Durum kodu: {response.status_code}. Yeniden deneniyor...")
+            logging.error(f"Hata: API'den yanıt alınamadı. Durum kodu: {response.status_code}. Yeniden deneniyor...")
             tries += 1
 
     if tries == max_tries:
-        print("Maksimum deneme sayısına ulaşıldı, işlem başarısız.")
+        logging.error("Maksimum deneme sayısına ulaşıldı, işlem başarısız.")
