@@ -30,15 +30,18 @@ jobs:
           EXCHANGE_RATES_API_KEY_1: ${{ secrets.EXCHANGE_RATES_API_KEY_1 }}
           EXCHANGE_RATES_API_KEY_2: ${{ secrets.EXCHANGE_RATES_API_KEY_2 }}
 
-      - name: Commit Files
+      - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated files" --allow-empty)
+          git diff-index --quiet HEAD || git commit -m "updated files"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push Changes
-        uses: ad-m/github-push-action@v1.0.0  # v0.6.0'dan v1.0.0'a güncellendi
+        uses: actions/github-script@v6
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          script: |
+            const exec = require('@actions/exec');
+            await exec.exec('git push origin main');
