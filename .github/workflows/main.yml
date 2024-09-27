@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # v2'den v3'e güncellendi
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4  # v2'den v4'e güncellendi
         with:
           python-version: '3.9'
 
@@ -38,7 +38,7 @@ jobs:
           git diff-index --quiet HEAD || (git commit -a -m "updated files" --allow-empty)
 
       - name: Push Changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@v1.0.0  # v0.6.0'dan v1.0.0'a güncellendi
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
