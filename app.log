@@ -63,3 +63,7 @@
 2024-09-30 08:00:17,653 - INFO - API yanıtı başarılı şekilde alındı.
 2024-09-30 08:00:17,653 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-09-30 08:00:18,698 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2024-09-30 13:30:20,317 - INFO - Script başlatıldı.
+2024-09-30 13:30:20,498 - INFO - API yanıtı başarılı şekilde alındı.
+2024-09-30 13:30:20,498 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-09-30 13:30:21,679 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
