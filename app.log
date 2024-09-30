@@ -55,3 +55,7 @@
 2024-09-30 07:00:23,379 - INFO - API yanıtı başarılı şekilde alındı.
 2024-09-30 07:00:23,379 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-09-30 07:00:24,482 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2024-09-30 07:59:22,065 - INFO - Script başlatıldı.
+2024-09-30 07:59:22,384 - INFO - API yanıtı başarılı şekilde alındı.
+2024-09-30 07:59:22,384 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-09-30 07:59:23,531 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default (1).webp
