@@ -69,9 +69,12 @@ else:
 
         return tweet_content
 
+    # Tweet atma fonksiyonu, resim eklenmiş şekilde
     def tweet(message):
         try:
-            client.create_tweet(text=message)
+            image_path = './images/gold_silver.webp'  # Varsayılan resim
+            media_id = api.media_upload(filename=image_path).media_id_string
+            client.create_tweet(text=message, media_ids=[media_id])
             logging.info("Altın ve gümüş fiyat tweeti başarıyla gönderildi.")
         except Exception as e:
             logging.error(f"Tweet gönderimi sırasında hata oluştu: {e}")
