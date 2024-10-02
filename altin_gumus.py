@@ -65,7 +65,7 @@ else:
         tweet_content = f"Türkiye saatiyle {current_local_time} itibarıyla güncel altın ve gümüş fiyatları:\n"
         tweet_content += f"🥇 1 XAU = {xau_to_usd:.6f} USD ({xau_to_try:.6f} TL)\n"
         tweet_content += f"🥈 1 XAG = {xag_to_usd:.6f} USD ({xag_to_try:.6f} TL)\n"
-        tweet_content += "#altın #gümüş #fiyatlar"
+        tweet_content += "#altın #gümüş #güncel #sondakika"
 
         return tweet_content
 
