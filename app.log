@@ -207,3 +207,5 @@
 2024-10-04 20:00:20,654 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-04 20:00:20,654 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-04 20:00:21,721 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2024-10-05 01:30:17,261 - INFO - Script başlatıldı.
+2024-10-05 01:30:17,273 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
