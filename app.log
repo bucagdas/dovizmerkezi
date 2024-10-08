@@ -279,3 +279,7 @@
 2024-10-08 07:00:20,001 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-08 07:00:20,001 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-08 07:00:21,035 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2024-10-08 07:59:20,760 - INFO - Script başlatıldı.
+2024-10-08 07:59:21,047 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-08 07:59:21,048 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-08 07:59:21,867 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default (1).webp
