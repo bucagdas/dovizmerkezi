@@ -283,3 +283,7 @@
 2024-10-08 07:59:21,047 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-08 07:59:21,048 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-08 07:59:21,867 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default (1).webp
+2024-10-08 08:00:22,634 - INFO - Script başlatıldı.
+2024-10-08 08:00:22,780 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-08 08:00:22,780 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-08 08:00:24,093 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
