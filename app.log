@@ -439,3 +439,7 @@
 2024-10-14 07:00:20,757 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-14 07:00:20,757 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-14 07:00:21,763 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2024-10-14 07:59:16,876 - INFO - Script başlatıldı.
+2024-10-14 07:59:17,039 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-14 07:59:17,039 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-14 07:59:18,170 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
