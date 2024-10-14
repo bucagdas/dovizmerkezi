@@ -451,3 +451,7 @@
 2024-10-14 13:30:17,572 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-14 13:30:17,572 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-14 13:30:18,570 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2024-10-14 15:00:17,424 - INFO - Script başlatıldı.
+2024-10-14 15:00:17,636 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-14 15:00:17,636 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-14 15:00:18,744 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
