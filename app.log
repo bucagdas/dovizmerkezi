@@ -459,3 +459,7 @@
 2024-10-14 16:30:21,151 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-14 16:30:21,152 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-14 16:30:22,057 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2024-10-14 20:00:18,015 - INFO - Script başlatıldı.
+2024-10-14 20:00:18,193 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-14 20:00:18,193 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-14 20:00:19,300 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
