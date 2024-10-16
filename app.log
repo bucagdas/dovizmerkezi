@@ -503,3 +503,7 @@
 2024-10-16 07:00:16,288 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-16 07:00:16,288 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-16 07:00:17,349 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2024-10-16 07:59:19,878 - INFO - Script başlatıldı.
+2024-10-16 07:59:20,051 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-16 07:59:20,051 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-16 07:59:21,039 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
