@@ -543,3 +543,7 @@
 2024-10-17 08:00:18,943 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-17 08:00:18,943 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-17 08:00:20,079 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2024-10-17 13:30:20,267 - INFO - Script başlatıldı.
+2024-10-17 13:30:20,540 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-17 13:30:20,540 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-17 13:30:21,701 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
