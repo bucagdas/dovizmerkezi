@@ -623,3 +623,7 @@
 2024-10-20 16:30:17,466 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
 2024-10-20 20:00:34,366 - INFO - Script başlatıldı.
 2024-10-20 20:00:34,379 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2024-10-21 01:30:19,918 - INFO - Script başlatıldı.
+2024-10-21 01:30:20,220 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-21 01:30:20,220 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-21 01:30:21,741 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
