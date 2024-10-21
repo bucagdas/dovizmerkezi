@@ -631,3 +631,7 @@
 2024-10-21 07:00:20,085 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-21 07:00:20,085 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-21 07:00:21,598 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2024-10-21 07:59:16,257 - INFO - Script başlatıldı.
+2024-10-21 07:59:16,514 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-21 07:59:16,514 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-21 07:59:17,689 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
