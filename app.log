@@ -663,3 +663,7 @@
 2024-10-22 07:00:18,835 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-22 07:00:18,835 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-22 07:00:20,057 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2024-10-22 07:59:21,457 - INFO - Script başlatıldı.
+2024-10-22 07:59:21,603 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-22 07:59:21,603 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-22 07:59:22,812 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
