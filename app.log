@@ -829,3 +829,7 @@
 2024-10-28 08:00:17,860 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-28 08:00:17,860 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-28 08:00:18,698 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2024-10-28 13:30:17,929 - INFO - Script başlatıldı.
+2024-10-28 13:30:18,102 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-28 13:30:18,102 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-28 13:30:19,129 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
