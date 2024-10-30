@@ -893,3 +893,7 @@
 2024-10-30 08:00:20,021 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-30 08:00:20,021 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-30 08:00:20,932 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2024-10-30 13:30:18,225 - INFO - Script başlatıldı.
+2024-10-30 13:30:18,405 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-30 13:30:18,405 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-30 13:30:19,234 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
