@@ -897,3 +897,7 @@
 2024-10-30 13:30:18,405 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-30 13:30:18,405 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-30 13:30:19,234 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2024-10-30 15:00:19,286 - INFO - Script başlatıldı.
+2024-10-30 15:00:19,527 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-30 15:00:19,527 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-30 15:00:20,566 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
