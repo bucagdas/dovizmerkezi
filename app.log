@@ -929,3 +929,7 @@
 2024-10-31 13:30:20,705 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-31 13:30:20,705 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-31 13:30:21,548 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2024-10-31 15:00:38,301 - INFO - Script başlatıldı.
+2024-10-31 15:00:39,743 - INFO - API yanıtı başarılı şekilde alındı.
+2024-10-31 15:00:39,744 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-10-31 15:00:40,859 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
