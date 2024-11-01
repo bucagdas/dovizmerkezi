@@ -21,7 +21,7 @@ weekday = current_local_time.weekday()  # Haftanın günü (Pazartesi=0, Salı=1
 api_keys = {
     'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
     'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
-    # Daha fazla API anahtarı ekleyebilirsiniz
+    'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
 }
 
 # Son kullanılan anahtar kimliğini dosyadan okuma
