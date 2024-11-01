@@ -34,6 +34,7 @@ jobs:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
           EXCHANGE_RATES_API_KEY_1: ${{ secrets.EXCHANGE_RATES_API_KEY_1 }}
           EXCHANGE_RATES_API_KEY_2: ${{ secrets.EXCHANGE_RATES_API_KEY_2 }}
+          EXCHANGE_RATES_API_KEY_3: ${{ secrets.EXCHANGE_RATES_API_KEY_3 }}
 
       # Commit and push changes
       - name: Commit and push changes
