@@ -25,7 +25,7 @@ jobs:
 
       # Run the Python script for gold and silver prices
       - name: Run Script
-        run: python altin_gumus.py  # Altın ve gümüş script dosya adı
+        run: python gold_silver.py  # Altın ve gümüş script dosya adı
         env:
           CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
           CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
@@ -34,6 +34,7 @@ jobs:
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
           EXCHANGE_RATES_API_KEY_1: ${{ secrets.EXCHANGE_RATES_API_KEY_1 }}
           EXCHANGE_RATES_API_KEY_2: ${{ secrets.EXCHANGE_RATES_API_KEY_2 }}
+          EXCHANGE_RATES_API_KEY_3: ${{ secrets.EXCHANGE_RATES_API_KEY_3 }}
 
       # Commit and push changes
       - name: Commit and push changes
