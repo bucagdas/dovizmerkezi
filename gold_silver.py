@@ -13,15 +13,15 @@ logging.info("Altın ve Gümüş Fiyat Scripti başlatıldı.")
 # Kullanılan son API anahtarını saklayacağımız dosya
 LAST_KEY_FILE = 'last_used_key.txt'
 
-# Şu anki yerel saat (Türkiye için)
-current_local_time = datetime.now(pytz.timezone('Europe/Istanbul'))
-weekday = current_local_time.weekday()  # Haftanın günü (Pazartesi=0, Salı=1, ..., Pazar=6)
+# Şu anki yerel saat (Türkiye için), sadece saat ve dakika formatında
+current_local_time = datetime.now(pytz.timezone('Europe/Istanbul')).strftime('%H:%M')
+weekday = datetime.now(pytz.timezone('Europe/Istanbul')).weekday()  # Haftanın günü (Pazartesi=0, Salı=1, ..., Pazar=6)
 
 # API anahtarları kimlik ile birlikte saklanıyor
 api_keys = {
     'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
     'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
-    'key2': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
+    'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
 }
 
 # Son kullanılan anahtar kimliğini dosyadan okuma
