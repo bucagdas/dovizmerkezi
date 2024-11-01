@@ -941,3 +941,7 @@
 2024-10-31 20:00:16,931 - INFO - API yanıtı başarılı şekilde alındı.
 2024-10-31 20:00:16,931 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-10-31 20:00:18,001 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2024-11-01 01:30:22,196 - INFO - Script başlatıldı.
+2024-11-01 01:30:22,425 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-01 01:30:22,425 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-01 01:30:23,476 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
