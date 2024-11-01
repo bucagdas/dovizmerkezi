@@ -8,17 +8,46 @@ import logging
 
 # Loglama yapılandırması
 logging.basicConfig(filename='app.log', filemode='a', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
 logging.info("Script başlatıldı.")
+
+# Kullanılan son API anahtarını saklayacağımız dosya
+LAST_KEY_FILE = 'last_used_key.txt'
 
 # Şu anki yerel saat (Türkiye için)
 current_local_time = datetime.now(pytz.timezone('Europe/Istanbul'))
 weekday = current_local_time.weekday()  # Haftanın günü (Pazartesi=0, Salı=1, ..., Pazar=6)
 
-# Hafta sonu kontrolü (Pazar=6, Cumartesi=5)
+# API anahtarları kimlik ile birlikte saklanıyor
+api_keys = {
+    'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
+    'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
+    # Daha fazla API anahtarı ekleyebilirsiniz
+}
+
+# Son kullanılan anahtar kimliğini dosyadan okuma
+def read_last_used_key():
+    try:
+        with open(LAST_KEY_FILE, 'r') as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        return None
+
+# Son kullanılan anahtar kimliğini dosyaya yazma
+def write_last_used_key(key_id):
+    with open(LAST_KEY_FILE, 'w') as file:
+        file.write(key_id)
+
+# Geçerli bir anahtar seçmek için fonksiyon (son kullanılan anahtarı dışlar)
+def get_random_api_key(exclude_key_id=None):
+    available_keys = {k: v for k, v in api_keys.items() if k != exclude_key_id}
+    if not available_keys:
+        return None, None
+    key_id = choice(list(available_keys.keys()))
+    return key_id, available_keys[key_id]
+
 if weekday == 5 or weekday == 6:
     logging.info("Hafta sonu olduğu için tweet gönderilmiyor.")
-else:  
+else:
     # X API anahtarları (v1 için)
     consumer_key = os.environ.get('CONSUMER_KEY')
     consumer_secret = os.environ.get('CONSUMER_SECRET')
@@ -40,13 +69,7 @@ else:
         wait_on_rate_limit=True,
     )
 
-    # API keys listesi
-    api_keys = [
-        os.environ.get('EXCHANGE_RATES_API_KEY_1'),
-        os.environ.get('EXCHANGE_RATES_API_KEY_2'),
-    ]
-
-    # Özel saatler ve karşılık gelen mesaj/görsel klasörü (klasörler içinde birden fazla resim var)
+    # Özel saatler ve karşılık gelen mesaj/görsel klasörü
     special_times = {
         "01:30": ("Şangay borsa açılışı", "./images/shanghai/"),
         "07:00": ("Türkiye borsa açılışı", "./images/turkiye/"),
@@ -61,21 +84,16 @@ else:
     # Default resimlerin bulunduğu klasör
     default_images_folder = "./images/"
 
-    # Klasördeki resimlerden rastgele birini seçme fonksiyonu
+    # Rastgele resim seçme fonksiyonu
     def get_random_image(image_folder):
         try:
-            # Belirtilen klasördeki resimleri tarar
             images = [os.path.join(image_folder, img) for img in os.listdir(image_folder) if img.endswith(('.png', '.jpg', '.webp'))]
-            if images:
-                return choice(images)  # Rastgele bir resim seçer
-            else:
-                logging.info(f"{image_folder} içinde resim bulunamadı. Varsayılan resimler kullanılacak.")
-                return get_random_image(default_images_folder)  # Eğer klasör boşsa default klasörden resim seç
+            return choice(images) if images else get_random_image(default_images_folder)
         except Exception as e:
             logging.error(f"{image_folder} klasörüne erişilirken hata oluştu: {e}")
-            return get_random_image(default_images_folder)  # Hata durumunda default resimlerden biri seçilir
+            return get_random_image(default_images_folder)
 
-    # X üzerinden yeni bir gönderi için tweet fonksiyonu
+    # Tweet gönderme fonksiyonu
     def tweet(message, image_folder):
         try:
             image_path = get_random_image(image_folder)
@@ -88,28 +106,24 @@ else:
         except Exception as e:
             logging.error(f"Tweet gönderimi sırasında hata oluştu: {e}")
 
+    # Döviz kur verilerini işleme fonksiyonu
     def process_data(data, current_local_time):
-        # Euro bazında döviz kurları
         eur_to_usd = data["rates"]["USD"]
         eur_to_try = data["rates"]["TRY"]
         eur_to_xau = data["rates"]["XAU"]
         eur_to_xag = data["rates"]["XAG"]
         eur_to_gbp = data["rates"]["GBP"]
 
-        # TRY bazında döviz kurlarını hesapla
         usd_to_try = eur_to_try / eur_to_usd
         xau_to_try = eur_to_try / eur_to_xau
         xag_to_try = eur_to_try / eur_to_xag
         gbp_to_try = eur_to_try / eur_to_gbp
 
-        # XAU ve XAG'nin USD cinsinden değerlerini hesapla
         xau_to_usd = eur_to_usd / eur_to_xau
         xag_to_usd = eur_to_usd / eur_to_xag
 
-        # Şu anki saat bilgisini UTC olarak al
         current_utc_time = datetime.utcnow().strftime('%H:%M')
 
-        # Özel mesaj varsa onu kullan, yoksa genel mesajı kullan
         special_message, image_folder = special_times.get(current_utc_time, (None, default_images_folder))
 
         if special_message:
@@ -117,7 +131,6 @@ else:
         else:
             tweet_content = f"Türkiye saatiyle {current_local_time} itibarıyla güncel kurlar:\n"
 
-        # Kur bilgilerini gönderi metnine ekle
         tweet_content += f"💵 1 USD = {usd_to_try:.2f} TL #USDTRY\n"
         tweet_content += f"💶 1 Euro = {eur_to_try:.2f} TL #EURTRY\n"
         tweet_content += f"💷 1 GBP = {gbp_to_try:.2f} TL #GBPTRY\n"
@@ -127,13 +140,19 @@ else:
 
         return tweet_content, image_folder
 
-    # Başarılı bir yanıt alana kadar maksimum deneme sayısı
-    max_tries = 3
+    # API ile veri alma ve tweet gönderme işlemi
+    max_tries = len(api_keys)
     tries = 0
+    last_used_key_id = read_last_used_key()
 
     while tries < max_tries:
-        current_local_time_str = datetime.now(pytz.timezone('Europe/Istanbul')).strftime('%H:%M')  # Zaman her döngüde güncellenir
-        api_key = choice(api_keys)
+        key_id, api_key = get_random_api_key(exclude_key_id=last_used_key_id)
+        if not api_key:
+            break  # Eğer geçerli bir anahtar yoksa çıkış yap
+
+        last_used_key_id = key_id
+        write_last_used_key(key_id)  # Seçilen anahtarın kimliğini dosyaya yaz
+
         url = f"http://api.exchangeratesapi.io/latest?symbols=USD,TRY,XAU,XAG,GBP&base=EUR&access_key={api_key}"
         response = requests.get(url)
 
@@ -143,14 +162,14 @@ else:
 
             if "rates" in data and all(key in data["rates"] for key in ["USD", "TRY", "XAU", "XAG", "GBP"]):
                 logging.info("API yanıtında tüm gerekli anahtarlar bulundu.")
-                tweet_content, image_folder = process_data(data, current_local_time_str)
+                tweet_content, image_folder = process_data(data, current_local_time)
                 tweet(tweet_content, image_folder)
-                break  # İşlem başarılı, döngüden çık
+                break
             else:
                 logging.error("API'den gelen yanıtta beklenen anahtarlar bulunamadı.")
-                break  # Beklenen anahtarlar yok, döngüden çık
+                break
         else:
-            logging.error(f"Hata: API'den yanıt alınamadı. Durum kodu: {response.status_code}. Yeniden deneniyor...")
+            logging.error(f"API'den yanıt alınamadı. Başka bir anahtarla deneniyor...")
             tries += 1
 
     if tries == max_tries:
