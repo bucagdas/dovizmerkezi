@@ -30,6 +30,7 @@ Script, aşağıdaki çevre değişkenlerini kullanır:
 - `BEARER_TOKEN`
 - `EXCHANGE_RATES_API_KEY_1`
 - `EXCHANGE_RATES_API_KEY_2`
+- `EXCHANGE_RATES_API_KEY_3`
 
 Bu değişkenleri güvenli bir şekilde saklamak için, GitHub Actions Secrets kullanılabilir.
 
