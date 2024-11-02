@@ -977,3 +977,5 @@
 2024-11-01 20:00:20,253 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-01 20:00:20,253 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-01 20:00:21,095 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2024-11-02 01:30:17,449 - INFO - Script başlatıldı.
+2024-11-02 01:30:17,462 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
