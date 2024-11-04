@@ -1029,3 +1029,7 @@
 2024-11-04 16:30:18,374 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-04 16:30:18,374 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-04 16:30:19,474 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2024-11-04 20:00:20,163 - INFO - Script başlatıldı.
+2024-11-04 20:00:20,582 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-04 20:00:20,583 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-04 20:00:21,610 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
