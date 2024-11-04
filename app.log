@@ -1017,3 +1017,7 @@
 2024-11-04 08:00:18,841 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-04 08:00:18,841 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-04 08:00:20,080 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2024-11-04 13:30:18,490 - INFO - Script başlatıldı.
+2024-11-04 13:30:18,714 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-04 13:30:18,714 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-04 13:30:19,682 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
