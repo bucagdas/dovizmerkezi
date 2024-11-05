@@ -1053,3 +1053,7 @@
 2024-11-05 15:00:20,135 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-05 15:00:20,135 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-05 15:00:21,123 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2024-11-05 16:30:18,423 - INFO - Script başlatıldı.
+2024-11-05 16:30:18,690 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-05 16:30:18,691 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-05 16:30:19,944 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
