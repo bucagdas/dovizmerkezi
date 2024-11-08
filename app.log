@@ -1121,3 +1121,7 @@
 2024-11-08 01:30:18,469 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-08 01:30:18,470 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-08 01:30:19,388 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2024-11-08 07:00:18,307 - INFO - Script başlatıldı.
+2024-11-08 07:00:18,624 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-08 07:00:18,624 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-08 07:00:19,660 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
