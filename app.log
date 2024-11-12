@@ -1224,3 +1224,6 @@
 2024-11-12 16:30:20,924 - INFO - Script başlatıldı.
 2024-11-12 16:30:21,199 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-12 16:30:21,200 - ERROR - API'den gelen yanıtta beklenen anahtarlar bulunamadı.
+2024-11-12 20:00:20,186 - INFO - Script başlatıldı.
+2024-11-12 20:00:20,468 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-12 20:00:20,468 - ERROR - API'den gelen yanıtta beklenen anahtarlar bulunamadı.
