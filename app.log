@@ -1209,3 +1209,7 @@
 2024-11-12 07:00:15,510 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-12 07:00:15,510 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-12 07:00:16,503 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2024-11-12 08:00:18,854 - INFO - Script başlatıldı.
+2024-11-12 08:00:19,078 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-12 08:00:19,078 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-12 08:00:20,042 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
