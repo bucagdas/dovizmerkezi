@@ -1221,3 +1221,6 @@
 2024-11-12 15:00:19,424 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-12 15:00:19,424 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-12 15:00:20,468 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2024-11-12 16:30:20,924 - INFO - Script başlatıldı.
+2024-11-12 16:30:21,199 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-12 16:30:21,200 - ERROR - API'den gelen yanıtta beklenen anahtarlar bulunamadı.
