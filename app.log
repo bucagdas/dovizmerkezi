@@ -1242,3 +1242,7 @@
 2024-11-13 15:00:21,945 - INFO - Script başlatıldı.
 2024-11-13 15:00:22,235 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-13 15:00:22,235 - ERROR - API'den gelen yanıtta beklenen anahtarlar bulunamadı.
+2024-11-13 16:30:18,634 - INFO - Script başlatıldı.
+2024-11-13 16:30:18,815 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-13 16:30:18,815 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-13 16:30:20,206 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
