@@ -1390,3 +1390,7 @@
 2024-11-19 20:00:20,832 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-19 20:00:20,832 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-19 20:00:21,862 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2024-11-20 01:30:17,338 - INFO - Script başlatıldı.
+2024-11-20 01:30:17,514 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-20 01:30:17,514 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-20 01:30:18,669 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
