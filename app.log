@@ -1466,3 +1466,7 @@
 2024-11-22 15:00:18,800 - INFO - API yanıtı başarılı şekilde alındı.
 2024-11-22 15:00:18,800 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-11-22 15:00:19,697 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2024-11-22 16:31:08,993 - INFO - Script başlatıldı.
+2024-11-22 16:31:09,240 - INFO - API yanıtı başarılı şekilde alındı.
+2024-11-22 16:31:09,240 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-11-22 16:31:10,209 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
