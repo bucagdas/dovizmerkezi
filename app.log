@@ -1854,3 +1854,7 @@
 2024-12-09 13:30:21,627 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-09 13:30:21,627 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-09 13:30:28,084 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2024-12-09 15:00:20,766 - INFO - Script başlatıldı.
+2024-12-09 15:00:20,866 - INFO - API yanıtı başarılı şekilde alındı.
+2024-12-09 15:00:20,866 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-12-09 15:00:21,973 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
