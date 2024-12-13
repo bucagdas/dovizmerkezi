@@ -1954,3 +1954,7 @@
 2024-12-13 01:30:19,117 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-13 01:30:19,117 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-13 01:30:19,953 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2024-12-13 07:00:18,671 - INFO - Script başlatıldı.
+2024-12-13 07:00:18,899 - INFO - API yanıtı başarılı şekilde alındı.
+2024-12-13 07:00:18,899 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-12-13 07:00:19,818 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
