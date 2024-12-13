@@ -1950,3 +1950,7 @@
 2024-12-12 20:00:20,736 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-12 20:00:20,736 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-12 20:00:21,642 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2024-12-13 01:30:18,865 - INFO - Script başlatıldı.
+2024-12-13 01:30:19,117 - INFO - API yanıtı başarılı şekilde alındı.
+2024-12-13 01:30:19,117 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-12-13 01:30:19,953 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
