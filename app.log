@@ -1962,3 +1962,7 @@
 2024-12-13 08:00:23,353 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-13 08:00:23,353 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-13 08:00:24,542 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2024-12-13 13:30:24,523 - INFO - Script başlatıldı.
+2024-12-13 13:30:24,725 - INFO - API yanıtı başarılı şekilde alındı.
+2024-12-13 13:30:24,725 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-12-13 13:30:25,660 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
