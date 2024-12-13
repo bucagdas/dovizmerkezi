@@ -1974,3 +1974,7 @@
 2024-12-13 16:30:22,195 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-13 16:30:22,195 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-13 16:30:23,048 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2024-12-13 20:00:20,985 - INFO - Script başlatıldı.
+2024-12-13 20:00:21,234 - INFO - API yanıtı başarılı şekilde alındı.
+2024-12-13 20:00:21,235 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-12-13 20:00:22,218 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
