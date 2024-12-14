@@ -1978,3 +1978,5 @@
 2024-12-13 20:00:21,234 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-13 20:00:21,235 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-13 20:00:22,218 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2024-12-14 01:30:19,559 - INFO - Script başlatıldı.
+2024-12-14 01:30:19,572 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
