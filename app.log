@@ -2130,3 +2130,7 @@
 2024-12-20 08:00:24,068 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-20 08:00:24,068 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-20 08:00:25,238 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2024-12-20 13:30:19,859 - INFO - Script başlatıldı.
+2024-12-20 13:30:20,050 - INFO - API yanıtı başarılı şekilde alındı.
+2024-12-20 13:30:20,050 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-12-20 13:30:21,055 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
