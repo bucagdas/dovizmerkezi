@@ -17,7 +17,6 @@ LAST_KEY_FILE = 'last_used_key.txt'
 # Şu anki yerel saat (Türkiye için), sadece saat ve dakika formatında
 current_local_time = datetime.now(timezone('Europe/Istanbul')).strftime('%H:%M')
 
-
 # API anahtarları kimlik ile birlikte saklanıyor
 api_keys = {
     'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
@@ -60,10 +59,21 @@ CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
 CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
 ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
 ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
+BEARER_TOKEN = os.environ.get('BEARER_TOKEN')
 
+# V1 ve V2 API Authentication
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth, wait_on_rate_limit=True)
+
+client = tweepy.Client(
+    bearer_token=BEARER_TOKEN,
+    consumer_key=CONSUMER_KEY,
+    consumer_secret=CONSUMER_SECRET,
+    access_token=ACCESS_TOKEN,
+    access_token_secret=ACCESS_TOKEN_SECRET,
+    wait_on_rate_limit=True,
+)
 
 # API ile veri alma fonksiyonu
 def fetch_exchange_rates():
@@ -139,13 +149,13 @@ def send_tweet(content, specific_media_path=None):
                 media_path = get_specific_media(specific_media_path)
                 if media_path:
                     media = api.media_upload(media_path)
-                    api.update_status(status=content, media_ids=[media.media_id])
+                    client.create_tweet(text=content, media_ids=[media.media_id])
                     logging.info(f"Tweet başarıyla gönderildi. Kullanılan medya: {media_path}")
                 else:
                     logging.warning("Medya bulunamadı, yalnızca metin gönderiliyor.")
-                    api.update_status(content)
+                    client.create_tweet(text=content)
             else:
-                api.update_status(content)
+                client.create_tweet(text=content)
                 logging.info("Tweet başarıyla gönderildi.")
         except Exception as e:
             logging.error(f"Tweet gönderilirken hata oluştu: {e}")
@@ -156,7 +166,7 @@ def main():
     if data and 'rates' in data:
         tweet_content = create_tweet_content(data)
         if tweet_content:
-            specific_media_path = "./images/asgari/default.mp4"  # Belirli medya dosyasının yolu
+            specific_media_path = "./media/specific_video.mp4"  # Belirli medya dosyasının yolu
             send_tweet(tweet_content, specific_media_path)
     else:
         logging.error("Veriler alınamadı, işlem iptal edildi.")
