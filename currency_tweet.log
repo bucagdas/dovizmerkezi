@@ -3,3 +3,6 @@
 2024-12-24 20:56:15,100 - INFO - Script başlatıldı.
 2024-12-24 20:56:15,265 - ERROR - Veriler alınamadı, işlem iptal edildi.
 2024-12-24 21:02:49,146 - INFO - Script başlatıldı.
+2024-12-24 21:39:42,980 - INFO - Script başlatıldı.
+2024-12-24 21:39:45,303 - ERROR - Tweet gönderilirken hata oluştu: 403 Forbidden
+453 - You currently have access to a subset of X API V2 endpoints and limited v1.1 endpoints (e.g. media post, oauth) only. If you need access to this endpoint, you may need a different access level. You can learn more here: https://developer.x.com/en/portal/product
