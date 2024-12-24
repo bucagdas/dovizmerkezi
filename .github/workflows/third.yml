@@ -1,4 +1,4 @@
-name: Gold and Silver Price Tweet Workflow
+name: Asgari Ucret Tweet Workflow
 
 on:
   workflow_dispatch:
