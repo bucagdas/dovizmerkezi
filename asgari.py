@@ -64,7 +64,7 @@ def create_tweet_content(data):
                          f"💷 {gbp_amount:.2f} GBP\n"
                          f"🥇 {xau_ounce:.4f} ons altın ({xau_gram:.2f} gram)\n"
                          f"🥈 {xag_ounce:.4f} ons gümüş ({xag_gram:.2f} gram)\n"
-                         f"#asgari #22104 asgari ücret)
+                         f"#asgari #22104 asgari ücret)"
         return tweet_content
     except Exception as e:
         logging.error(f"Tweet içeriği oluşturulurken hata: {e}")
