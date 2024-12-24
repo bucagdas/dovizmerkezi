@@ -95,7 +95,7 @@ else:
     # Tweet atma fonksiyonu, resim eklenmiş şekilde
     def tweet(message):
         try:
-            image_path = './images/gold_silver/gold_silver.webp'  # Varsayılan resim
+            image_path = './images/gold_silver/gold_silver.mp4'  # Varsayılan resim
             media_id = api.media_upload(filename=image_path).media_id_string
             client.create_tweet(text=message, media_ids=[media_id])
             logging.info("Altın ve gümüş fiyat tweeti başarıyla gönderildi.")
