@@ -126,7 +126,7 @@ def create_tweet_content(data):
         xag_gram = xag_ounce * GRAM_PER_OUNCE
 
         # Tweet metni oluştur
-        tweet_content = (f"📊 {current_local_time} itibarıyla asgari ücret yani {TARGET_TL} TL ile alabilecekleriniz:\n"
+        tweet_content = (f"📊 Saat {current_local_time} itibarıyla asgari ücret yani {TARGET_TL} TL ile alabilecekleriniz:\n"
                          f"💵 {usd_amount:.2f} USD\n"
                          f"💶 {TARGET_TL / eur_to_try:.2f} EUR\n"
                          f"💷 {gbp_amount:.2f} GBP\n"
