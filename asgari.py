@@ -25,7 +25,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 TARGET_TL = 22104
 
 # Simülasyon modu
-TEST_MODE = True
+TEST_MODE = False
 
 # API ile veri alma fonksiyonu
 def fetch_exchange_rates():
@@ -64,7 +64,7 @@ def create_tweet_content(data):
                          f"💷 {gbp_amount:.2f} GBP\n"
                          f"🥇 {xau_ounce:.4f} ons altın ({xau_gram:.2f} gram)\n"
                          f"🥈 {xag_ounce:.4f} ons gümüş ({xag_gram:.2f} gram)\n"
-                         f"#döviz #altın #gümüş #finans")
+                         f"#asgari #22104 asgari ücret)
         return tweet_content
     except Exception as e:
         logging.error(f"Tweet içeriği oluşturulurken hata: {e}")
