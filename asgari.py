@@ -1,6 +1,7 @@
 import os
 import requests
 from datetime import datetime
+from pytz import timezone
 from random import choice
 import tweepy
 import logging
@@ -14,7 +15,8 @@ logging.info("Script başlatıldı.")
 LAST_KEY_FILE = 'last_used_key.txt'
 
 # Şu anki yerel saat (Türkiye için), sadece saat ve dakika formatında
-current_local_time = datetime.now().strftime('%H:%M')
+current_local_time = datetime.now(timezone('Europe/Istanbul')).strftime('%H:%M')
+
 
 # API anahtarları kimlik ile birlikte saklanıyor
 api_keys = {
@@ -48,7 +50,7 @@ def get_random_api_key(exclude_key_id=None):
 TARGET_TL = 22104
 
 # Simülasyon modu
-TEST_MODE = True
+TEST_MODE = False
 
 # Gram ons çevirim oranları
 GRAM_PER_OUNCE = 31.1035
@@ -88,6 +90,14 @@ def fetch_exchange_rates():
     logging.error("Maksimum deneme sayısına ulaşıldı, işlem iptal edildi.")
     return None
 
+# Belirli bir dosyayı seçme fonksiyonu
+def get_specific_media(file_path):
+    if os.path.exists(file_path) and file_path.endswith(('.png', '.jpg', '.jpeg', '.webp', '.mp4')):
+        return file_path
+    else:
+        logging.error(f"Belirtilen dosya bulunamadı veya geçerli bir medya formatında değil: {file_path}")
+        return None
+
 # Tweet içeriğini oluşturma fonksiyonu
 def create_tweet_content(data):
     try:
@@ -106,27 +116,37 @@ def create_tweet_content(data):
         xag_gram = xag_ounce * GRAM_PER_OUNCE
 
         # Tweet metni oluştur
-        tweet_content = (f"📊 {TARGET_TL} TL ile alabilecekleriniz:\n"
+        tweet_content = (f"📊 {current_local_time} itibarıyla asgari ücret yani {TARGET_TL} TL ile alabilecekleriniz:\n"
                          f"💵 {usd_amount:.2f} USD\n"
                          f"💶 {TARGET_TL / eur_to_try:.2f} EUR\n"
                          f"💷 {gbp_amount:.2f} GBP\n"
                          f"🥇 {xau_ounce:.4f} ons altın ({xau_gram:.2f} gram)\n"
                          f"🥈 {xag_ounce:.4f} ons gümüş ({xag_gram:.2f} gram)\n"
-                         f"#döviz #altın #gümüş #finans")
+                         f"#asgariücret #altın #gümüş #dolar #euro")
         return tweet_content
     except Exception as e:
         logging.error(f"Tweet içeriği oluşturulurken hata: {e}")
         return None
 
 # Tweet gönderme fonksiyonu
-def send_tweet(content):
+def send_tweet(content, specific_media_path=None):
     if TEST_MODE:
-        print("Simülasyon Modu: Gönderilecek Tweet İçeriği:\n")
+        print("Simülasyon Modu: Gönderilecek Tweet İçeriği:")
         print(content)
     else:
         try:
-            api.update_status(content)
-            logging.info("Tweet başarıyla gönderildi.")
+            if specific_media_path:
+                media_path = get_specific_media(specific_media_path)
+                if media_path:
+                    media = api.media_upload(media_path)
+                    api.update_status(status=content, media_ids=[media.media_id])
+                    logging.info(f"Tweet başarıyla gönderildi. Kullanılan medya: {media_path}")
+                else:
+                    logging.warning("Medya bulunamadı, yalnızca metin gönderiliyor.")
+                    api.update_status(content)
+            else:
+                api.update_status(content)
+                logging.info("Tweet başarıyla gönderildi.")
         except Exception as e:
             logging.error(f"Tweet gönderilirken hata oluştu: {e}")
 
@@ -136,7 +156,8 @@ def main():
     if data and 'rates' in data:
         tweet_content = create_tweet_content(data)
         if tweet_content:
-            send_tweet(tweet_content)
+            specific_media_path = "./images/asgari.mp4"  # Belirli medya dosyasının yolu
+            send_tweet(tweet_content, specific_media_path)
     else:
         logging.error("Veriler alınamadı, işlem iptal edildi.")
 
