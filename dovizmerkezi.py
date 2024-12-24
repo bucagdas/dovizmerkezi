@@ -87,7 +87,7 @@ else:
     # Rastgele resim seçme fonksiyonu
     def get_random_image(image_folder):
         try:
-            images = [os.path.join(image_folder, img) for img in os.listdir(image_folder) if img.endswith(('.png', '.jpg', '.webp'))]
+            images = [os.path.join(image_folder, img) for img in os.listdir(image_folder) if img.endswith(('.png', '.jpg', '.webp', '.mp4'))]
             return choice(images) if images else get_random_image(default_images_folder)
         except Exception as e:
             logging.error(f"{image_folder} klasörüne erişilirken hata oluştu: {e}")
