@@ -1,6 +1,7 @@
 import os
 import requests
 from datetime import datetime
+from random import choice
 import tweepy
 import logging
 
@@ -9,36 +10,83 @@ logging.basicConfig(filename='currency_tweet.log', filemode='a', level=logging.I
                     format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info("Script başlatıldı.")
 
-# API Anahtarları
-EXCHANGE_RATES_API_KEY = os.environ.get('EXCHANGE_RATES_API_KEY')
-CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
-CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
-ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
-ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
+# Kullanılan son API anahtarını saklayacağımız dosya
+LAST_KEY_FILE = 'last_used_key.txt'
 
-# Tweepy API Ayarları
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-api = tweepy.API(auth, wait_on_rate_limit=True)
+# Şu anki yerel saat (Türkiye için), sadece saat ve dakika formatında
+current_local_time = datetime.now().strftime('%H:%M')
+
+# API anahtarları kimlik ile birlikte saklanıyor
+api_keys = {
+    'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
+    'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
+    'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
+}
+
+# Son kullanılan anahtar kimliğini dosyadan okuma
+def read_last_used_key():
+    try:
+        with open(LAST_KEY_FILE, 'r') as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        return None
+
+# Son kullanılan anahtar kimliğini dosyaya yazma
+def write_last_used_key(key_id):
+    with open(LAST_KEY_FILE, 'w') as file:
+        file.write(key_id)
+
+# Geçerli bir anahtar seçmek için fonksiyon (son kullanılan anahtarı dışlar)
+def get_random_api_key(exclude_key_id=None):
+    available_keys = {k: v for k, v in api_keys.items() if k != exclude_key_id and v}
+    if not available_keys:
+        return None, None
+    key_id = choice(list(available_keys.keys()))
+    return key_id, available_keys[key_id]
 
 # Hedef TL Miktarı
 TARGET_TL = 22104
 
 # Simülasyon modu
-TEST_MODE = False
-
-# API ile veri alma fonksiyonu
-def fetch_exchange_rates():
-    url = f"http://api.exchangeratesapi.io/latest?symbols=USD,TRY,GBP,XAU,XAG&base=EUR&access_key={EXCHANGE_RATES_API_KEY}"
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        logging.error(f"API'den yanıt alınamadı. Durum kodu: {response.status_code}")
-        return None
+TEST_MODE = True
 
 # Gram ons çevirim oranları
 GRAM_PER_OUNCE = 31.1035
+
+# Tweepy API Ayarları
+CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
+CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
+ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
+ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+api = tweepy.API(auth, wait_on_rate_limit=True)
+
+# API ile veri alma fonksiyonu
+def fetch_exchange_rates():
+    last_used_key_id = read_last_used_key()
+    max_tries = len(api_keys)
+    tries = 0
+
+    while tries < max_tries:
+        key_id, api_key = get_random_api_key(exclude_key_id=last_used_key_id)
+        if not api_key:
+            logging.error("Geçerli bir API anahtarı bulunamadı.")
+            break
+
+        url = f"http://api.exchangeratesapi.io/latest?symbols=USD,TRY,GBP,XAU,XAG&base=EUR&access_key={api_key}"
+        response = requests.get(url)
+
+        if response.status_code == 200:
+            write_last_used_key(key_id)
+            return response.json()
+        else:
+            logging.error(f"API anahtarı başarısız oldu: {key_id}")
+            tries += 1
+
+    logging.error("Maksimum deneme sayısına ulaşıldı, işlem iptal edildi.")
+    return None
 
 # Tweet içeriğini oluşturma fonksiyonu
 def create_tweet_content(data):
@@ -58,13 +106,13 @@ def create_tweet_content(data):
         xag_gram = xag_ounce * GRAM_PER_OUNCE
 
         # Tweet metni oluştur
-        tweet_content = (f"📊 22104 TL ile alabilecekleriniz:\n"
+        tweet_content = (f"📊 {TARGET_TL} TL ile alabilecekleriniz:\n"
                          f"💵 {usd_amount:.2f} USD\n"
                          f"💶 {TARGET_TL / eur_to_try:.2f} EUR\n"
                          f"💷 {gbp_amount:.2f} GBP\n"
                          f"🥇 {xau_ounce:.4f} ons altın ({xau_gram:.2f} gram)\n"
                          f"🥈 {xag_ounce:.4f} ons gümüş ({xag_gram:.2f} gram)\n"
-                         f"#asgari #22104 asgari ücret")
+                         f"#döviz #altın #gümüş #finans")
         return tweet_content
     except Exception as e:
         logging.error(f"Tweet içeriği oluşturulurken hata: {e}")
