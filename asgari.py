@@ -166,7 +166,7 @@ def main():
     if data and 'rates' in data:
         tweet_content = create_tweet_content(data)
         if tweet_content:
-            specific_media_path = "./media/specific_video.mp4"  # Belirli medya dosyasının yolu
+            specific_media_path = "./images/asgari/default.mp4"  # Belirli medya dosyasının yolu
             send_tweet(tweet_content, specific_media_path)
     else:
         logging.error("Veriler alınamadı, işlem iptal edildi.")
