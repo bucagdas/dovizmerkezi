@@ -9,3 +9,5 @@
 2024-12-24 21:48:22,518 - INFO - Script başlatıldı.
 2024-12-24 21:48:22,823 - ERROR - Belirtilen dosya bulunamadı veya geçerli bir medya formatında değil: ./media/specific_video.mp4
 2024-12-24 21:48:22,823 - WARNING - Medya bulunamadı, yalnızca metin gönderiliyor.
+2024-12-25 07:19:31,028 - INFO - Script başlatıldı.
+2024-12-25 07:19:33,560 - INFO - Tweet başarıyla gönderildi. Kullanılan medya: ./images/asgari/default.mp4
