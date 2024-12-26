@@ -2266,3 +2266,7 @@
 2024-12-26 07:00:20,428 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-26 07:00:20,428 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-26 07:00:21,262 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2024-12-26 08:00:20,690 - INFO - Script başlatıldı.
+2024-12-26 08:00:20,884 - INFO - API yanıtı başarılı şekilde alındı.
+2024-12-26 08:00:20,884 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-12-26 08:00:21,914 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
