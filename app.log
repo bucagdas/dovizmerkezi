@@ -2374,3 +2374,7 @@
 2024-12-31 01:30:16,774 - INFO - API yanıtı başarılı şekilde alındı.
 2024-12-31 01:30:16,774 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2024-12-31 01:30:17,660 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2024-12-31 07:00:20,288 - INFO - Script başlatıldı.
+2024-12-31 07:00:20,561 - INFO - API yanıtı başarılı şekilde alındı.
+2024-12-31 07:00:20,561 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2024-12-31 07:00:21,839 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
