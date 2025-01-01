@@ -2410,3 +2410,7 @@
 2025-01-01 08:00:17,857 - INFO - API yanıtı başarılı şekilde alındı.
 2025-01-01 08:00:17,857 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-01-01 08:00:18,802 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2025-01-01 13:30:21,136 - INFO - Script başlatıldı.
+2025-01-01 13:30:21,305 - INFO - API yanıtı başarılı şekilde alındı.
+2025-01-01 13:30:21,305 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-01-01 13:30:22,436 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
