@@ -2430,3 +2430,7 @@
 2025-01-02 01:30:15,808 - INFO - API yanıtı başarılı şekilde alındı.
 2025-01-02 01:30:15,809 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-01-02 01:30:16,634 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-01-02 07:00:18,610 - INFO - Script başlatıldı.
+2025-01-02 07:00:18,876 - INFO - API yanıtı başarılı şekilde alındı.
+2025-01-02 07:00:18,876 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-01-02 07:00:19,716 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
