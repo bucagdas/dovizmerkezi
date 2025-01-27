@@ -3022,3 +3022,7 @@
 2025-01-27 13:30:23,179 - INFO - API yanıtı başarılı şekilde alındı.
 2025-01-27 13:30:23,179 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-01-27 13:30:24,083 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-01-27 15:00:24,417 - INFO - Script başlatıldı.
+2025-01-27 15:00:24,609 - INFO - API yanıtı başarılı şekilde alındı.
+2025-01-27 15:00:24,609 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-01-27 15:00:25,559 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
