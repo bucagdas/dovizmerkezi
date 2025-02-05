@@ -3230,3 +3230,7 @@
 2025-02-04 20:00:20,493 - INFO - API yanıtı başarılı şekilde alındı.
 2025-02-04 20:00:20,493 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-02-04 20:00:21,629 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-02-05 01:30:18,252 - INFO - Script başlatıldı.
+2025-02-05 01:30:18,503 - INFO - API yanıtı başarılı şekilde alındı.
+2025-02-05 01:30:18,503 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-02-05 01:30:19,413 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
