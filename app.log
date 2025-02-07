@@ -3290,3 +3290,7 @@
 2025-02-07 01:30:20,447 - INFO - API yanıtı başarılı şekilde alındı.
 2025-02-07 01:30:20,447 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-02-07 01:30:21,519 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
+2025-02-07 07:00:20,163 - INFO - Script başlatıldı.
+2025-02-07 07:00:20,495 - INFO - API yanıtı başarılı şekilde alındı.
+2025-02-07 07:00:20,495 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-02-07 07:00:21,416 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
