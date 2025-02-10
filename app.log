@@ -3362,3 +3362,7 @@
 2025-02-10 15:00:23,509 - INFO - API yanıtı başarılı şekilde alındı.
 2025-02-10 15:00:23,510 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-02-10 15:00:24,641 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-02-10 16:30:21,550 - INFO - Script başlatıldı.
+2025-02-10 16:30:21,831 - INFO - API yanıtı başarılı şekilde alındı.
+2025-02-10 16:30:21,831 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-02-10 16:30:23,193 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
