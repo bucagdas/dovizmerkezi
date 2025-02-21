@@ -3623,3 +3623,7 @@
 2025-02-20 20:00:25,069 - INFO - API yanıtı başarılı şekilde alındı.
 2025-02-20 20:00:25,069 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-02-20 20:00:26,600 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-02-21 01:30:20,483 - INFO - Script başlatıldı.
+2025-02-21 01:30:20,638 - INFO - API yanıtı başarılı şekilde alındı.
+2025-02-21 01:30:20,638 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-02-21 01:30:21,705 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
