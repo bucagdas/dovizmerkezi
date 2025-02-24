@@ -3703,3 +3703,7 @@
 2025-02-24 16:30:23,154 - INFO - API yanıtı başarılı şekilde alındı.
 2025-02-24 16:30:23,154 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-02-24 16:30:24,217 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2025-02-24 20:00:24,141 - INFO - Script başlatıldı.
+2025-02-24 20:00:24,462 - INFO - API yanıtı başarılı şekilde alındı.
+2025-02-24 20:00:24,462 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-02-24 20:00:25,399 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
