@@ -3739,3 +3739,7 @@
 2025-02-26 01:30:17,206 - INFO - API yanıtı başarılı şekilde alındı.
 2025-02-26 01:30:17,206 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-02-26 01:30:18,174 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-02-26 07:00:19,439 - INFO - Script başlatıldı.
+2025-02-26 07:00:19,621 - INFO - API yanıtı başarılı şekilde alındı.
+2025-02-26 07:00:19,621 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-02-26 07:00:20,856 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
