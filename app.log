@@ -3803,3 +3803,7 @@
 2025-02-28 08:00:18,175 - INFO - API yanıtı başarılı şekilde alındı.
 2025-02-28 08:00:18,175 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-02-28 08:00:19,297 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2025-02-28 13:30:21,831 - INFO - Script başlatıldı.
+2025-02-28 13:30:22,156 - INFO - API yanıtı başarılı şekilde alındı.
+2025-02-28 13:30:22,156 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-02-28 13:30:23,695 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
