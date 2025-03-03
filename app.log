@@ -3871,3 +3871,7 @@
 2025-03-03 16:30:23,359 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-03 16:30:23,359 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-03 16:30:24,874 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2025-03-03 20:00:22,140 - INFO - Script başlatıldı.
+2025-03-03 20:00:22,480 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-03 20:00:22,480 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-03 20:00:23,704 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
