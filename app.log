@@ -3903,3 +3903,7 @@
 2025-03-04 20:00:20,278 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-04 20:00:20,279 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-04 20:00:21,134 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-03-05 01:30:18,017 - INFO - Script başlatıldı.
+2025-03-05 01:30:18,281 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-05 01:30:18,281 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-05 01:30:19,617 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
