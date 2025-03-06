@@ -3956,3 +3956,7 @@
 2025-03-06 16:30:21,705 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-06 16:30:29,947 - ERROR - Tweet gönderimi sırasında hata oluştu: 500 Internal Server Error
 131 - Internal error
+2025-03-06 20:00:20,859 - INFO - Script başlatıldı.
+2025-03-06 20:00:21,122 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-06 20:00:21,122 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-06 20:00:22,322 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
