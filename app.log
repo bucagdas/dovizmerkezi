@@ -3951,3 +3951,8 @@
 2025-03-06 15:00:24,234 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-06 15:00:24,234 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-06 15:00:25,068 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-03-06 16:30:21,451 - INFO - Script başlatıldı.
+2025-03-06 16:30:21,705 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-06 16:30:21,705 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-06 16:30:29,947 - ERROR - Tweet gönderimi sırasında hata oluştu: 500 Internal Server Error
+131 - Internal error
