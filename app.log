@@ -3960,3 +3960,7 @@
 2025-03-06 20:00:21,122 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-06 20:00:21,122 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-06 20:00:22,322 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-03-07 01:30:18,140 - INFO - Script başlatıldı.
+2025-03-07 01:30:18,324 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-07 01:30:18,324 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-07 01:30:19,575 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
