@@ -4040,3 +4040,7 @@
 2025-03-10 16:30:22,299 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-10 16:30:22,299 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-10 16:30:24,123 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-03-10 20:00:20,523 - INFO - Script başlatıldı.
+2025-03-10 20:00:20,696 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-10 20:00:20,696 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-10 20:00:21,872 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
