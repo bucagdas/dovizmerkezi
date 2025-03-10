@@ -4020,3 +4020,7 @@
 2025-03-10 01:30:17,555 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-10 01:30:17,555 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-10 01:30:18,495 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-03-10 07:00:22,333 - INFO - Script başlatıldı.
+2025-03-10 07:00:22,687 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-10 07:00:22,687 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-10 07:00:23,613 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
