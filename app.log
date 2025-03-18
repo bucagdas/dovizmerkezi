@@ -4212,3 +4212,7 @@
 2025-03-17 20:00:21,219 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-17 20:00:21,219 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-17 20:00:22,588 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-03-18 01:30:19,539 - INFO - Script başlatıldı.
+2025-03-18 01:30:19,775 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-18 01:30:19,775 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-18 01:30:20,885 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
