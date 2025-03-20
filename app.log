@@ -4288,3 +4288,7 @@
 2025-03-20 15:00:26,687 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-20 15:00:26,687 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-20 15:00:27,596 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-03-20 16:30:21,545 - INFO - Script başlatıldı.
+2025-03-20 16:30:21,695 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-20 16:30:21,695 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-20 16:30:23,200 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
