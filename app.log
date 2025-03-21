@@ -4300,3 +4300,7 @@
 2025-03-21 01:30:17,847 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-21 01:30:17,848 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-21 01:30:19,397 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
+2025-03-21 07:01:21,604 - INFO - Script başlatıldı.
+2025-03-21 07:01:21,737 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-21 07:01:21,737 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-21 07:01:23,328 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
