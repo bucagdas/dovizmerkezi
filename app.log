@@ -4432,3 +4432,7 @@
 2025-03-26 16:30:24,026 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-26 16:30:24,026 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-26 16:30:24,923 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-03-26 20:00:21,247 - INFO - Script başlatıldı.
+2025-03-26 20:00:21,393 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-26 20:00:21,393 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-26 20:00:22,491 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
