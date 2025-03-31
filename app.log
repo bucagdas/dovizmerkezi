@@ -4540,3 +4540,7 @@
 2025-03-31 15:00:22,454 - INFO - API yanıtı başarılı şekilde alındı.
 2025-03-31 15:00:22,455 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-03-31 15:00:23,427 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-03-31 16:30:23,719 - INFO - Script başlatıldı.
+2025-03-31 16:30:23,889 - INFO - API yanıtı başarılı şekilde alındı.
+2025-03-31 16:30:23,889 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-03-31 16:30:25,767 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
