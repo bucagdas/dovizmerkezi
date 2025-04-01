@@ -4560,3 +4560,7 @@
 2025-04-01 08:00:21,170 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-01 08:00:21,171 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-01 08:00:22,990 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-04-01 13:30:26,878 - INFO - Script başlatıldı.
+2025-04-01 13:30:27,129 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-01 13:30:27,129 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-01 13:30:28,041 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
