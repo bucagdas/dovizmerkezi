@@ -4580,3 +4580,7 @@
 2025-04-02 01:30:18,219 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-02 01:30:18,219 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-02 01:30:19,218 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-04-02 07:00:21,372 - INFO - Script başlatıldı.
+2025-04-02 07:00:21,561 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-02 07:00:21,561 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-02 07:00:22,788 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
