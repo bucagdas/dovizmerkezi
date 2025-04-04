@@ -4632,3 +4632,7 @@
 2025-04-03 20:00:20,109 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-03 20:00:20,109 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-03 20:00:21,150 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-04-04 01:30:24,706 - INFO - Script başlatıldı.
+2025-04-04 01:30:24,947 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-04 01:30:24,947 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-04 01:30:26,026 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
