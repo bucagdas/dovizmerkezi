@@ -4712,3 +4712,7 @@
 2025-04-07 16:30:24,990 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-07 16:30:24,990 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-07 16:30:25,991 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-04-07 20:00:22,655 - INFO - Script başlatıldı.
+2025-04-07 20:00:23,005 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-07 20:00:23,005 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-07 20:00:23,934 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
