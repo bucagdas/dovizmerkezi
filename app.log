@@ -4804,3 +4804,7 @@
 2025-04-11 01:30:21,376 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-11 01:30:21,376 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-11 01:30:22,663 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
+2025-04-11 07:01:24,994 - INFO - Script başlatıldı.
+2025-04-11 07:01:25,190 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-11 07:01:25,191 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-11 07:01:26,362 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
