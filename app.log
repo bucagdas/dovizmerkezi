@@ -4812,3 +4812,7 @@
 2025-04-11 08:00:19,800 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-11 08:00:19,800 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-11 08:00:20,702 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-04-11 13:30:21,625 - INFO - Script başlatıldı.
+2025-04-11 13:30:21,890 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-11 13:30:21,890 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-11 13:30:22,927 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
