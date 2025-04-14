@@ -4860,3 +4860,7 @@
 2025-04-14 01:30:19,515 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-14 01:30:19,515 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-14 01:30:20,748 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-04-14 07:00:21,139 - INFO - Script başlatıldı.
+2025-04-14 07:00:21,426 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-14 07:00:21,426 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-14 07:00:22,397 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
