@@ -4856,3 +4856,7 @@
 2025-04-13 16:30:19,677 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
 2025-04-13 20:00:20,393 - INFO - Script başlatıldı.
 2025-04-13 20:00:20,405 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-04-14 01:30:19,181 - INFO - Script başlatıldı.
+2025-04-14 01:30:19,515 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-14 01:30:19,515 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-14 01:30:20,748 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
