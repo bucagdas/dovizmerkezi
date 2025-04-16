@@ -4932,3 +4932,7 @@
 2025-04-16 15:00:26,551 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-16 15:00:26,552 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-16 15:00:28,325 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-04-16 16:30:25,090 - INFO - Script başlatıldı.
+2025-04-16 16:30:25,344 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-16 16:30:25,344 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-16 16:30:26,496 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
