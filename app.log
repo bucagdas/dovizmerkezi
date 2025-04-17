@@ -4940,3 +4940,7 @@
 2025-04-16 20:00:24,166 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-16 20:00:24,167 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-16 20:00:25,097 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-04-17 01:30:21,441 - INFO - Script başlatıldı.
+2025-04-17 01:30:21,796 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-17 01:30:21,796 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-17 01:30:22,731 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
