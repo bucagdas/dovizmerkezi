@@ -5048,3 +5048,7 @@
 2025-04-21 16:30:27,713 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-21 16:30:27,713 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-21 16:30:29,492 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-04-21 20:00:23,961 - INFO - Script başlatıldı.
+2025-04-21 20:00:24,285 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-21 20:00:24,285 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-21 20:00:25,251 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
