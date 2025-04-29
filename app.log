@@ -5224,3 +5224,7 @@
 2025-04-29 01:30:20,809 - INFO - API yanıtı başarılı şekilde alındı.
 2025-04-29 01:30:20,809 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-04-29 01:30:21,762 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
+2025-04-29 07:00:27,183 - INFO - Script başlatıldı.
+2025-04-29 07:00:27,528 - INFO - API yanıtı başarılı şekilde alındı.
+2025-04-29 07:00:27,528 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-04-29 07:00:28,456 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
