@@ -5332,3 +5332,5 @@
 2025-05-02 20:00:24,851 - INFO - API yanıtı başarılı şekilde alındı.
 2025-05-02 20:00:24,851 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-05-02 20:00:26,067 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-05-03 01:30:21,668 - INFO - Script başlatıldı.
+2025-05-03 01:30:21,680 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
