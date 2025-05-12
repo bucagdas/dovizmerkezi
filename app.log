@@ -5552,3 +5552,7 @@
 2025-05-12 16:30:22,377 - INFO - API yanıtı başarılı şekilde alındı.
 2025-05-12 16:30:22,378 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-05-12 16:30:25,158 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-05-12 20:00:21,588 - INFO - Script başlatıldı.
+2025-05-12 20:00:21,687 - INFO - API yanıtı başarılı şekilde alındı.
+2025-05-12 20:00:21,687 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-05-12 20:00:22,586 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
