@@ -5580,3 +5580,7 @@
 2025-05-13 16:30:26,827 - INFO - API yanıtı başarılı şekilde alındı.
 2025-05-13 16:30:26,828 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-05-13 16:30:28,935 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-05-13 20:00:19,947 - INFO - Script başlatıldı.
+2025-05-13 20:00:20,200 - INFO - API yanıtı başarılı şekilde alındı.
+2025-05-13 20:00:20,200 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-05-13 20:00:21,182 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
