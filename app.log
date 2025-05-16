@@ -5640,3 +5640,7 @@
 2025-05-15 20:00:27,960 - INFO - API yanıtı başarılı şekilde alındı.
 2025-05-15 20:00:27,961 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-05-15 20:00:28,793 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-05-16 01:30:18,325 - INFO - Script başlatıldı.
+2025-05-16 01:30:18,541 - INFO - API yanıtı başarılı şekilde alındı.
+2025-05-16 01:30:18,541 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-05-16 01:30:19,627 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
