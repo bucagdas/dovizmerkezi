@@ -5720,3 +5720,7 @@
 2025-05-19 16:30:20,019 - INFO - API yanıtı başarılı şekilde alındı.
 2025-05-19 16:30:20,019 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-05-19 16:30:21,092 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-05-19 20:00:21,953 - INFO - Script başlatıldı.
+2025-05-19 20:00:22,040 - INFO - API yanıtı başarılı şekilde alındı.
+2025-05-19 20:00:22,040 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-05-19 20:00:23,206 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
