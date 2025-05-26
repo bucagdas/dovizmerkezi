@@ -5872,3 +5872,7 @@
 2025-05-26 07:00:21,387 - INFO - API yanıtı başarılı şekilde alındı.
 2025-05-26 07:00:21,387 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-05-26 07:00:22,426 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-05-26 13:30:20,434 - INFO - Script başlatıldı.
+2025-05-26 13:30:20,569 - INFO - API yanıtı başarılı şekilde alındı.
+2025-05-26 13:30:20,569 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-05-26 13:30:21,975 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
