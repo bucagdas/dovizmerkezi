@@ -5996,3 +5996,7 @@
 2025-05-30 16:30:20,619 - INFO - API yanıtı başarılı şekilde alındı.
 2025-05-30 16:30:20,619 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-05-30 16:30:22,266 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-05-30 20:00:22,663 - INFO - Script başlatıldı.
+2025-05-30 20:00:22,893 - INFO - API yanıtı başarılı şekilde alındı.
+2025-05-30 20:00:22,893 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-05-30 20:00:23,846 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
