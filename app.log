@@ -6080,3 +6080,7 @@
 2025-06-03 16:30:25,219 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-03 16:30:25,219 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-03 16:30:26,104 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-06-03 20:00:32,363 - INFO - Script başlatıldı.
+2025-06-03 20:00:32,718 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-03 20:00:32,718 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-03 20:00:33,841 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
