@@ -6104,3 +6104,7 @@
 2025-06-04 15:00:36,758 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-04 15:00:36,758 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-04 15:00:37,797 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-06-04 16:30:21,728 - INFO - Script başlatıldı.
+2025-06-04 16:30:21,974 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-04 16:30:21,974 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-04 16:30:22,978 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
