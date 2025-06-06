@@ -6140,3 +6140,7 @@
 2025-06-05 20:00:24,933 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-05 20:00:24,933 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-05 20:00:25,952 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-06-06 01:30:20,393 - INFO - Script başlatıldı.
+2025-06-06 01:30:20,554 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-06 01:30:20,554 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-06 01:30:21,426 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
