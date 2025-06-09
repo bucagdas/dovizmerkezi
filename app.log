@@ -6208,3 +6208,7 @@
 2025-06-09 08:00:22,773 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-09 08:00:22,773 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-09 08:00:23,601 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-06-09 13:30:23,001 - INFO - Script başlatıldı.
+2025-06-09 13:30:23,134 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-09 13:30:23,134 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-09 13:30:24,047 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
