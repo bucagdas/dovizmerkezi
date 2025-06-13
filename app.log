@@ -6312,3 +6312,7 @@
 2025-06-13 01:31:10,070 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-13 01:31:10,070 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-13 01:31:11,256 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
+2025-06-13 07:00:17,027 - INFO - Script başlatıldı.
+2025-06-13 07:00:17,133 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-13 07:00:17,134 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-13 07:00:18,313 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
