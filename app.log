@@ -6320,3 +6320,7 @@
 2025-06-13 08:00:17,983 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-13 08:00:17,984 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-13 08:00:19,934 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-06-13 13:30:18,710 - INFO - Script başlatıldı.
+2025-06-13 13:30:18,909 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-13 13:30:18,909 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-13 13:30:20,183 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
