@@ -6404,3 +6404,7 @@
 2025-06-17 08:00:23,066 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-17 08:00:23,066 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-17 08:00:24,194 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-06-17 13:30:21,194 - INFO - Script başlatıldı.
+2025-06-17 13:30:21,567 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-17 13:30:21,567 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-17 13:30:23,241 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
