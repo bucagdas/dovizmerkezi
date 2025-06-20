@@ -6492,3 +6492,7 @@
 2025-06-20 13:30:18,877 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-20 13:30:18,877 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-20 13:30:20,025 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-06-20 15:00:21,394 - INFO - Script başlatıldı.
+2025-06-20 15:00:21,621 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-20 15:00:21,621 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-20 15:00:22,929 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
