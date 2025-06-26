@@ -6620,3 +6620,7 @@
 2025-06-26 01:30:16,769 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-26 01:30:16,769 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-26 01:30:17,737 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
+2025-06-26 07:00:21,629 - INFO - Script başlatıldı.
+2025-06-26 07:00:21,909 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-26 07:00:21,909 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-26 07:00:22,851 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
