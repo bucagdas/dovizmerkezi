@@ -6632,3 +6632,7 @@
 2025-06-26 13:30:21,185 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-26 13:30:21,185 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-26 13:30:22,312 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-06-26 15:00:20,957 - INFO - Script başlatıldı.
+2025-06-26 15:00:21,368 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-26 15:00:21,368 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-26 15:00:22,646 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
