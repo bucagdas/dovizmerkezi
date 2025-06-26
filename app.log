@@ -6641,3 +6641,7 @@
 2025-06-26 16:30:20,809 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-26 16:30:21,488 - ERROR - Tweet gönderimi sırasında hata oluştu: 500 Internal Server Error
 Something is broken. This is usually a temporary error, for example in a high load situation or if an endpoint is temporarily having issues. Check in the developer forums in case others are having similar issues, or try again later. 
+2025-06-26 20:00:25,169 - INFO - Script başlatıldı.
+2025-06-26 20:00:25,431 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-26 20:00:25,431 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-26 20:00:26,807 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
