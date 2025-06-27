@@ -6661,3 +6661,7 @@ Something is broken. This is usually a temporary error, for example in a high lo
 2025-06-27 13:30:23,934 - INFO - API yanıtı başarılı şekilde alındı.
 2025-06-27 13:30:23,935 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-06-27 13:30:25,119 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-06-27 15:00:19,081 - INFO - Script başlatıldı.
+2025-06-27 15:00:19,308 - INFO - API yanıtı başarılı şekilde alındı.
+2025-06-27 15:00:19,308 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-06-27 15:00:20,493 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
