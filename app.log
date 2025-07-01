@@ -6749,3 +6749,7 @@ Something is broken. This is usually a temporary error, for example in a high lo
 2025-07-01 15:00:24,620 - INFO - API yanıtı başarılı şekilde alındı.
 2025-07-01 15:00:24,620 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-07-01 15:00:26,070 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-07-01 16:30:17,355 - INFO - Script başlatıldı.
+2025-07-01 16:30:17,618 - INFO - API yanıtı başarılı şekilde alındı.
+2025-07-01 16:30:17,618 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-07-01 16:30:18,516 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
