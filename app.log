@@ -6813,3 +6813,7 @@ Something is broken. This is usually a temporary error, for example in a high lo
 2025-07-03 20:00:22,869 - INFO - API yanıtı başarılı şekilde alındı.
 2025-07-03 20:00:22,869 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-07-03 20:00:23,828 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-07-04 01:30:16,577 - INFO - Script başlatıldı.
+2025-07-04 01:30:16,794 - INFO - API yanıtı başarılı şekilde alındı.
+2025-07-04 01:30:16,794 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-07-04 01:30:17,857 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
