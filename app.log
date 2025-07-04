@@ -6825,3 +6825,7 @@ Something is broken. This is usually a temporary error, for example in a high lo
 2025-07-04 08:00:17,334 - INFO - API yanıtı başarılı şekilde alındı.
 2025-07-04 08:00:17,334 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-07-04 08:00:19,082 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-07-04 13:30:18,186 - INFO - Script başlatıldı.
+2025-07-04 13:30:18,408 - INFO - API yanıtı başarılı şekilde alındı.
+2025-07-04 13:30:18,408 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-07-04 13:30:19,343 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
