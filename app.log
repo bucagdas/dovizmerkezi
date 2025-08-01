@@ -6885,3 +6885,7 @@ Something is broken. This is usually a temporary error, for example in a high lo
 2025-08-01 08:00:22,430 - INFO - API yanıtı başarılı şekilde alındı.
 2025-08-01 08:00:22,430 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
 2025-08-01 08:00:23,361 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-08-01 13:30:18,048 - INFO - Script başlatıldı.
+2025-08-01 13:30:18,220 - INFO - API yanıtı başarılı şekilde alındı.
+2025-08-01 13:30:18,220 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-08-01 13:30:19,266 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
