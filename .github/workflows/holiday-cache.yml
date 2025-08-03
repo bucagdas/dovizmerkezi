@@ -1,0 +1,40 @@
+name: Holiday Cache Workflow
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Her gün gece yarısı UTC (sabah 03:00 Türkiye saati)
+  workflow_dispatch:  # Manuel tetikleme için
+
+jobs:
+  cache-holidays:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pytz
+
+      - name: Cache Holiday Data
+        run: python holiday_cache.py
+        env:
+          CALENDARIFIC_API_KEY: ${{ secrets.CALENDARIFIC_API_KEY }}
+
+      - name: Commit and push holiday cache
+        run: |-
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add holiday_cache.json
+          timestamp=$(date '+%Y-%m-%d')
+          git commit -m "🗓️ Holiday cache update ${timestamp}" || exit 0
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

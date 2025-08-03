@@ -1,0 +1,30 @@
+{
+  "cache_date": "2025-08-03",
+  "last_updated": "2025-08-03T12:00:00",
+  "countries": {
+    "TR": {
+      "is_holiday": false,
+      "holiday_names": [],
+      "last_updated": "2025-08-03T12:00:00",
+      "date_checked": "2025-08-03"
+    },
+    "US": {
+      "is_holiday": false,
+      "holiday_names": [],
+      "last_updated": "2025-08-03T12:00:00",
+      "date_checked": "2025-08-03"
+    },
+    "GB": {
+      "is_holiday": false,
+      "holiday_names": [],
+      "last_updated": "2025-08-03T12:00:00",
+      "date_checked": "2025-08-03"
+    },
+    "CN": {
+      "is_holiday": false,
+      "holiday_names": [],
+      "last_updated": "2025-08-03T12:00:00",
+      "date_checked": "2025-08-03"
+    }
+  }
+}

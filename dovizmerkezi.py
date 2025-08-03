@@ -1,4 +1,5 @@
 import os
+import json
 import requests
 from datetime import datetime, date
 import pytz
@@ -25,13 +26,50 @@ api_keys = {
     'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
 }
 
-# Tatil günü kontrolü fonksiyonu
+# Tatil cache'den okuma fonksiyonu
+def load_holiday_cache():
+    """Holiday cache dosyasını okur."""
+    try:
+        with open('holiday_cache.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        logging.warning("Holiday cache dosyası bulunamadı, API'ye fallback yapılacak.")
+        return None
+    except Exception as e:
+        logging.error(f"Holiday cache okunamadı: {e}")
+        return None
+
+# Tatil günü kontrolü fonksiyonu (Cache öncelikli)
 def is_country_holiday(country_code, check_date=None):
     """Belirtilen ülkede bugün tatil günü mü kontrol eder."""
     if check_date is None:
         check_date = date.today()
     
-    # Calendarific API anahtarı
+    # Önce cache'den kontrol et
+    cache_data = load_holiday_cache()
+    if cache_data:
+        # Cache tarihini kontrol et
+        cache_date = cache_data.get('cache_date')
+        if cache_date == check_date.isoformat():
+            country_data = cache_data.get('countries', {}).get(country_code)
+            if country_data:
+                is_holiday = country_data.get('is_holiday', False)
+                holiday_names = country_data.get('holiday_names', [])
+                
+                if is_holiday:
+                    logging.info(f"Bugün {country_code}'de resmi tatil (cache): {', '.join(holiday_names)}")
+                else:
+                    logging.info(f"Bugün {country_code}'de resmi tatil günü değil (cache).")
+                
+                return is_holiday, holiday_names
+            else:
+                logging.warning(f"{country_code} için cache verisi bulunamadı.")
+        else:
+            logging.warning(f"Cache verisi eski (cache: {cache_date}, bugün: {check_date.isoformat()})")
+    
+    # Cache yoksa veya eski ise API'ye fallback yap
+    logging.info(f"{country_code} için API'ye fallback yapılıyor...")
+    
     calendar_api_key = os.environ.get('CALENDARIFIC_API_KEY')
     if not calendar_api_key:
         logging.warning("Calendarific API anahtarı bulunamadı, sadece hafta sonu kontrolü yapılıyor.")
@@ -56,10 +94,10 @@ def is_country_holiday(country_code, check_date=None):
             
             if holidays:
                 holiday_names = [holiday['name'] for holiday in holidays]
-                logging.info(f"Bugün {country_code}'de resmi tatil: {', '.join(holiday_names)}")
+                logging.info(f"Bugün {country_code}'de resmi tatil (API): {', '.join(holiday_names)}")
                 return True, holiday_names
             else:
-                logging.info(f"Bugün {country_code}'de resmi tatil günü değil.")
+                logging.info(f"Bugün {country_code}'de resmi tatil günü değil (API).")
                 return False, []
         else:
             logging.error(f"Tatil API'si hatası ({country_code}): {response.status_code}")
