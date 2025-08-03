@@ -1,6 +1,6 @@
 import os
 import requests
-from datetime import datetime
+from datetime import datetime, date
 import pytz
 from random import choice
 import tweepy
@@ -14,8 +14,9 @@ logging.info("Script başlatıldı.")
 LAST_KEY_FILE = 'last_used_key.txt'
 
 # Şu anki yerel saat (Türkiye için), sadece saat ve dakika formatında
-current_local_time = datetime.now(pytz.timezone('Europe/Istanbul')).strftime('%H:%M')
-weekday = datetime.now(pytz.timezone('Europe/Istanbul')).weekday()  # Haftanın günü (Pazartesi=0, Salı=1, ..., Pazar=6)
+current_time = datetime.now(pytz.timezone('Europe/Istanbul'))
+current_local_time = current_time.strftime('%H:%M')
+weekday = current_time.weekday()  # Haftanın günü (Pazartesi=0, Salı=1, ..., Pazar=6)
 
 # API anahtarları kimlik ile birlikte saklanıyor
 api_keys = {
@@ -23,6 +24,112 @@ api_keys = {
     'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
     'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
 }
+
+# Tatil günü kontrolü fonksiyonu
+def is_country_holiday(country_code, check_date=None):
+    """Belirtilen ülkede bugün tatil günü mü kontrol eder."""
+    if check_date is None:
+        check_date = date.today()
+    
+    # Calendarific API anahtarı
+    calendar_api_key = os.environ.get('CALENDARIFIC_API_KEY')
+    if not calendar_api_key:
+        logging.warning("Calendarific API anahtarı bulunamadı, sadece hafta sonu kontrolü yapılıyor.")
+        return False, []
+    
+    try:
+        url = "https://calendarific.com/api/v2/holidays"
+        params = {
+            'api_key': calendar_api_key,
+            'country': country_code,
+            'year': check_date.year,
+            'type': 'national,religious,bank',
+            'day': check_date.day,
+            'month': check_date.month
+        }
+        
+        response = requests.get(url, params=params, timeout=10)
+        
+        if response.status_code == 200:
+            data = response.json()
+            holidays = data.get('response', {}).get('holidays', [])
+            
+            if holidays:
+                holiday_names = [holiday['name'] for holiday in holidays]
+                logging.info(f"Bugün {country_code}'de resmi tatil: {', '.join(holiday_names)}")
+                return True, holiday_names
+            else:
+                logging.info(f"Bugün {country_code}'de resmi tatil günü değil.")
+                return False, []
+        else:
+            logging.error(f"Tatil API'si hatası ({country_code}): {response.status_code}")
+            return False, []
+            
+    except Exception as e:
+        logging.error(f"Tatil kontrolü sırasında hata ({country_code}): {e}")
+        return False, []
+
+# Borsa durumu kontrolü fonksiyonu
+def get_market_status(market_name, check_time=None):
+    """Belirli bir borsanın açık olup olmadığını kontrol eder."""
+    if check_time is None:
+        check_time = datetime.now(pytz.timezone('Europe/Istanbul'))
+    
+    # Pazar saat dilimleri ve çalışma saatleri
+    market_config = {
+        'shanghai': {
+            'timezone': 'Asia/Shanghai',
+            'hours': [(9, 30, 11, 30), (13, 0, 15, 0)],  # İki seans
+            'country_code': 'CN'
+        },
+        'turkiye': {
+            'timezone': 'Europe/Istanbul', 
+            'hours': [(10, 0, 18, 10)],
+            'country_code': 'TR'
+        },
+        'london': {
+            'timezone': 'Europe/London',
+            'hours': [(8, 0, 16, 30)],
+            'country_code': 'GB'
+        },
+        'newyork': {
+            'timezone': 'America/New_York',
+            'hours': [(9, 30, 16, 0)],
+            'country_code': 'US'
+        }
+    }
+    
+    if market_name not in market_config:
+        return {'is_open': False, 'is_holiday': False, 'message': 'Bilinmeyen pazar', 'holiday_names': []}
+    
+    config = market_config[market_name]
+    market_tz = pytz.timezone(config['timezone'])
+    market_time = check_time.astimezone(market_tz)
+    
+    # Hafta sonu kontrolü
+    if market_time.weekday() >= 5:
+        return {'is_open': False, 'is_holiday': False, 'message': 'Hafta sonu', 'holiday_names': []}
+    
+    # Tatil kontrolü
+    is_holiday, holiday_names = is_country_holiday(config['country_code'], market_time.date())
+    
+    if is_holiday:
+        return {'is_open': False, 'is_holiday': True, 'message': 'Resmi tatil', 'holiday_names': holiday_names}
+    
+    # Saat kontrolü
+    current_minutes = market_time.hour * 60 + market_time.minute
+    is_open = False
+    
+    for start_h, start_m, end_h, end_m in config['hours']:
+        start_minutes = start_h * 60 + start_m
+        end_minutes = end_h * 60 + end_m
+        
+        if start_minutes <= current_minutes <= end_minutes:
+            is_open = True
+            break
+    
+    status_msg = 'Açık' if is_open else 'Kapalı'
+    return {'is_open': is_open, 'is_holiday': is_holiday, 'message': status_msg, 'holiday_names': holiday_names}
 
 # Son kullanılan anahtar kimliğini dosyadan okuma
 def read_last_used_key():
@@ -45,8 +152,13 @@ def get_random_api_key(exclude_key_id=None):
     key_id = choice(list(available_keys.keys()))
     return key_id, available_keys[key_id]
 
+# Ana kontrol: Hafta sonu ve tatil kontrolü
+is_turkey_holiday, turkey_holiday_names = is_country_holiday('TR')
+
 if weekday == 5 or weekday == 6:
     logging.info("Hafta sonu olduğu için tweet gönderilmiyor.")
+elif is_turkey_holiday:
+    logging.info(f"Türkiye'de resmi tatil günü ({', '.join(turkey_holiday_names)}) olduğu için tweet gönderilmiyor.")
 else:
     # X API anahtarları (v1 için)
     consumer_key = os.environ.get('CONSUMER_KEY')
@@ -71,14 +183,14 @@ else:
 
     # Özel saatler ve karşılık gelen mesaj/görsel klasörü
     special_times = {
-        "01:30": ("Şangay borsa açılışı", "./images/shanghai/"),
-        "07:00": ("Türkiye borsa açılışı", "./images/turkiye/"),
-        "07:49": ("Şangay borsa kapanışı", "./images/shanghai/"),
-        "08:00": ("Londra borsa açılışı", "./images/london/"),
-        "13:30": ("New York borsa açılışı", "./images/newyork/"),
-        "15:00": ("Türkiye borsa kapanışı", "./images/turkiye/"),
-        "16:30": ("Londra borsa kapanışı", "./images/london/"),
-        "20:00": ("New York borsa kapanışı", "./images/newyork/"),
+        "01:30": ("Şangay borsa açılışı", "./images/shanghai/", "shanghai"),
+        "07:00": ("Türkiye borsa açılışı", "./images/turkiye/", "turkiye"),
+        "07:49": ("Şangay borsa kapanışı", "./images/shanghai/", "shanghai"),
+        "08:00": ("Londra borsa açılışı", "./images/london/", "london"),
+        "13:30": ("New York borsa açılışı", "./images/newyork/", "newyork"),
+        "15:00": ("Türkiye borsa kapanışı", "./images/turkiye/", "turkiye"),
+        "16:30": ("Londra borsa kapanışı", "./images/london/", "london"),
+        "20:00": ("New York borsa kapanışı", "./images/newyork/", "newyork"),
     }
 
     # Default resimlerin bulunduğu klasör
@@ -88,10 +200,20 @@ else:
     def get_random_image(image_folder):
         try:
             images = [os.path.join(image_folder, img) for img in os.listdir(image_folder) if img.endswith(('.png', '.jpg', '.webp', '.mp4'))]
-            return choice(images) if images else get_random_image(default_images_folder)
+            if images:
+                return choice(images)
+            elif image_folder != default_images_folder:
+                # Eğer özel klasörde resim yoksa, default klasöre bak
+                logging.warning(f"{image_folder} klasöründe resim bulunamadı, default klasöre geçiliyor.")
+                return get_random_image(default_images_folder)
+            else:
+                logging.error("Hiçbir klasörde resim bulunamadı.")
+                return None
         except Exception as e:
             logging.error(f"{image_folder} klasörüne erişilirken hata oluştu: {e}")
-            return get_random_image(default_images_folder)
+            if image_folder != default_images_folder:
+                return get_random_image(default_images_folder)
+            return None
 
     # Tweet gönderme fonksiyonu
     def tweet(message, image_folder):
@@ -124,7 +246,36 @@ else:
 
         current_utc_time = datetime.utcnow().strftime('%H:%M')
 
-        special_message, image_folder = special_times.get(current_utc_time, (None, default_images_folder))
+        # Özel saat kontrolü ve pazar durumu
+        special_info = special_times.get(current_utc_time)
+        if special_info:
+            special_message, image_folder, market = special_info
+            market_status = get_market_status(market)
+            
+            if market_status['is_holiday']:
+                holiday_info = ', '.join(market_status['holiday_names'][:2])  # İlk 2 tatil adı
+                special_message += f" (Resmi tatil: {holiday_info} - pazar kapalı)"
+            elif not market_status['is_open']:
+                special_message += f" (Pazar {market_status['message']})"
+                
+        else:
+            special_message = None
+            image_folder = default_images_folder
+
+        # Aktif pazarlar listesi
+        active_markets = []
+        all_markets = ['shanghai', 'turkiye', 'london', 'newyork']
+        market_names_tr = {
+            'shanghai': 'Şangay',
+            'turkiye': 'İstanbul', 
+            'london': 'Londra',
+            'newyork': 'New York'
+        }
+        
+        for market in all_markets:
+            status = get_market_status(market)
+            if status['is_open']:
+                active_markets.append(market_names_tr[market])
 
         if special_message:
             tweet_content = f"Saat {current_local_time} itibarıyla {special_message} güncel kurları:\n"
@@ -136,7 +287,12 @@ else:
         tweet_content += f"💷 1 GBP = {gbp_to_try:.2f} TL #GBPTRY\n"
         tweet_content += f"🥈 1 XAG = {xag_to_usd:.6f} USD ({xag_to_try:.6f} TL)\n"
         tweet_content += f"🥇 1 XAU = {xau_to_usd:.6f} USD ({xau_to_try:.6f} TL)\n"
-        tweet_content += "#döviz #dolar #euro #gümüş #altın"
+        
+        # Aktif pazarlar bilgisi ekle
+        if active_markets:
+            tweet_content += f"\n📈 Açık pazarlar: {', '.join(active_markets)}"
+        
+        tweet_content += "\n#döviz #dolar #euro #gümüş #altın"
 
         return tweet_content, image_folder
 
