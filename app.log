@@ -381,3 +381,23 @@
 2025-08-07 20:00:20,821 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-08-07 20:00:20,821 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-08-07 20:00:21,698 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-08-08 01:30:16,411 - INFO - Script başlatıldı.
+2025-08-08 01:30:16,423 - WARNING - Cache verisi eski (cache: 2025-08-07, bugün: 2025-08-08)
+2025-08-08 01:30:16,423 - INFO - TR için API'ye fallback yapılıyor...
+2025-08-08 01:30:16,724 - ERROR - Tatil API'si hatası (TR): 500
+2025-08-08 01:30:17,079 - INFO - API yanıtı başarılı şekilde alındı.
+2025-08-08 01:30:17,079 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-08-08 01:30:17,079 - WARNING - Cache verisi eski (cache: 2025-08-07, bugün: 2025-08-08)
+2025-08-08 01:30:17,079 - INFO - CN için API'ye fallback yapılıyor...
+2025-08-08 01:30:17,307 - ERROR - Tatil API'si hatası (CN): 500
+2025-08-08 01:30:17,307 - WARNING - Cache verisi eski (cache: 2025-08-07, bugün: 2025-08-08)
+2025-08-08 01:30:17,307 - INFO - CN için API'ye fallback yapılıyor...
+2025-08-08 01:30:17,850 - ERROR - Tatil API'si hatası (CN): 500
+2025-08-08 01:30:17,851 - WARNING - Cache verisi eski (cache: 2025-08-07, bugün: 2025-08-08)
+2025-08-08 01:30:17,851 - INFO - TR için API'ye fallback yapılıyor...
+2025-08-08 01:30:18,389 - ERROR - Tatil API'si hatası (TR): 500
+2025-08-08 01:30:18,390 - WARNING - Cache verisi eski (cache: 2025-08-07, bugün: 2025-08-08)
+2025-08-08 01:30:18,390 - INFO - GB için API'ye fallback yapılıyor...
+2025-08-08 01:30:18,614 - ERROR - Tatil API'si hatası (GB): 500
+2025-08-08 01:30:18,615 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-08-08 01:30:19,645 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
