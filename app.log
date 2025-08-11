@@ -524,3 +524,13 @@
 2025-08-11 01:30:17,394 - INFO - GB için API'ye fallback yapılıyor...
 2025-08-11 01:30:17,546 - ERROR - Tatil API'si hatası (GB): 500
 2025-08-11 01:30:18,435 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-08-11 07:00:15,664 - INFO - Script başlatıldı.
+2025-08-11 07:00:15,681 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-11 07:00:15,903 - INFO - API yanıtı başarılı şekilde alındı.
+2025-08-11 07:00:15,903 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-08-11 07:00:15,904 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-11 07:00:15,904 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-08-11 07:00:15,904 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-11 07:00:15,905 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-08-11 07:00:15,905 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-08-11 07:00:16,983 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
