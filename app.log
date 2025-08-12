@@ -660,3 +660,15 @@
 2025-08-12 16:30:17,867 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-08-12 16:30:17,867 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-08-12 16:30:18,945 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-08-12 20:00:19,356 - INFO - Script başlatıldı.
+2025-08-12 20:00:19,379 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-12 20:00:19,753 - INFO - API yanıtı başarılı şekilde alındı.
+2025-08-12 20:00:19,753 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-08-12 20:00:19,753 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-08-12 20:00:19,754 - WARNING - Cache verisi eski (cache: 2025-08-12, bugün: 2025-08-13)
+2025-08-12 20:00:19,754 - INFO - CN için API'ye fallback yapılıyor...
+2025-08-12 20:00:20,026 - ERROR - Tatil API'si hatası (CN): 500
+2025-08-12 20:00:20,026 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-12 20:00:20,027 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-08-12 20:00:20,027 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-08-12 20:00:21,059 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
