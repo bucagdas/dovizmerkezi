@@ -776,3 +776,13 @@
 2025-08-14 01:30:17,115 - ERROR - Tatil API'si hatası (GB): 500
 2025-08-14 01:30:17,116 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-08-14 01:30:18,078 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-08-14 07:00:17,989 - INFO - Script başlatıldı.
+2025-08-14 07:00:18,002 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-14 07:00:18,338 - INFO - API yanıtı başarılı şekilde alındı.
+2025-08-14 07:00:18,338 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-08-14 07:00:18,338 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-14 07:00:18,339 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-08-14 07:00:18,339 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-14 07:00:18,340 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-08-14 07:00:18,340 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-08-14 07:00:19,528 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
