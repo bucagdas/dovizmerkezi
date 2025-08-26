@@ -1556,3 +1556,13 @@
 2025-08-26 13:30:21,801 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-08-26 13:30:21,801 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-08-26 13:30:23,099 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-08-26 15:00:27,008 - INFO - Script başlatıldı.
+2025-08-26 15:00:27,020 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-26 15:00:27,345 - INFO - API yanıtı başarılı şekilde alındı.
+2025-08-26 15:00:27,346 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-08-26 15:00:27,346 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-26 15:00:27,346 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-08-26 15:00:27,346 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-08-26 15:00:27,347 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-08-26 15:00:27,348 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-08-26 15:00:28,483 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
