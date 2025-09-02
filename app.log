@@ -2015,3 +2015,13 @@
 2025-09-02 13:30:33,242 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-02 13:30:33,242 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-02 13:30:34,498 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-09-02 15:00:19,767 - INFO - Script başlatıldı.
+2025-09-02 15:00:19,779 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-02 15:00:20,316 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-02 15:00:20,317 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-02 15:00:20,317 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-02 15:00:20,317 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-02 15:00:20,317 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-02 15:00:20,318 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-02 15:00:20,318 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-02 15:00:21,319 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
