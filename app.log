@@ -2099,3 +2099,13 @@
 2025-09-03 13:30:20,457 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-03 13:30:20,457 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-03 13:30:21,425 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-09-03 15:00:17,619 - INFO - Script başlatıldı.
+2025-09-03 15:00:17,631 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-03 15:00:17,991 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-03 15:00:17,991 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-03 15:00:17,991 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-03 15:00:17,992 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-03 15:00:17,992 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-03 15:00:17,992 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-03 15:00:17,993 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-03 15:00:18,928 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
