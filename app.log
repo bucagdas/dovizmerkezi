@@ -2163,3 +2163,13 @@
 2025-09-04 07:00:18,042 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-04 07:00:18,043 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-04 07:00:18,988 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-09-04 13:30:22,987 - INFO - Script başlatıldı.
+2025-09-04 13:30:22,999 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-04 13:30:23,276 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-04 13:30:23,276 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-04 13:30:23,277 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-04 13:30:23,277 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-04 13:30:23,277 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-04 13:30:23,278 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-04 13:30:23,278 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-04 13:30:24,476 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
