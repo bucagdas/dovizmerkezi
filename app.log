@@ -2257,3 +2257,13 @@
 2025-09-05 13:30:23,345 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-05 13:30:23,345 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-05 13:30:24,806 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-09-05 15:00:19,305 - INFO - Script başlatıldı.
+2025-09-05 15:00:19,318 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-05 15:00:19,748 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-05 15:00:19,749 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-05 15:00:19,749 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-05 15:00:19,749 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-05 15:00:19,749 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-05 15:00:19,750 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-05 15:00:19,751 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-05 15:00:20,903 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
