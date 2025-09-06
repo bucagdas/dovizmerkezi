@@ -2285,3 +2285,8 @@
 2025-09-05 20:00:17,298 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-05 20:00:17,298 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-05 20:00:18,439 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-09-06 01:30:17,735 - INFO - Script başlatıldı.
+2025-09-06 01:30:17,747 - WARNING - Cache verisi eski (cache: 2025-09-05, bugün: 2025-09-06)
+2025-09-06 01:30:17,747 - INFO - TR için API'ye fallback yapılıyor...
+2025-09-06 01:30:18,142 - ERROR - Tatil API'si hatası (TR): 500
+2025-09-06 01:30:18,143 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
