@@ -2290,3 +2290,6 @@
 2025-09-06 01:30:17,747 - INFO - TR için API'ye fallback yapılıyor...
 2025-09-06 01:30:18,142 - ERROR - Tatil API'si hatası (TR): 500
 2025-09-06 01:30:18,143 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-09-06 07:00:23,022 - INFO - Script başlatıldı.
+2025-09-06 07:00:23,037 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-06 07:00:23,037 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
