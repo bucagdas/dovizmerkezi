@@ -2308,3 +2308,8 @@
 2025-09-06 20:00:19,776 - INFO - Script başlatıldı.
 2025-09-06 20:00:19,800 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-09-06 20:00:19,800 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-09-07 01:30:19,113 - INFO - Script başlatıldı.
+2025-09-07 01:30:19,125 - WARNING - Cache verisi eski (cache: 2025-09-06, bugün: 2025-09-07)
+2025-09-07 01:30:19,125 - INFO - TR için API'ye fallback yapılıyor...
+2025-09-07 01:30:19,444 - ERROR - Tatil API'si hatası (TR): 500
+2025-09-07 01:30:19,444 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
