@@ -2371,3 +2371,13 @@
 2025-09-08 08:00:22,642 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-08 08:00:26,900 - ERROR - Tweet gönderimi sırasında hata oluştu: 503 Service Unavailable
 Service Unavailable
+2025-09-08 13:30:19,239 - INFO - Script başlatıldı.
+2025-09-08 13:30:19,251 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-08 13:30:20,127 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-08 13:30:20,128 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-08 13:30:20,128 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-08 13:30:20,129 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-08 13:30:20,129 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-08 13:30:20,129 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-08 13:30:20,130 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-08 13:30:21,094 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
