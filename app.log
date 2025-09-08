@@ -2360,3 +2360,14 @@
 2025-09-08 07:00:53,088 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-08 07:00:53,090 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-08 07:00:54,217 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-09-08 08:00:22,156 - INFO - Script başlatıldı.
+2025-09-08 08:00:22,168 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-08 08:00:22,640 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-08 08:00:22,640 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-08 08:00:22,641 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-08 08:00:22,641 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-08 08:00:22,641 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-08 08:00:22,641 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-08 08:00:22,642 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-08 08:00:26,900 - ERROR - Tweet gönderimi sırasında hata oluştu: 503 Service Unavailable
+Service Unavailable
