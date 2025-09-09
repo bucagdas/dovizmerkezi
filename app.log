@@ -2445,3 +2445,13 @@ Service Unavailable
 2025-09-09 07:00:18,346 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-09 07:00:18,347 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-09 07:00:19,381 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-09-09 08:00:19,769 - INFO - Script başlatıldı.
+2025-09-09 08:00:19,780 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-09 08:00:20,290 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-09 08:00:20,290 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-09 08:00:20,291 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-09 08:00:20,291 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-09 08:00:20,291 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-09 08:00:20,291 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-09 08:00:20,292 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-09 08:00:21,534 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
