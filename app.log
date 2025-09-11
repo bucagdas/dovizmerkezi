@@ -2613,3 +2613,13 @@ Service Unavailable
 2025-09-11 07:00:17,833 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-11 07:00:17,833 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-11 07:00:18,795 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-09-11 08:00:34,989 - INFO - Script başlatıldı.
+2025-09-11 08:00:35,001 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-11 08:00:35,336 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-11 08:00:35,337 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-11 08:00:35,337 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-11 08:00:35,338 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-11 08:00:35,338 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-11 08:00:35,338 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-11 08:00:35,339 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-11 08:00:37,263 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
