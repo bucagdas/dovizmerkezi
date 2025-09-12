@@ -2736,3 +2736,12 @@ Service Unavailable
 2025-09-12 16:30:23,703 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-12 16:30:23,704 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-12 16:30:26,222 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-09-12 20:00:20,264 - INFO - Script başlatıldı.
+2025-09-12 20:00:20,276 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-12 20:00:20,627 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-12 20:00:20,627 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-12 20:00:20,628 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-12 20:00:20,629 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-12 20:00:20,629 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-12 20:00:20,629 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-12 20:00:21,815 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
