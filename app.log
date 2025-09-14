@@ -2768,3 +2768,8 @@ Service Unavailable
 2025-09-13 20:00:23,319 - INFO - Script başlatıldı.
 2025-09-13 20:00:23,331 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-09-13 20:00:23,331 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-09-14 01:30:19,632 - INFO - Script başlatıldı.
+2025-09-14 01:30:19,644 - WARNING - Cache verisi eski (cache: 2025-09-13, bugün: 2025-09-14)
+2025-09-14 01:30:19,644 - INFO - TR için API'ye fallback yapılıyor...
+2025-09-14 01:30:19,963 - ERROR - Tatil API'si hatası (TR): 500
+2025-09-14 01:30:19,964 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
