@@ -2840,3 +2840,13 @@ Service Unavailable
 2025-09-15 13:30:20,985 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-15 13:30:20,985 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-15 13:30:22,072 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-09-15 15:00:22,770 - INFO - Script başlatıldı.
+2025-09-15 15:00:22,782 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-15 15:00:22,929 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-15 15:00:22,930 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-15 15:00:22,930 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-15 15:00:22,930 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-15 15:00:22,931 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-15 15:00:22,932 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-15 15:00:22,933 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-15 15:00:23,896 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
