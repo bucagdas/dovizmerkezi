@@ -3186,3 +3186,12 @@ Service Unavailable
 2025-09-19 15:00:21,814 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-19 15:00:21,814 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-19 15:00:22,996 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-09-19 16:30:22,997 - INFO - Script başlatıldı.
+2025-09-19 16:30:23,009 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-19 16:30:23,459 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-19 16:30:23,460 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-19 16:30:23,460 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-19 16:30:23,461 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-19 16:30:23,461 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-19 16:30:23,461 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-19 16:30:25,699 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
