@@ -3166,3 +3166,13 @@ Service Unavailable
 2025-09-19 08:00:20,313 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-19 08:00:20,314 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-19 08:00:21,203 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2025-09-19 13:30:20,513 - INFO - Script başlatıldı.
+2025-09-19 13:30:20,525 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-19 13:30:20,888 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-19 13:30:20,889 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-19 13:30:20,889 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-19 13:30:20,890 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-19 13:30:20,890 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-19 13:30:20,890 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-19 13:30:20,891 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-19 13:30:22,079 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
