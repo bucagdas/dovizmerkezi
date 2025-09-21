@@ -3238,3 +3238,6 @@ Service Unavailable
 2025-09-21 08:00:16,195 - INFO - Script başlatıldı.
 2025-09-21 08:00:16,219 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-09-21 08:00:16,220 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-09-21 13:30:20,531 - INFO - Script başlatıldı.
+2025-09-21 13:30:20,556 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-21 13:30:20,556 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
