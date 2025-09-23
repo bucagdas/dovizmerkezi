@@ -3383,3 +3383,13 @@ Service Unavailable
 2025-09-23 13:30:20,577 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-23 13:30:20,577 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-23 13:30:21,660 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-09-23 15:00:23,187 - INFO - Script başlatıldı.
+2025-09-23 15:00:23,210 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-23 15:00:23,466 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-23 15:00:23,467 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-23 15:00:23,467 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-23 15:00:23,467 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-23 15:00:23,467 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-23 15:00:23,468 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-23 15:00:23,468 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-23 15:00:24,611 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
