@@ -3457,3 +3457,13 @@ Service Unavailable
 2025-09-24 08:00:19,803 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-24 08:00:19,804 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-24 08:00:20,857 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-09-24 13:30:22,950 - INFO - Script başlatıldı.
+2025-09-24 13:30:22,962 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-24 13:30:23,378 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-24 13:30:23,378 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-24 13:30:23,379 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-24 13:30:23,379 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-24 13:30:23,379 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-24 13:30:23,380 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-24 13:30:23,380 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-24 13:30:24,738 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
