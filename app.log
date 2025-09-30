@@ -3822,3 +3822,13 @@ Service Unavailable
 2025-09-30 07:00:19,353 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-09-30 07:00:19,353 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-09-30 07:00:20,220 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-09-30 08:00:17,635 - INFO - Script başlatıldı.
+2025-09-30 08:00:17,658 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-30 08:00:17,827 - INFO - API yanıtı başarılı şekilde alındı.
+2025-09-30 08:00:17,827 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-09-30 08:00:17,828 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-30 08:00:17,828 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-09-30 08:00:17,828 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-09-30 08:00:17,828 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-09-30 08:00:17,829 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-09-30 08:00:18,996 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
