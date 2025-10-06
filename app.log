@@ -4198,3 +4198,13 @@ Service Unavailable
 2025-10-06 07:00:19,556 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-06 07:00:19,557 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-06 07:00:20,499 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-10-06 08:00:33,738 - INFO - Script başlatıldı.
+2025-10-06 08:00:33,761 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-06 08:00:34,122 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-06 08:00:34,122 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-06 08:00:34,123 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-06 08:00:34,123 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-06 08:00:34,123 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-06 08:00:34,123 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-06 08:00:34,124 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-06 08:00:35,134 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
