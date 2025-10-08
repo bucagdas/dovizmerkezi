@@ -4376,3 +4376,13 @@ Service Unavailable
 2025-10-08 08:00:28,021 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-08 08:00:28,022 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-08 08:00:29,859 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-10-08 13:30:20,598 - INFO - Script başlatıldı.
+2025-10-08 13:30:20,611 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-08 13:30:20,851 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-08 13:30:20,852 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-08 13:30:20,853 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-08 13:30:20,853 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-08 13:30:20,854 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-08 13:30:20,855 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-08 13:30:20,855 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-08 13:30:21,994 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
