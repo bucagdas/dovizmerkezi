@@ -4470,3 +4470,12 @@ Service Unavailable
 2025-10-09 13:30:21,402 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-09 13:30:21,402 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-09 13:30:22,417 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-10-09 15:22:11,341 - INFO - Script başlatıldı.
+2025-10-09 15:22:11,353 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-09 15:22:11,726 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-09 15:22:11,727 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-09 15:22:11,727 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-09 15:22:11,727 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-09 15:22:11,729 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-09 15:22:11,729 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-09 15:22:13,010 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/default.webp
