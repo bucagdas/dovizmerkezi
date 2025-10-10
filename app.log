@@ -4563,3 +4563,12 @@ Service Unavailable
 2025-10-10 15:00:25,022 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-10 15:00:25,023 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-10 15:00:26,148 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-10-10 16:30:20,001 - INFO - Script başlatıldı.
+2025-10-10 16:30:20,024 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-10 16:30:20,086 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-10 16:30:20,086 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-10 16:30:20,088 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-10 16:30:20,088 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-10 16:30:20,088 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-10 16:30:20,090 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-10 16:30:21,086 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
