@@ -4604,3 +4604,8 @@ Service Unavailable
 2025-10-11 20:00:22,526 - INFO - Script başlatıldı.
 2025-10-11 20:00:22,538 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-10-11 20:00:22,538 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-10-12 01:30:20,882 - INFO - Script başlatıldı.
+2025-10-12 01:30:20,895 - WARNING - Cache verisi eski (cache: 2025-10-11, bugün: 2025-10-12)
+2025-10-12 01:30:20,895 - INFO - TR için API'ye fallback yapılıyor...
+2025-10-12 01:30:21,124 - ERROR - Tatil API'si hatası (TR): 500
+2025-10-12 01:30:21,126 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
