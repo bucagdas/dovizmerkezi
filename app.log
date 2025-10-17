@@ -5012,3 +5012,13 @@ Service Unavailable
 2025-10-17 13:30:26,236 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-17 13:30:26,237 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-17 13:30:27,500 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-10-17 15:00:23,517 - INFO - Script başlatıldı.
+2025-10-17 15:00:23,530 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-17 15:00:23,821 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-17 15:00:23,821 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-17 15:00:23,821 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-17 15:00:23,822 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-17 15:00:23,822 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-17 15:00:23,822 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-17 15:00:23,823 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-17 15:00:24,835 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
