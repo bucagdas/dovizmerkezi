@@ -5054,3 +5054,6 @@ Service Unavailable
 2025-10-18 13:30:21,390 - INFO - Script başlatıldı.
 2025-10-18 13:30:21,402 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-10-18 13:30:21,402 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-10-18 15:00:19,156 - INFO - Script başlatıldı.
+2025-10-18 15:00:19,167 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-18 15:00:19,167 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
