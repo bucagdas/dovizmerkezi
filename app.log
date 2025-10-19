@@ -5083,3 +5083,6 @@ Service Unavailable
 2025-10-19 16:30:22,519 - INFO - Script başlatıldı.
 2025-10-19 16:30:22,542 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-10-19 16:30:22,542 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-10-19 20:00:20,055 - INFO - Script başlatıldı.
+2025-10-19 20:00:20,067 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-19 20:00:20,067 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
