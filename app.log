@@ -5115,3 +5115,13 @@ Service Unavailable
 2025-10-20 07:00:18,917 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-20 07:00:18,918 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-20 07:00:20,250 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-10-20 08:00:18,489 - INFO - Script başlatıldı.
+2025-10-20 08:00:18,513 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-20 08:00:18,702 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-20 08:00:18,702 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-20 08:00:18,703 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-20 08:00:18,703 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-20 08:00:18,703 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-20 08:00:18,703 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-20 08:00:18,704 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-20 08:00:19,729 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
