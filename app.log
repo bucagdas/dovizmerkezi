@@ -5209,3 +5209,13 @@ Service Unavailable
 2025-10-21 08:00:37,100 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-21 08:00:37,101 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-21 08:00:39,381 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-10-21 13:30:27,701 - INFO - Script başlatıldı.
+2025-10-21 13:30:27,713 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-21 13:30:27,959 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-21 13:30:27,959 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-21 13:30:27,960 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-21 13:30:27,961 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-21 13:30:27,961 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-21 13:30:27,962 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-21 13:30:27,963 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-21 13:30:29,681 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
