@@ -5518,3 +5518,6 @@ Service Unavailable
 2025-10-25 16:30:27,668 - INFO - Script başlatıldı.
 2025-10-25 16:30:27,692 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-10-25 16:30:27,693 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-10-25 20:00:30,866 - INFO - Script başlatıldı.
+2025-10-25 20:00:30,879 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-25 20:00:30,879 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
