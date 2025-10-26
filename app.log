@@ -5532,3 +5532,6 @@ Service Unavailable
 2025-10-26 08:00:25,298 - INFO - Script başlatıldı.
 2025-10-26 08:00:25,310 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-10-26 08:00:25,310 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-10-26 13:30:31,843 - INFO - Script başlatıldı.
+2025-10-26 13:30:31,856 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-26 13:30:31,856 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
