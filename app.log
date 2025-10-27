@@ -5583,3 +5583,13 @@ Service Unavailable
 2025-10-27 08:00:36,190 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-27 08:00:36,191 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-27 08:00:37,176 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-10-27 13:30:33,054 - INFO - Script başlatıldı.
+2025-10-27 13:30:33,066 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-27 13:30:33,504 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-27 13:30:33,505 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-27 13:30:33,505 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-27 13:30:33,506 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-27 13:30:33,506 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-27 13:30:33,506 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-27 13:30:33,507 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-27 13:30:34,711 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
