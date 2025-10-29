@@ -5751,3 +5751,13 @@ Service Unavailable
 2025-10-29 08:00:20,869 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-29 08:00:20,870 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-29 08:00:22,997 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-10-29 13:30:34,359 - INFO - Script başlatıldı.
+2025-10-29 13:30:34,379 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-29 13:30:34,867 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-29 13:30:34,867 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-29 13:30:34,868 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-29 13:30:34,869 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-29 13:30:34,869 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-29 13:30:34,869 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-29 13:30:34,869 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-29 13:30:36,006 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
