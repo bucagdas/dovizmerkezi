@@ -5711,3 +5711,23 @@ Service Unavailable
 2025-10-28 20:00:24,466 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-28 20:00:24,466 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-28 20:00:25,335 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-10-29 01:30:22,660 - INFO - Script başlatıldı.
+2025-10-29 01:30:22,683 - WARNING - Cache verisi eski (cache: 2025-10-28, bugün: 2025-10-29)
+2025-10-29 01:30:22,683 - INFO - TR için API'ye fallback yapılıyor...
+2025-10-29 01:30:23,023 - ERROR - Tatil API'si hatası (TR): 500
+2025-10-29 01:30:23,359 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-29 01:30:23,360 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-29 01:30:23,360 - WARNING - Cache verisi eski (cache: 2025-10-28, bugün: 2025-10-29)
+2025-10-29 01:30:23,360 - INFO - CN için API'ye fallback yapılıyor...
+2025-10-29 01:30:23,597 - ERROR - Tatil API'si hatası (CN): 500
+2025-10-29 01:30:23,598 - WARNING - Cache verisi eski (cache: 2025-10-28, bugün: 2025-10-29)
+2025-10-29 01:30:23,598 - INFO - CN için API'ye fallback yapılıyor...
+2025-10-29 01:30:23,828 - ERROR - Tatil API'si hatası (CN): 500
+2025-10-29 01:30:23,829 - WARNING - Cache verisi eski (cache: 2025-10-28, bugün: 2025-10-29)
+2025-10-29 01:30:23,829 - INFO - TR için API'ye fallback yapılıyor...
+2025-10-29 01:30:24,061 - ERROR - Tatil API'si hatası (TR): 500
+2025-10-29 01:30:24,063 - WARNING - Cache verisi eski (cache: 2025-10-28, bugün: 2025-10-29)
+2025-10-29 01:30:24,063 - INFO - GB için API'ye fallback yapılıyor...
+2025-10-29 01:30:24,321 - ERROR - Tatil API'si hatası (GB): 500
+2025-10-29 01:30:24,322 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-29 01:30:25,252 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
