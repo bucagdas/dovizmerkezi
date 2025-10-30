@@ -5845,3 +5845,13 @@ Service Unavailable
 2025-10-30 13:30:18,975 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-10-30 13:30:18,975 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-30 13:30:20,013 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2025-10-30 15:00:37,068 - INFO - Script başlatıldı.
+2025-10-30 15:00:37,080 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-30 15:00:37,174 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-30 15:00:37,174 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-30 15:00:37,174 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-30 15:00:37,174 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-30 15:00:37,174 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-30 15:00:37,175 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-30 15:00:37,176 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-30 15:00:38,288 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
