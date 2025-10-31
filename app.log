@@ -5899,3 +5899,13 @@ Service Unavailable
 2025-10-31 01:30:17,501 - ERROR - Tatil API'si hatası (GB): 500
 2025-10-31 01:30:17,503 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-10-31 01:30:18,428 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-10-31 07:00:20,697 - INFO - Script başlatıldı.
+2025-10-31 07:00:20,709 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-31 07:00:22,892 - INFO - API yanıtı başarılı şekilde alındı.
+2025-10-31 07:00:22,892 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-10-31 07:00:22,892 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-31 07:00:22,892 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-10-31 07:00:22,892 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-10-31 07:00:22,893 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-10-31 07:00:22,894 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-10-31 07:00:24,087 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
