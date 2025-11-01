@@ -5971,3 +5971,6 @@ Service Unavailable
 2025-11-01 13:30:21,063 - INFO - Script başlatıldı.
 2025-11-01 13:30:21,075 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-11-01 13:30:21,075 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-01 15:00:20,046 - INFO - Script başlatıldı.
+2025-11-01 15:00:20,058 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-01 15:00:20,058 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
