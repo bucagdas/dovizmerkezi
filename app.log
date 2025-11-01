@@ -5968,3 +5968,6 @@ Service Unavailable
 2025-11-01 08:00:13,937 - INFO - Script başlatıldı.
 2025-11-01 08:00:13,948 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-11-01 08:00:13,948 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-01 13:30:21,063 - INFO - Script başlatıldı.
+2025-11-01 13:30:21,075 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-01 13:30:21,075 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
