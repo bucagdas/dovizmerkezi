@@ -6000,3 +6000,6 @@ Service Unavailable
 2025-11-02 16:30:20,000 - INFO - Script başlatıldı.
 2025-11-02 16:30:20,012 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-11-02 16:30:20,012 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-02 20:00:23,624 - INFO - Script başlatıldı.
+2025-11-02 20:00:23,636 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-02 20:00:23,636 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
