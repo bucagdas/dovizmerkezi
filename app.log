@@ -6022,3 +6022,13 @@ Service Unavailable
 2025-11-03 01:30:16,605 - INFO - GB için API'ye fallback yapılıyor...
 2025-11-03 01:30:16,845 - ERROR - Tatil API'si hatası (GB): 500
 2025-11-03 01:30:17,707 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2025-11-03 07:00:20,374 - INFO - Script başlatıldı.
+2025-11-03 07:00:20,397 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-03 07:00:20,793 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-03 07:00:20,793 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-03 07:00:20,794 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-03 07:00:20,794 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-11-03 07:00:20,794 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-03 07:00:20,795 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-03 07:00:20,795 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-03 07:00:21,612 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
