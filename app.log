@@ -6052,3 +6052,13 @@ Service Unavailable
 2025-11-03 13:30:29,540 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-03 13:30:29,540 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-03 13:30:30,617 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-11-03 15:00:18,826 - INFO - Script başlatıldı.
+2025-11-03 15:00:18,849 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-03 15:00:19,229 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-03 15:00:19,230 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-03 15:00:19,230 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-03 15:00:19,230 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-11-03 15:00:19,230 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-03 15:00:19,232 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-03 15:00:19,233 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-03 15:00:20,405 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
