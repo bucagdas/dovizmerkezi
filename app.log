@@ -6284,3 +6284,13 @@ Service Unavailable
 2025-11-06 07:00:18,395 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-06 07:00:18,397 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-06 07:00:19,371 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-11-06 08:00:19,199 - INFO - Script başlatıldı.
+2025-11-06 08:00:19,211 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-06 08:00:19,563 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-06 08:00:19,563 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-06 08:00:19,564 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-06 08:00:19,565 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-11-06 08:00:19,565 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-06 08:00:19,565 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-06 08:00:19,565 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-06 08:00:20,504 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
