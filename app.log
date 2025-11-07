@@ -6407,3 +6407,12 @@ Service Unavailable
 2025-11-07 16:30:21,318 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-07 16:30:21,318 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-07 16:30:23,211 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-11-07 20:00:20,196 - INFO - Script başlatıldı.
+2025-11-07 20:00:20,208 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-07 20:00:20,480 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-07 20:00:20,480 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-07 20:00:20,482 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-07 20:00:20,482 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-07 20:00:20,483 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-07 20:00:20,483 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-07 20:00:22,363 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
