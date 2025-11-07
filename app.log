@@ -6378,3 +6378,13 @@ Service Unavailable
 2025-11-07 08:00:22,300 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-07 08:00:22,301 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-07 08:00:23,367 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-11-07 13:30:26,243 - INFO - Script başlatıldı.
+2025-11-07 13:30:26,254 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-07 13:30:26,783 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-07 13:30:26,783 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-07 13:30:26,784 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-07 13:30:26,784 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-11-07 13:30:26,785 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-07 13:30:26,785 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-07 13:30:26,785 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-07 13:30:28,231 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
