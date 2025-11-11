@@ -6585,3 +6585,13 @@ Service Unavailable
 2025-11-11 08:00:15,625 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-11 08:00:15,625 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-11 08:00:16,603 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-11-11 13:30:17,745 - INFO - Script başlatıldı.
+2025-11-11 13:30:17,757 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-11 13:30:17,876 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-11 13:30:17,876 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-11 13:30:17,877 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-11 13:30:17,877 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-11-11 13:30:17,877 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-11 13:30:17,878 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-11 13:30:17,878 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-11 13:30:18,996 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
