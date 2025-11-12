@@ -6669,3 +6669,13 @@ Service Unavailable
 2025-11-12 08:00:18,426 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-12 08:00:18,427 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-12 08:00:19,400 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-11-12 13:30:17,953 - INFO - Script başlatıldı.
+2025-11-12 13:30:17,979 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-12 13:30:18,183 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-12 13:30:18,183 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-12 13:30:18,184 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-12 13:30:18,184 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-11-12 13:30:18,184 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-12 13:30:18,185 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-12 13:30:18,185 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-12 13:30:19,188 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
