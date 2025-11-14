@@ -6847,3 +6847,12 @@ Service Unavailable
 2025-11-14 15:00:21,671 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-14 15:00:21,672 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-14 15:00:22,776 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-11-14 16:30:21,236 - INFO - Script başlatıldı.
+2025-11-14 16:30:21,248 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-14 16:30:21,422 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-14 16:30:21,422 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-14 16:30:21,423 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-14 16:30:21,423 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-14 16:30:21,424 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-14 16:30:21,425 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-14 16:30:22,567 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
