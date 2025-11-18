@@ -7040,3 +7040,14 @@ Service Unavailable
 2025-11-18 13:30:17,470 - ERROR - API'den yanıt alınamadı. Başka bir anahtarla deneniyor...
 2025-11-18 13:30:17,524 - ERROR - API'den yanıt alınamadı. Başka bir anahtarla deneniyor...
 2025-11-18 13:30:17,524 - ERROR - Maksimum deneme sayısına ulaşıldı, işlem başarısız.
+2025-11-18 15:00:18,826 - INFO - Script başlatıldı.
+2025-11-18 15:00:18,837 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-18 15:00:18,961 - ERROR - API'den yanıt alınamadı. Başka bir anahtarla deneniyor...
+2025-11-18 15:00:19,072 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-18 15:00:19,072 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-18 15:00:19,072 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-18 15:00:19,073 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-11-18 15:00:19,073 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-18 15:00:19,074 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-18 15:00:19,076 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-18 15:00:20,111 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
