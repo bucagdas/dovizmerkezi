@@ -7034,3 +7034,9 @@ Service Unavailable
 2025-11-18 08:00:17,674 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-18 08:00:17,674 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-18 08:00:18,537 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-11-18 13:30:17,201 - INFO - Script başlatıldı.
+2025-11-18 13:30:17,219 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-18 13:30:17,414 - ERROR - API'den yanıt alınamadı. Başka bir anahtarla deneniyor...
+2025-11-18 13:30:17,470 - ERROR - API'den yanıt alınamadı. Başka bir anahtarla deneniyor...
+2025-11-18 13:30:17,524 - ERROR - API'den yanıt alınamadı. Başka bir anahtarla deneniyor...
+2025-11-18 13:30:17,524 - ERROR - Maksimum deneme sayısına ulaşıldı, işlem başarısız.
