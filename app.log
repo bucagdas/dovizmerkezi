@@ -7024,3 +7024,13 @@ Service Unavailable
 2025-11-18 07:00:22,544 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-11-18 07:00:22,544 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-11-18 07:00:23,347 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-11-18 08:00:17,450 - INFO - Script başlatıldı.
+2025-11-18 08:00:17,462 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-18 08:00:17,672 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-18 08:00:17,672 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-18 08:00:17,673 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-18 08:00:17,674 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-11-18 08:00:17,674 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-18 08:00:17,674 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-11-18 08:00:17,674 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-11-18 08:00:18,537 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
