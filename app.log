@@ -7341,3 +7341,6 @@ Service Unavailable
 2025-11-22 16:30:16,763 - INFO - Script başlatıldı.
 2025-11-22 16:30:16,775 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-11-22 16:30:16,775 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-22 20:00:17,813 - INFO - Script başlatıldı.
+2025-11-22 20:00:17,824 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-22 20:00:17,824 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
