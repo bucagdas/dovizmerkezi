@@ -7358,3 +7358,6 @@ Service Unavailable
 2025-11-23 13:30:19,946 - INFO - Script başlatıldı.
 2025-11-23 13:30:19,962 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-11-23 13:30:19,962 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-23 15:00:20,543 - INFO - Script başlatıldı.
+2025-11-23 15:00:20,555 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-23 15:00:20,555 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
