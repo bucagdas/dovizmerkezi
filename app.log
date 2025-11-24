@@ -7367,3 +7367,22 @@ Service Unavailable
 2025-11-23 20:00:19,661 - INFO - Script başlatıldı.
 2025-11-23 20:00:19,673 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-11-23 20:00:19,673 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-24 01:30:15,605 - INFO - Script başlatıldı.
+2025-11-24 01:30:15,629 - WARNING - Cache verisi eski (cache: 2025-11-23, bugün: 2025-11-24)
+2025-11-24 01:30:15,629 - INFO - TR için API'ye fallback yapılıyor...
+2025-11-24 01:30:15,886 - ERROR - Tatil API'si hatası (TR): 500
+2025-11-24 01:30:16,106 - INFO - API yanıtı başarılı şekilde alındı.
+2025-11-24 01:30:16,106 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-11-24 01:30:16,107 - WARNING - Cache verisi eski (cache: 2025-11-23, bugün: 2025-11-24)
+2025-11-24 01:30:16,107 - INFO - CN için API'ye fallback yapılıyor...
+2025-11-24 01:30:16,299 - ERROR - Tatil API'si hatası (CN): 500
+2025-11-24 01:30:16,301 - WARNING - Cache verisi eski (cache: 2025-11-23, bugün: 2025-11-24)
+2025-11-24 01:30:16,301 - INFO - CN için API'ye fallback yapılıyor...
+2025-11-24 01:30:16,503 - ERROR - Tatil API'si hatası (CN): 500
+2025-11-24 01:30:16,504 - WARNING - Cache verisi eski (cache: 2025-11-23, bugün: 2025-11-24)
+2025-11-24 01:30:16,504 - INFO - TR için API'ye fallback yapılıyor...
+2025-11-24 01:30:16,698 - ERROR - Tatil API'si hatası (TR): 500
+2025-11-24 01:30:16,701 - WARNING - Cache verisi eski (cache: 2025-11-23, bugün: 2025-11-24)
+2025-11-24 01:30:16,701 - INFO - GB için API'ye fallback yapılıyor...
+2025-11-24 01:30:16,898 - ERROR - Tatil API'si hatası (GB): 500
+2025-11-24 01:30:17,947 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
