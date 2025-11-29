@@ -7794,3 +7794,6 @@ Service Unavailable
 2025-11-29 13:30:20,706 - INFO - Script başlatıldı.
 2025-11-29 13:30:20,718 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-11-29 13:30:20,718 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-29 15:00:15,882 - INFO - Script başlatıldı.
+2025-11-29 15:00:15,894 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-29 15:00:15,894 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
