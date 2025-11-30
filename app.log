@@ -7803,3 +7803,8 @@ Service Unavailable
 2025-11-29 20:00:18,627 - INFO - Script başlatıldı.
 2025-11-29 20:00:18,638 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-11-29 20:00:18,638 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-30 01:30:19,772 - INFO - Script başlatıldı.
+2025-11-30 01:30:19,785 - WARNING - Cache verisi eski (cache: 2025-11-29, bugün: 2025-11-30)
+2025-11-30 01:30:19,785 - INFO - TR için API'ye fallback yapılıyor...
+2025-11-30 01:30:20,069 - ERROR - Tatil API'si hatası (TR): 500
+2025-11-30 01:30:20,070 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
