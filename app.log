@@ -7808,3 +7808,6 @@ Service Unavailable
 2025-11-30 01:30:19,785 - INFO - TR için API'ye fallback yapılıyor...
 2025-11-30 01:30:20,069 - ERROR - Tatil API'si hatası (TR): 500
 2025-11-30 01:30:20,070 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-11-30 07:00:16,637 - INFO - Script başlatıldı.
+2025-11-30 07:00:16,648 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-11-30 07:00:16,649 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
