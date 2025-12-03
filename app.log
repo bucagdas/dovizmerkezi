@@ -8053,3 +8053,15 @@ Service Unavailable
 2025-12-03 15:00:32,419 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-03 15:00:32,419 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-03 15:00:33,283 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-12-03 16:30:24,091 - INFO - Script başlatıldı.
+2025-12-03 16:30:24,116 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-03 16:30:24,270 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-03 16:30:24,270 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-03 16:30:24,271 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-03 16:30:24,271 - WARNING - Cache verisi eski (cache: 2025-12-03, bugün: 2025-12-04)
+2025-12-03 16:30:24,271 - INFO - CN için API'ye fallback yapılıyor...
+2025-12-03 16:30:24,659 - ERROR - Tatil API'si hatası (CN): 500
+2025-12-03 16:30:24,661 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-03 16:30:24,661 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-03 16:30:24,661 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-03 16:30:27,366 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
