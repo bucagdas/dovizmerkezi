@@ -8013,3 +8013,13 @@ Service Unavailable
 2025-12-03 01:30:20,577 - ERROR - Tatil API'si hatası (GB): 500
 2025-12-03 01:30:20,579 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-03 01:30:21,474 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
+2025-12-03 07:00:16,003 - INFO - Script başlatıldı.
+2025-12-03 07:00:16,025 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-03 07:00:16,307 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-03 07:00:16,307 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-03 07:00:16,308 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-03 07:00:16,308 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-03 07:00:16,308 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-03 07:00:16,310 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-03 07:00:16,311 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-03 07:00:17,387 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
