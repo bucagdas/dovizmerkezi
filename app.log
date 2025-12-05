@@ -8221,3 +8221,12 @@ Service Unavailable
 2025-12-05 15:00:20,929 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-05 15:00:20,930 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-05 15:00:22,234 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-12-05 16:30:20,024 - INFO - Script başlatıldı.
+2025-12-05 16:30:20,036 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-05 16:30:20,368 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-05 16:30:20,368 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-05 16:30:20,369 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-05 16:30:20,369 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-05 16:30:20,369 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-05 16:30:20,370 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-05 16:30:21,874 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
