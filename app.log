@@ -8211,3 +8211,13 @@ Service Unavailable
 2025-12-05 13:30:18,001 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-05 13:30:18,001 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-05 13:30:19,293 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-12-05 15:00:20,286 - INFO - Script başlatıldı.
+2025-12-05 15:00:20,294 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-05 15:00:20,928 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-05 15:00:20,928 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-05 15:00:20,928 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-05 15:00:20,929 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-05 15:00:20,929 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-05 15:00:20,929 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-05 15:00:20,930 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-05 15:00:22,234 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
