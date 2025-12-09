@@ -8398,3 +8398,13 @@ Service Unavailable
 2025-12-09 07:00:35,934 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-09 07:00:35,935 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-09 07:00:36,907 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2025-12-09 08:00:19,669 - INFO - Script başlatıldı.
+2025-12-09 08:00:19,691 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-09 08:00:19,951 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-09 08:00:19,951 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-09 08:00:19,952 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-09 08:00:19,952 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-09 08:00:19,953 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-09 08:00:19,953 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-09 08:00:19,953 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-09 08:00:22,211 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
