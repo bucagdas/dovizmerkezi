@@ -8689,3 +8689,12 @@ Service Unavailable
 2025-12-12 16:30:18,707 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-12 16:30:18,707 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-12 16:30:19,562 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2025-12-12 20:00:18,214 - INFO - Script başlatıldı.
+2025-12-12 20:00:18,226 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-12 20:00:18,503 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-12 20:00:18,503 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-12 20:00:18,504 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-12 20:00:18,504 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-12 20:00:18,505 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-12 20:00:18,505 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-12 20:00:19,651 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
