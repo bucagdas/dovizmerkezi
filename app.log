@@ -8660,3 +8660,13 @@ Service Unavailable
 2025-12-12 08:00:16,967 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-12 08:00:16,967 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-12 08:00:18,002 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2025-12-12 13:30:15,951 - INFO - Script başlatıldı.
+2025-12-12 13:30:15,972 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-12 13:30:16,253 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-12 13:30:16,253 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-12 13:30:16,254 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-12 13:30:16,254 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-12 13:30:16,255 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-12 13:30:16,255 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-12 13:30:16,255 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-12 13:30:17,365 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
