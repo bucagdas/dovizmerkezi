@@ -8793,3 +8793,13 @@ Service Unavailable
 2025-12-15 13:30:37,924 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-15 13:30:37,924 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-15 13:30:39,124 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-12-15 15:00:16,910 - INFO - Script başlatıldı.
+2025-12-15 15:00:16,922 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-15 15:00:17,127 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-15 15:00:17,127 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-15 15:00:17,127 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-15 15:00:17,128 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-15 15:00:17,128 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-15 15:00:17,129 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-15 15:00:17,130 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-15 15:00:18,184 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
