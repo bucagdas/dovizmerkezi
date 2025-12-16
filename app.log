@@ -8857,3 +8857,13 @@ Service Unavailable
 2025-12-16 07:00:15,803 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-16 07:00:15,805 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-16 07:00:16,771 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-12-16 08:00:15,155 - INFO - Script başlatıldı.
+2025-12-16 08:00:15,168 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-16 08:00:15,244 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-16 08:00:15,244 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-16 08:00:15,245 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-16 08:00:15,246 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-16 08:00:15,246 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-16 08:00:15,246 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-16 08:00:15,248 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-16 08:00:16,462 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
