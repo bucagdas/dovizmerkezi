@@ -8941,3 +8941,13 @@ Service Unavailable
 2025-12-17 07:00:17,837 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-17 07:00:17,837 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-17 07:00:18,863 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-12-17 08:00:20,767 - INFO - Script başlatıldı.
+2025-12-17 08:00:20,790 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-17 08:00:20,967 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-17 08:00:20,967 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-17 08:00:20,968 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-17 08:00:20,968 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-17 08:00:20,968 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-17 08:00:20,969 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-17 08:00:20,969 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-17 08:00:22,018 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
