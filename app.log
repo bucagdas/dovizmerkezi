@@ -9045,3 +9045,13 @@ Service Unavailable
 2025-12-18 13:30:19,227 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-18 13:30:19,227 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-18 13:30:20,177 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-12-18 15:00:18,607 - INFO - Script başlatıldı.
+2025-12-18 15:00:18,631 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-18 15:00:18,704 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-18 15:00:18,704 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-18 15:00:18,704 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-18 15:00:18,705 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-18 15:00:18,705 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-18 15:00:18,706 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-18 15:00:18,707 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-18 15:00:19,780 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
