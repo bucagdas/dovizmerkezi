@@ -9129,3 +9129,13 @@ Service Unavailable
 2025-12-19 13:30:16,603 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-19 13:30:16,603 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-19 13:30:17,571 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2025-12-19 15:00:19,466 - INFO - Script başlatıldı.
+2025-12-19 15:00:19,478 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-19 15:00:19,824 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-19 15:00:19,824 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-19 15:00:19,824 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-19 15:00:19,824 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-19 15:00:19,825 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-19 15:00:19,826 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-19 15:00:19,827 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-19 15:00:20,684 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
