@@ -9099,3 +9099,13 @@ Service Unavailable
 2025-12-19 01:30:21,871 - ERROR - Tatil API'si hatası (GB): 500
 2025-12-19 01:30:21,873 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-19 01:30:22,845 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
+2025-12-19 07:00:18,368 - INFO - Script başlatıldı.
+2025-12-19 07:00:18,380 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-19 07:00:21,557 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-19 07:00:21,557 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-19 07:00:21,558 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-19 07:00:21,558 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-19 07:00:21,558 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-19 07:00:21,559 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-19 07:00:21,559 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-19 07:00:22,559 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
