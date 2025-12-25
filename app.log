@@ -9484,3 +9484,13 @@ Service Unavailable
 2025-12-25 07:00:19,706 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-25 07:00:19,707 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-25 07:00:21,247 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2025-12-25 08:00:19,700 - INFO - Script başlatıldı.
+2025-12-25 08:00:19,725 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-25 08:00:19,891 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-25 08:00:19,891 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-25 08:00:19,892 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-25 08:00:19,892 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-25 08:00:19,892 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-25 08:00:19,892 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-25 08:00:19,893 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-25 08:00:21,685 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
