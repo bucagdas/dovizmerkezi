@@ -9607,3 +9607,12 @@ Service Unavailable
 2025-12-26 16:30:16,786 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-26 16:30:16,787 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-26 16:30:18,631 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2025-12-26 20:00:18,522 - INFO - Script başlatıldı.
+2025-12-26 20:00:18,543 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-26 20:00:18,820 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-26 20:00:18,820 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-26 20:00:18,822 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-26 20:00:18,822 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-26 20:00:18,823 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-26 20:00:18,823 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-26 20:00:19,873 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
