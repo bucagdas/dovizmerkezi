@@ -9630,3 +9630,6 @@ Service Unavailable
 2025-12-27 13:30:17,018 - INFO - Script başlatıldı.
 2025-12-27 13:30:17,030 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-12-27 13:30:17,030 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-12-27 15:00:21,174 - INFO - Script başlatıldı.
+2025-12-27 15:00:21,183 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-27 15:00:21,183 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
