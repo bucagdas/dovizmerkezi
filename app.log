@@ -9650,3 +9650,6 @@ Service Unavailable
 2025-12-28 08:00:19,450 - INFO - Script başlatıldı.
 2025-12-28 08:00:19,462 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2025-12-28 08:00:19,462 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2025-12-28 13:30:19,522 - INFO - Script başlatıldı.
+2025-12-28 13:30:19,534 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-28 13:30:19,534 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
