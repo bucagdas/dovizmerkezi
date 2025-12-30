@@ -9775,3 +9775,13 @@ Service Unavailable
 2025-12-30 07:00:16,629 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-30 07:00:16,630 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-30 07:00:17,313 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
+2025-12-30 08:00:17,172 - INFO - Script başlatıldı.
+2025-12-30 08:00:17,184 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-30 08:00:17,399 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-30 08:00:17,400 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-30 08:00:17,400 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-30 08:00:17,401 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2025-12-30 08:00:17,401 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-30 08:00:17,401 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-30 08:00:17,401 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-30 08:00:18,371 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
