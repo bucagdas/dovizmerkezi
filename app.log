@@ -9901,3 +9901,15 @@ Service Unavailable
 2025-12-31 16:30:18,673 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-31 16:30:18,674 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-31 16:30:20,275 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
+2025-12-31 20:00:18,071 - INFO - Script başlatıldı.
+2025-12-31 20:00:18,083 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-31 20:00:18,397 - INFO - API yanıtı başarılı şekilde alındı.
+2025-12-31 20:00:18,397 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2025-12-31 20:00:18,398 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-31 20:00:18,398 - WARNING - Cache verisi eski (cache: 2025-12-31, bugün: 2026-01-01)
+2025-12-31 20:00:18,398 - INFO - CN için API'ye fallback yapılıyor...
+2025-12-31 20:00:18,797 - ERROR - Tatil API'si hatası (CN): 500
+2025-12-31 20:00:18,798 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2025-12-31 20:00:18,799 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2025-12-31 20:00:18,799 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2025-12-31 20:00:19,525 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
