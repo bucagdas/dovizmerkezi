@@ -1,33 +1,33 @@
 {
-  "cache_date": "2025-12-30",
-  "last_updated": "2025-12-30T02:10:27.433380",
+  "cache_date": "2025-12-31",
+  "last_updated": "2025-12-31T02:10:50.091663",
   "countries": {
     "TR": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2025-12-30T02:10:27.698087",
-      "date_checked": "2025-12-30",
+      "last_updated": "2025-12-31T02:10:50.357798",
+      "date_checked": "2025-12-31",
       "error": "API error 500"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2025-12-30T02:10:28.053343",
-      "date_checked": "2025-12-30",
+      "last_updated": "2025-12-31T02:10:50.682014",
+      "date_checked": "2025-12-31",
       "error": "API error 500"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2025-12-30T02:10:28.295672",
-      "date_checked": "2025-12-30",
+      "last_updated": "2025-12-31T02:10:50.888556",
+      "date_checked": "2025-12-31",
       "error": "API error 500"
     },
     "CN": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2025-12-30T02:10:28.543837",
-      "date_checked": "2025-12-30",
+      "last_updated": "2025-12-31T02:10:51.097040",
+      "date_checked": "2025-12-31",
       "error": "API error 500"
     }
   }
