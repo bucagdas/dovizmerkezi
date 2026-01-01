@@ -9943,3 +9943,13 @@ Service Unavailable
 2026-01-01 07:00:19,105 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-01 07:00:19,105 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-01 07:00:19,665 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
+2026-01-01 08:00:16,683 - INFO - Script başlatıldı.
+2026-01-01 08:00:16,695 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-01 08:00:16,981 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-01 08:00:16,981 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-01 08:00:16,982 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-01 08:00:16,983 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-01 08:00:16,983 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-01 08:00:16,983 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-01 08:00:16,983 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-01 08:00:19,202 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
