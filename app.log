@@ -9913,3 +9913,23 @@ Service Unavailable
 2025-12-31 20:00:18,799 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2025-12-31 20:00:18,799 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2025-12-31 20:00:19,525 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
+2026-01-01 01:30:17,608 - INFO - Script başlatıldı.
+2026-01-01 01:30:17,622 - WARNING - Cache verisi eski (cache: 2025-12-31, bugün: 2026-01-01)
+2026-01-01 01:30:17,622 - INFO - TR için API'ye fallback yapılıyor...
+2026-01-01 01:30:17,946 - ERROR - Tatil API'si hatası (TR): 500
+2026-01-01 01:30:18,160 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-01 01:30:18,161 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-01 01:30:18,161 - WARNING - Cache verisi eski (cache: 2025-12-31, bugün: 2026-01-01)
+2026-01-01 01:30:18,161 - INFO - CN için API'ye fallback yapılıyor...
+2026-01-01 01:30:18,375 - ERROR - Tatil API'si hatası (CN): 500
+2026-01-01 01:30:18,377 - WARNING - Cache verisi eski (cache: 2025-12-31, bugün: 2026-01-01)
+2026-01-01 01:30:18,377 - INFO - CN için API'ye fallback yapılıyor...
+2026-01-01 01:30:18,588 - ERROR - Tatil API'si hatası (CN): 500
+2026-01-01 01:30:18,589 - WARNING - Cache verisi eski (cache: 2025-12-31, bugün: 2026-01-01)
+2026-01-01 01:30:18,589 - INFO - TR için API'ye fallback yapılıyor...
+2026-01-01 01:30:18,851 - ERROR - Tatil API'si hatası (TR): 500
+2026-01-01 01:30:18,853 - WARNING - Cache verisi eski (cache: 2025-12-31, bugün: 2026-01-01)
+2026-01-01 01:30:18,853 - INFO - GB için API'ye fallback yapılıyor...
+2026-01-01 01:30:19,034 - ERROR - Tatil API'si hatası (GB): 500
+2026-01-01 01:30:19,036 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-01 01:30:19,685 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
