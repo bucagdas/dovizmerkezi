@@ -10066,3 +10066,12 @@ Service Unavailable
 2026-01-02 16:30:19,239 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-02 16:30:19,240 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-02 16:30:20,180 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
+2026-01-02 20:00:18,697 - INFO - Script başlatıldı.
+2026-01-02 20:00:18,720 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-02 20:00:19,014 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-02 20:00:19,014 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-02 20:00:19,015 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-02 20:00:19,016 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-02 20:00:19,016 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-02 20:00:19,016 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-02 20:00:19,686 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
