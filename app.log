@@ -10083,3 +10083,6 @@ Service Unavailable
 2026-01-03 07:00:18,026 - INFO - Script başlatıldı.
 2026-01-03 07:00:18,038 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2026-01-03 07:00:18,038 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2026-01-03 08:00:14,585 - INFO - Script başlatıldı.
+2026-01-03 08:00:14,597 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-03 08:00:14,597 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
