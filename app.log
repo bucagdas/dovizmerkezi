@@ -10075,3 +10075,8 @@ Service Unavailable
 2026-01-02 20:00:19,016 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-02 20:00:19,016 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-02 20:00:19,686 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
+2026-01-03 01:30:14,348 - INFO - Script başlatıldı.
+2026-01-03 01:30:14,359 - WARNING - Cache verisi eski (cache: 2026-01-02, bugün: 2026-01-03)
+2026-01-03 01:30:14,360 - INFO - TR için API'ye fallback yapılıyor...
+2026-01-03 01:30:14,595 - ERROR - Tatil API'si hatası (TR): 500
+2026-01-03 01:30:14,596 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
