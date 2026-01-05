@@ -10160,3 +10160,13 @@ Service Unavailable
 2026-01-05 08:00:18,331 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-05 08:00:18,332 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-05 08:00:20,397 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2026-01-05 13:30:21,659 - INFO - Script başlatıldı.
+2026-01-05 13:30:21,682 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-05 13:30:21,918 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-05 13:30:21,918 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-05 13:30:21,918 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-05 13:30:21,919 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-05 13:30:21,919 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-05 13:30:21,919 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-05 13:30:21,920 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-05 13:30:23,416 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
