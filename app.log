@@ -10276,3 +10276,15 @@ Service Unavailable
 2026-01-06 16:30:18,878 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-06 16:30:18,878 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-06 16:30:20,029 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2026-01-06 20:00:21,437 - INFO - Script başlatıldı.
+2026-01-06 20:00:21,460 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-06 20:00:21,812 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-06 20:00:21,812 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-06 20:00:21,813 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-06 20:00:21,813 - WARNING - Cache verisi eski (cache: 2026-01-06, bugün: 2026-01-07)
+2026-01-06 20:00:21,813 - INFO - CN için API'ye fallback yapılıyor...
+2026-01-06 20:00:22,201 - ERROR - Tatil API'si hatası (CN): 500
+2026-01-06 20:00:22,202 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-06 20:00:22,204 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-06 20:00:22,204 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-06 20:00:23,169 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
