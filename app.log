@@ -10244,3 +10244,13 @@ Service Unavailable
 2026-01-06 08:00:19,437 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-06 08:00:19,438 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-06 08:00:20,045 - ERROR - Tweet gönderimi sırasında hata oluştu: 403 Forbidden
+2026-01-06 13:30:19,542 - INFO - Script başlatıldı.
+2026-01-06 13:30:19,557 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-06 13:30:19,785 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-06 13:30:19,785 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-06 13:30:19,786 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-06 13:30:19,787 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-06 13:30:19,787 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-06 13:30:19,787 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-06 13:30:19,788 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-06 13:30:20,961 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
