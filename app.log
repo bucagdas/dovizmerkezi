@@ -10516,3 +10516,12 @@ Service Unavailable
 2026-01-09 15:00:20,083 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-09 15:00:20,084 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-09 15:00:21,161 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2026-01-09 16:30:18,061 - INFO - Script başlatıldı.
+2026-01-09 16:30:18,084 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-09 16:30:18,476 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-09 16:30:18,476 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-09 16:30:18,477 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-09 16:30:18,477 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-09 16:30:18,477 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-09 16:30:18,478 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-09 16:30:19,353 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
