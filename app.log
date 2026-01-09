@@ -10496,3 +10496,13 @@ Service Unavailable
 2026-01-09 08:00:17,257 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-09 08:00:17,258 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-09 08:00:18,347 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2026-01-09 13:30:21,213 - INFO - Script başlatıldı.
+2026-01-09 13:30:21,236 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-09 13:30:21,446 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-09 13:30:21,446 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-09 13:30:21,447 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-09 13:30:21,448 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-09 13:30:21,448 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-09 13:30:21,449 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-09 13:30:21,449 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-09 13:30:22,478 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
