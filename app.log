@@ -10629,3 +10629,13 @@ Service Unavailable
 2026-01-12 13:30:20,591 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-12 13:30:20,591 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-12 13:30:21,908 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2026-01-12 15:00:22,610 - INFO - Script başlatıldı.
+2026-01-12 15:00:22,626 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-12 15:00:23,000 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-12 15:00:23,001 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-12 15:00:23,001 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-12 15:00:23,001 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-12 15:00:23,001 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-12 15:00:23,002 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-12 15:00:23,002 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-12 15:00:24,147 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
