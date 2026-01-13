@@ -10703,3 +10703,13 @@ Service Unavailable
 2026-01-13 08:00:16,126 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-13 08:00:16,126 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-13 08:00:18,155 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2026-01-13 13:30:16,649 - INFO - Script başlatıldı.
+2026-01-13 13:30:16,661 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-13 13:30:16,927 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-13 13:30:16,927 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-13 13:30:16,929 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-13 13:30:16,929 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-13 13:30:16,929 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-13 13:30:16,931 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-13 13:30:16,931 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-13 13:30:18,060 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
