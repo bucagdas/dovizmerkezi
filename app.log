@@ -10777,3 +10777,13 @@ Service Unavailable
 2026-01-14 07:00:28,272 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-14 07:00:28,273 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-14 07:00:29,676 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2026-01-14 08:00:38,452 - INFO - Script başlatıldı.
+2026-01-14 08:00:38,474 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-14 08:00:38,720 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-14 08:00:38,720 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-14 08:00:38,720 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-14 08:00:38,721 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-14 08:00:38,721 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-14 08:00:38,721 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-14 08:00:38,722 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-14 08:00:39,842 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
