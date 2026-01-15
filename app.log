@@ -10903,3 +10903,15 @@ Service Unavailable
 2026-01-15 16:30:29,408 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-15 16:30:29,409 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-15 16:30:31,212 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
+2026-01-15 20:00:27,893 - INFO - Script başlatıldı.
+2026-01-15 20:00:27,905 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-15 20:00:28,248 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-15 20:00:28,248 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-15 20:00:28,249 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-15 20:00:28,249 - WARNING - Cache verisi eski (cache: 2026-01-15, bugün: 2026-01-16)
+2026-01-15 20:00:28,249 - INFO - CN için API'ye fallback yapılıyor...
+2026-01-15 20:00:28,674 - ERROR - Tatil API'si hatası (CN): 500
+2026-01-15 20:00:28,675 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-15 20:00:28,676 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-15 20:00:28,676 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-15 20:00:29,779 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
