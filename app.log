@@ -10861,3 +10861,13 @@ Service Unavailable
 2026-01-15 07:00:18,194 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-15 07:00:18,195 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-15 07:00:19,270 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2026-01-15 08:00:23,684 - INFO - Script başlatıldı.
+2026-01-15 08:00:23,696 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-15 08:00:23,957 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-15 08:00:23,957 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-15 08:00:23,957 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-15 08:00:23,958 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-15 08:00:23,958 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-15 08:00:23,958 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-15 08:00:23,959 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-15 08:00:25,006 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
