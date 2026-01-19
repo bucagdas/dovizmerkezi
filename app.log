@@ -11068,3 +11068,13 @@ Service Unavailable
 2026-01-19 07:00:24,336 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-19 07:00:24,338 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-19 07:00:25,288 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2026-01-19 08:00:27,341 - INFO - Script başlatıldı.
+2026-01-19 08:00:27,353 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-19 08:00:27,428 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-19 08:00:27,428 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-19 08:00:27,429 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-19 08:00:27,429 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-19 08:00:27,429 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-19 08:00:27,430 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-19 08:00:27,430 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-19 08:00:28,364 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
