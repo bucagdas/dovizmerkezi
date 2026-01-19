@@ -11058,3 +11058,13 @@ Service Unavailable
 2026-01-19 01:30:26,432 - INFO - GB için API'ye fallback yapılıyor...
 2026-01-19 01:30:26,975 - ERROR - Tatil API'si hatası (GB): 500
 2026-01-19 01:30:27,900 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
+2026-01-19 07:00:24,276 - INFO - Script başlatıldı.
+2026-01-19 07:00:24,288 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-19 07:00:24,334 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-19 07:00:24,334 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-19 07:00:24,334 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-19 07:00:24,335 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-19 07:00:24,335 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-19 07:00:24,336 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-19 07:00:24,338 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-19 07:00:25,288 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
