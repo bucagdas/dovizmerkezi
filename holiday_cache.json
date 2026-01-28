@@ -1,33 +1,33 @@
 {
-  "cache_date": "2026-01-27",
-  "last_updated": "2026-01-27T02:26:37.242928",
+  "cache_date": "2026-01-28",
+  "last_updated": "2026-01-28T02:22:46.676543",
   "countries": {
     "TR": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-01-27T02:26:37.594154",
-      "date_checked": "2026-01-27",
+      "last_updated": "2026-01-28T02:22:46.931164",
+      "date_checked": "2026-01-28",
       "error": "API error 401"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-01-27T02:26:37.816343",
-      "date_checked": "2026-01-27",
+      "last_updated": "2026-01-28T02:22:47.445633",
+      "date_checked": "2026-01-28",
       "error": "API error 401"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-01-27T02:26:38.044967",
-      "date_checked": "2026-01-27",
+      "last_updated": "2026-01-28T02:22:47.653961",
+      "date_checked": "2026-01-28",
       "error": "API error 401"
     },
     "CN": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-01-27T02:26:38.272621",
-      "date_checked": "2026-01-27",
+      "last_updated": "2026-01-28T02:22:47.890188",
+      "date_checked": "2026-01-28",
       "error": "API error 401"
     }
   }
