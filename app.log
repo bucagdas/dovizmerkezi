@@ -11652,3 +11652,23 @@ Service Unavailable
 2026-01-27 20:00:28,372 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-27 20:00:28,372 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-27 20:00:29,189 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2026-01-28 01:30:21,375 - INFO - Script başlatıldı.
+2026-01-28 01:30:21,387 - WARNING - Cache verisi eski (cache: 2026-01-27, bugün: 2026-01-28)
+2026-01-28 01:30:21,387 - INFO - TR için API'ye fallback yapılıyor...
+2026-01-28 01:30:21,688 - ERROR - Tatil API'si hatası (TR): 401
+2026-01-28 01:30:21,746 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-28 01:30:21,747 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-28 01:30:21,747 - WARNING - Cache verisi eski (cache: 2026-01-27, bugün: 2026-01-28)
+2026-01-28 01:30:21,747 - INFO - CN için API'ye fallback yapılıyor...
+2026-01-28 01:30:21,967 - ERROR - Tatil API'si hatası (CN): 401
+2026-01-28 01:30:21,968 - WARNING - Cache verisi eski (cache: 2026-01-27, bugün: 2026-01-28)
+2026-01-28 01:30:21,968 - INFO - CN için API'ye fallback yapılıyor...
+2026-01-28 01:30:22,191 - ERROR - Tatil API'si hatası (CN): 401
+2026-01-28 01:30:22,192 - WARNING - Cache verisi eski (cache: 2026-01-27, bugün: 2026-01-28)
+2026-01-28 01:30:22,192 - INFO - TR için API'ye fallback yapılıyor...
+2026-01-28 01:30:22,400 - ERROR - Tatil API'si hatası (TR): 401
+2026-01-28 01:30:22,402 - WARNING - Cache verisi eski (cache: 2026-01-27, bugün: 2026-01-28)
+2026-01-28 01:30:22,402 - INFO - GB için API'ye fallback yapılıyor...
+2026-01-28 01:30:22,600 - ERROR - Tatil API'si hatası (GB): 401
+2026-01-28 01:30:22,602 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-28 01:30:23,542 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai.webp
