@@ -11850,3 +11850,13 @@ Service Unavailable
 2026-01-30 07:00:25,118 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-01-30 07:00:25,119 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-30 07:00:26,158 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
+2026-01-30 08:00:26,896 - INFO - Script başlatıldı.
+2026-01-30 08:00:26,910 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-30 08:00:27,153 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-30 08:00:27,153 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-30 08:00:27,154 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-30 08:00:27,154 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-30 08:00:27,155 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-30 08:00:27,155 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-30 08:00:27,155 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-30 08:00:29,448 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
