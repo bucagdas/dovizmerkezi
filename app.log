@@ -11840,3 +11840,13 @@ Service Unavailable
 2026-01-30 01:30:25,057 - ERROR - Tatil API'si hatası (GB): 401
 2026-01-30 01:30:25,059 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-01-30 01:30:26,195 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/shanghai/shanghai (1).webp
+2026-01-30 07:00:24,997 - INFO - Script başlatıldı.
+2026-01-30 07:00:25,009 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-30 07:00:25,116 - INFO - API yanıtı başarılı şekilde alındı.
+2026-01-30 07:00:25,116 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-01-30 07:00:25,116 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-30 07:00:25,116 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-01-30 07:00:25,117 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-30 07:00:25,118 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-01-30 07:00:25,119 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-01-30 07:00:26,158 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
