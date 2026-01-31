@@ -11903,3 +11903,6 @@ Service Unavailable
 2026-01-31 01:30:25,384 - INFO - TR için API'ye fallback yapılıyor...
 2026-01-31 01:30:25,726 - ERROR - Tatil API'si hatası (TR): 401
 2026-01-31 01:30:25,728 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2026-01-31 07:00:25,185 - INFO - Script başlatıldı.
+2026-01-31 07:00:25,197 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-01-31 07:00:25,197 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
