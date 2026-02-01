@@ -11921,3 +11921,8 @@ Service Unavailable
 2026-01-31 20:00:26,285 - INFO - Script başlatıldı.
 2026-01-31 20:00:26,298 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2026-01-31 20:00:26,298 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2026-02-01 01:30:23,463 - INFO - Script başlatıldı.
+2026-02-01 01:30:23,475 - WARNING - Cache verisi eski (cache: 2026-01-31, bugün: 2026-02-01)
+2026-02-01 01:30:23,475 - INFO - TR için API'ye fallback yapılıyor...
+2026-02-01 01:30:24,233 - ERROR - Tatil API'si hatası (TR): 500
+2026-02-01 01:30:24,234 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
