@@ -12149,3 +12149,13 @@ Service Unavailable
 2026-02-04 13:30:28,446 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-04 13:30:28,446 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-04 13:30:29,947 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2026-02-04 15:00:24,541 - INFO - Script başlatıldı.
+2026-02-04 15:00:24,553 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-04 15:00:24,799 - INFO - API yanıtı başarılı şekilde alındı.
+2026-02-04 15:00:24,799 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-02-04 15:00:24,800 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-04 15:00:24,800 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-02-04 15:00:24,800 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-04 15:00:24,801 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-04 15:00:24,801 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-04 15:00:25,745 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
