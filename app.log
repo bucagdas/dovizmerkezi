@@ -12233,3 +12233,13 @@ Service Unavailable
 2026-02-05 13:30:30,434 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-05 13:30:30,434 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-05 13:30:31,310 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2026-02-05 15:00:29,868 - INFO - Script başlatıldı.
+2026-02-05 15:00:29,880 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-05 15:00:29,943 - INFO - API yanıtı başarılı şekilde alındı.
+2026-02-05 15:00:29,943 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-02-05 15:00:29,943 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-05 15:00:29,943 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-02-05 15:00:29,944 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-05 15:00:29,944 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-05 15:00:29,945 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-05 15:00:30,828 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
