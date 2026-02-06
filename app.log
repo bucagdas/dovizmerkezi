@@ -12327,3 +12327,12 @@ Service Unavailable
 2026-02-06 15:00:28,455 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-06 15:00:28,456 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-06 15:00:29,523 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2026-02-06 16:30:27,570 - INFO - Script başlatıldı.
+2026-02-06 16:30:27,582 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-06 16:30:27,760 - INFO - API yanıtı başarılı şekilde alındı.
+2026-02-06 16:30:27,760 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-02-06 16:30:27,761 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-06 16:30:27,762 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-06 16:30:27,762 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-06 16:30:27,762 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-06 16:30:30,090 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.mp4
