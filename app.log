@@ -12307,3 +12307,13 @@ Service Unavailable
 2026-02-06 08:00:27,787 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-06 08:00:27,787 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-06 08:00:28,967 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london (1).webp
+2026-02-06 13:30:26,215 - INFO - Script başlatıldı.
+2026-02-06 13:30:26,228 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-06 13:30:26,431 - INFO - API yanıtı başarılı şekilde alındı.
+2026-02-06 13:30:26,431 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-02-06 13:30:26,433 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-06 13:30:26,433 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-02-06 13:30:26,433 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-06 13:30:26,435 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-06 13:30:26,435 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-06 13:30:27,675 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
