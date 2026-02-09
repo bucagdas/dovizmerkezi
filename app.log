@@ -12440,3 +12440,13 @@ Service Unavailable
 2026-02-09 13:30:28,083 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-09 13:30:28,083 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-09 13:30:28,921 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
+2026-02-09 15:00:30,157 - INFO - Script başlatıldı.
+2026-02-09 15:00:30,169 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-09 15:00:30,549 - INFO - API yanıtı başarılı şekilde alındı.
+2026-02-09 15:00:30,549 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-02-09 15:00:30,549 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-09 15:00:30,550 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-02-09 15:00:30,550 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-09 15:00:30,551 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-09 15:00:30,551 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-09 15:00:31,911 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye (1).webp
