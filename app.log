@@ -12524,3 +12524,13 @@ Service Unavailable
 2026-02-10 13:30:28,633 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-10 13:30:28,633 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-10 13:30:29,726 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2026-02-10 15:00:31,528 - INFO - Script başlatıldı.
+2026-02-10 15:00:31,540 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-10 15:00:31,935 - INFO - API yanıtı başarılı şekilde alındı.
+2026-02-10 15:00:31,935 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-02-10 15:00:31,935 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-10 15:00:31,935 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-02-10 15:00:31,935 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-10 15:00:31,936 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-10 15:00:31,937 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-10 15:00:32,991 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
