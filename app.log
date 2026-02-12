@@ -12672,3 +12672,13 @@ Service Unavailable
 2026-02-12 07:00:28,988 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-12 07:00:28,989 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-12 07:00:30,139 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/turkiye/turkiye.webp
+2026-02-12 08:00:27,625 - INFO - Script başlatıldı.
+2026-02-12 08:00:27,638 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-12 08:00:28,003 - INFO - API yanıtı başarılı şekilde alındı.
+2026-02-12 08:00:28,003 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-02-12 08:00:28,005 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-12 08:00:28,005 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-02-12 08:00:28,006 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-12 08:00:28,006 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-12 08:00:28,007 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-12 08:00:29,190 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
