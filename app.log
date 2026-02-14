@@ -12804,3 +12804,8 @@ Service Unavailable
 2026-02-13 20:00:28,436 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-13 20:00:28,436 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-13 20:00:29,297 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork (1).webp
+2026-02-14 01:30:24,628 - INFO - Script başlatıldı.
+2026-02-14 01:30:24,641 - WARNING - Cache verisi eski (cache: 2026-02-13, bugün: 2026-02-14)
+2026-02-14 01:30:24,641 - INFO - TR için API'ye fallback yapılıyor...
+2026-02-14 01:30:24,961 - ERROR - Tatil API'si hatası (TR): 500
+2026-02-14 01:30:24,962 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
