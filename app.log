@@ -12838,3 +12838,6 @@ Service Unavailable
 2026-02-15 08:00:25,615 - INFO - Script başlatıldı.
 2026-02-15 08:00:25,628 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2026-02-15 08:00:25,628 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2026-02-15 13:30:23,014 - INFO - Script başlatıldı.
+2026-02-15 13:30:23,027 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-15 13:30:23,027 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
