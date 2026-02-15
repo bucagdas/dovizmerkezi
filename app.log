@@ -12832,3 +12832,6 @@ Service Unavailable
 2026-02-15 01:30:24,558 - INFO - TR için API'ye fallback yapılıyor...
 2026-02-15 01:30:24,884 - ERROR - Tatil API'si hatası (TR): 500
 2026-02-15 01:30:24,885 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2026-02-15 07:00:26,228 - INFO - Script başlatıldı.
+2026-02-15 07:00:26,236 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-15 07:00:26,236 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
