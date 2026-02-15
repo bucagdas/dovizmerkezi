@@ -12847,3 +12847,6 @@ Service Unavailable
 2026-02-15 16:30:25,111 - INFO - Script başlatıldı.
 2026-02-15 16:30:25,124 - INFO - Bugün TR'de resmi tatil günü değil (cache).
 2026-02-15 16:30:25,124 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
+2026-02-15 20:00:25,820 - INFO - Script başlatıldı.
+2026-02-15 20:00:25,833 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-15 20:00:25,833 - INFO - Hafta sonu olduğu için tweet gönderilmiyor.
