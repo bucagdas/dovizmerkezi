@@ -1,6 +1,8 @@
 name: Gold and Silver Price Tweet Workflow
 
 on:
+  schedule:
+    - cron: '0 9 * * 2'  # Salı 12:00 Türkiye saati (UTC+3)
   workflow_dispatch:
 
 jobs:
