@@ -2,87 +2,31 @@ import os
 import requests
 from datetime import datetime
 from pytz import timezone
-from random import choice
-import tweepy
 import logging
 
+from utils import get_random_api_key, read_last_used_key, write_last_used_key, get_twitter_clients, is_weekend_or_holiday
+
 # Loglama yapılandırması
-logging.basicConfig(filename='currency_tweet.log', filemode='a', level=logging.INFO, 
+logging.basicConfig(filename='bot.log', filemode='a', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info("Script başlatıldı.")
 
-# Kullanılan son API anahtarını saklayacağımız dosya
 LAST_KEY_FILE = 'last_used_key.txt'
 
-# Şu anki yerel saat (Türkiye için), sadece saat ve dakika formatında
-current_local_time = datetime.now(timezone('Europe/Istanbul')).strftime('%H:%M')
-
-# API anahtarları kimlik ile birlikte saklanıyor
+# API anahtarları
 api_keys = {
     'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
     'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
     'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
 }
 
-# Son kullanılan anahtar kimliğini dosyadan okuma
-def read_last_used_key():
-    try:
-        with open(LAST_KEY_FILE, 'r') as file:
-            return file.read().strip()
-    except FileNotFoundError:
-        return None
-
-# Son kullanılan anahtar kimliğini dosyaya yazma
-def write_last_used_key(key_id):
-    with open(LAST_KEY_FILE, 'w') as file:
-        file.write(key_id)
-
-# Geçerli bir anahtar seçmek için fonksiyon (son kullanılan anahtarı dışlar)
-def get_random_api_key(exclude_key_id=None):
-    available_keys = {k: v for k, v in api_keys.items() if k != exclude_key_id and v}
-    if not available_keys:
-        return None, None
-    key_id = choice(list(available_keys.keys()))
-    return key_id, available_keys[key_id]
-
-# Hedef TL Miktarı
-TARGET_TL = 22104
-
-# Simülasyon modu
-TEST_MODE = False
-
-# Gram ons çevirim oranları
-GRAM_PER_OUNCE = 31.1035
-
-# Tweepy API Ayarları
-CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
-CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
-ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
-ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
-BEARER_TOKEN = os.environ.get('BEARER_TOKEN')
-
-# V1 ve V2 API Authentication
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-api = tweepy.API(auth, wait_on_rate_limit=True)
-
-client = tweepy.Client(
-    bearer_token=BEARER_TOKEN,
-    consumer_key=CONSUMER_KEY,
-    consumer_secret=CONSUMER_SECRET,
-    access_token=ACCESS_TOKEN,
-    access_token_secret=ACCESS_TOKEN_SECRET,
-    wait_on_rate_limit=True,
-)
-
-# API ile veri alma fonksiyonu
 def fetch_exchange_rates():
-    last_used_key_id = read_last_used_key()
+    last_used_key_id = read_last_used_key(LAST_KEY_FILE)
     max_tries = len(api_keys)
     tries = 0
 
     while tries < max_tries:
-        key_id, api_key = get_random_api_key(exclude_key_id=last_used_key_id)
+        key_id, api_key = get_random_api_key(api_keys, exclude_key_id=last_used_key_id)
         if not api_key:
             logging.error("Geçerli bir API anahtarı bulunamadı.")
             break
@@ -91,7 +35,7 @@ def fetch_exchange_rates():
         response = requests.get(url)
 
         if response.status_code == 200:
-            write_last_used_key(key_id)
+            write_last_used_key(key_id, LAST_KEY_FILE)
             return response.json()
         else:
             logging.error(f"API anahtarı başarısız oldu: {key_id}")
@@ -99,6 +43,16 @@ def fetch_exchange_rates():
 
     logging.error("Maksimum deneme sayısına ulaşıldı, işlem iptal edildi.")
     return None
+
+
+# Hedef TL Miktarı
+TARGET_TL = 28075.50
+
+# Simülasyon modu
+TEST_MODE = False
+
+# Gram ons çevirim oranları
+GRAM_PER_OUNCE = 31.1035
 
 # Belirli bir dosyayı seçme fonksiyonu
 def get_specific_media(file_path):
@@ -111,6 +65,7 @@ def get_specific_media(file_path):
 # Tweet içeriğini oluşturma fonksiyonu
 def create_tweet_content(data):
     try:
+        current_local_time = datetime.now(timezone('Europe/Istanbul')).strftime('%H:%M')
         eur_to_try = data['rates']['TRY']
         eur_to_usd = data['rates']['USD']
         eur_to_gbp = data['rates']['GBP']
@@ -138,8 +93,9 @@ def create_tweet_content(data):
         logging.error(f"Tweet içeriği oluşturulurken hata: {e}")
         return None
 
+
 # Tweet gönderme fonksiyonu
-def send_tweet(content, specific_media_path=None):
+def send_tweet(content, api, client, specific_media_path=None):
     if TEST_MODE:
         print("Simülasyon Modu: Gönderilecek Tweet İçeriği:")
         print(content)
@@ -160,14 +116,21 @@ def send_tweet(content, specific_media_path=None):
         except Exception as e:
             logging.error(f"Tweet gönderilirken hata oluştu: {e}")
 
+
 # Ana çalışma akışı
 def main():
+    is_off, reason = is_weekend_or_holiday('TR')
+    if is_off:
+        logging.info(f"Tweet gönderilmiyor: {reason}")
+        return
+
     data = fetch_exchange_rates()
     if data and 'rates' in data:
         tweet_content = create_tweet_content(data)
         if tweet_content:
-            specific_media_path = "./images/asgari/default.mp4"  # Belirli medya dosyasının yolu
-            send_tweet(tweet_content, specific_media_path)
+            api, client = get_twitter_clients()
+            specific_media_path = "./images/asgari/default.mp4"
+            send_tweet(tweet_content, api, client, specific_media_path)
     else:
         logging.error("Veriler alınamadı, işlem iptal edildi.")
 
