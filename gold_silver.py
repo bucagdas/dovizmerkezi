@@ -1,23 +1,11 @@
-import os
-import requests
 from datetime import datetime
 import pytz
 import logging
 
-from utils import get_random_api_key, read_last_used_key, write_last_used_key, get_twitter_clients
+from utils import get_twitter_clients, fetch_exchange_rates, setup_logging
 
-# Loglama yapılandırması
-logging.basicConfig(filename='bot.log', filemode='a', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+setup_logging()
 logging.info("Altın ve Gümüş Fiyat Scripti başlatıldı.")
-
-LAST_KEY_FILE = 'last_used_key.txt'
-
-# API anahtarları
-api_keys = {
-    'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
-    'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
-    'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
-}
 
 
 def process_data(data, current_local_time):
@@ -60,37 +48,12 @@ def main():
 
     api, client = get_twitter_clients()
 
-    max_tries = len(api_keys)
-    tries = 0
-    last_used_key_id = read_last_used_key(LAST_KEY_FILE)
-
-    while tries < max_tries:
-        key_id, api_key = get_random_api_key(api_keys, exclude_key_id=last_used_key_id)
-        if not api_key:
-            break
-
-        last_used_key_id = key_id
-        write_last_used_key(key_id, LAST_KEY_FILE)
-
-        url = f"http://api.exchangeratesapi.io/latest?symbols=USD,TRY,XAU,XAG&base=EUR&access_key={api_key}"
-        response = requests.get(url)
-
-        if response.status_code == 200:
-            logging.info("API yanıtı başarılı şekilde alındı.")
-            data = response.json()
-            if "rates" in data and all(key in data["rates"] for key in ["USD", "TRY", "XAU", "XAG"]):
-                tweet_content = process_data(data, current_local_time)
-                send_tweet(tweet_content, api, client)
-                break
-            else:
-                logging.error("API'den gelen yanıtta beklenen anahtarlar bulunamadı.")
-                break
-        else:
-            logging.error(f"API'den yanıt alınamadı. Durum kodu: {response.status_code}. Başka bir anahtarla deneniyor...")
-            tries += 1
-
-    if tries == max_tries:
-        logging.error("Maksimum deneme sayısına ulaşıldı, işlem başarısız.")
+    data = fetch_exchange_rates("USD,TRY,XAU,XAG")
+    if data and "rates" in data and all(key in data["rates"] for key in ["USD", "TRY", "XAU", "XAG"]):
+        tweet_content = process_data(data, current_local_time)
+        send_tweet(tweet_content, api, client)
+    else:
+        logging.error("Veriler alınamadı veya beklenen anahtarlar bulunamadı.")
 
 
 if __name__ == "__main__":

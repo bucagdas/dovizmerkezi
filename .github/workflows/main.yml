@@ -35,6 +35,7 @@ jobs:
           EXCHANGE_RATES_API_KEY_1: ${{ secrets.EXCHANGE_RATES_API_KEY_1 }}
           EXCHANGE_RATES_API_KEY_2: ${{ secrets.EXCHANGE_RATES_API_KEY_2 }}
           EXCHANGE_RATES_API_KEY_3: ${{ secrets.EXCHANGE_RATES_API_KEY_3 }}
+          EXCHANGE_RATES_API_KEY_4: ${{ secrets.EXCHANGE_RATES_API_KEY_4 }}
           CALENDARIFIC_API_KEY: ${{ secrets.CALENDARIFIC_API_KEY }}
 
       # Commit and push changes

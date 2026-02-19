@@ -1,48 +1,12 @@
 import os
-import requests
 from datetime import datetime
 from pytz import timezone
 import logging
 
-from utils import get_random_api_key, read_last_used_key, write_last_used_key, get_twitter_clients, is_weekend_or_holiday
+from utils import get_twitter_clients, is_weekend_or_holiday, fetch_exchange_rates, setup_logging
 
-# Loglama yapılandırması
-logging.basicConfig(filename='bot.log', filemode='a', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+setup_logging()
 logging.info("Script başlatıldı.")
-
-LAST_KEY_FILE = 'last_used_key.txt'
-
-# API anahtarları
-api_keys = {
-    'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
-    'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
-    'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
-}
-
-def fetch_exchange_rates():
-    last_used_key_id = read_last_used_key(LAST_KEY_FILE)
-    max_tries = len(api_keys)
-    tries = 0
-
-    while tries < max_tries:
-        key_id, api_key = get_random_api_key(api_keys, exclude_key_id=last_used_key_id)
-        if not api_key:
-            logging.error("Geçerli bir API anahtarı bulunamadı.")
-            break
-
-        url = f"http://api.exchangeratesapi.io/latest?symbols=USD,TRY,GBP,XAU,XAG&base=EUR&access_key={api_key}"
-        response = requests.get(url)
-
-        if response.status_code == 200:
-            write_last_used_key(key_id, LAST_KEY_FILE)
-            return response.json()
-        else:
-            logging.error(f"API anahtarı başarısız oldu: {key_id}")
-            tries += 1
-
-    logging.error("Maksimum deneme sayısına ulaşıldı, işlem iptal edildi.")
-    return None
 
 
 # Hedef TL Miktarı
@@ -124,7 +88,7 @@ def main():
         logging.info(f"Tweet gönderilmiyor: {reason}")
         return
 
-    data = fetch_exchange_rates()
+    data = fetch_exchange_rates("USD,TRY,GBP,XAU,XAG")
     if data and 'rates' in data:
         tweet_content = create_tweet_content(data)
         if tweet_content:

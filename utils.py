@@ -1,8 +1,55 @@
 import os
+import logging
+import requests
 from random import choice
 from datetime import date
 import holidays
 import tweepy
+
+
+EXCHANGE_RATES_API_KEYS = {
+    'key1': os.environ.get('EXCHANGE_RATES_API_KEY_1'),
+    'key2': os.environ.get('EXCHANGE_RATES_API_KEY_2'),
+    'key3': os.environ.get('EXCHANGE_RATES_API_KEY_3'),
+    'key4': os.environ.get('EXCHANGE_RATES_API_KEY_4'),
+}
+
+LAST_KEY_FILE = 'last_used_key.txt'
+
+
+def setup_logging():
+    logging.basicConfig(
+        filename='bot.log',
+        filemode='a',
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s'
+    )
+
+
+def fetch_exchange_rates(symbols):
+    """ExchangeRates API'den kur verisi çeker. Anahtarları döngüsel kullanır."""
+    last_used_key_id = read_last_used_key()
+    max_tries = len(EXCHANGE_RATES_API_KEYS)
+    tries = 0
+
+    while tries < max_tries:
+        key_id, api_key = get_random_api_key(EXCHANGE_RATES_API_KEYS, exclude_key_id=last_used_key_id)
+        if not api_key:
+            logging.error("Geçerli bir API anahtarı bulunamadı.")
+            break
+
+        url = f"http://api.exchangeratesapi.io/latest?symbols={symbols}&base=EUR&access_key={api_key}"
+        response = requests.get(url)
+
+        if response.status_code == 200:
+            write_last_used_key(key_id)
+            return response.json()
+        else:
+            logging.error(f"API'den yanıt alınamadı. Durum kodu: {response.status_code}. Başka bir anahtarla deneniyor...")
+            tries += 1
+
+    logging.error("Maksimum deneme sayısına ulaşıldı, işlem başarısız.")
+    return None
 
 
 def read_last_used_key(key_file='last_used_key.txt'):
