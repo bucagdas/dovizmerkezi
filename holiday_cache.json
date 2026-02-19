@@ -1,34 +1,32 @@
 {
   "cache_date": "2026-02-19",
-  "last_updated": "2026-02-19T02:48:16.444519",
+  "last_updated": "2026-02-19T22:26:42.405274",
   "countries": {
     "TR": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-02-19T02:48:16.820231",
-      "date_checked": "2026-02-19",
-      "error": "API error 500"
+      "last_updated": "2026-02-19T22:26:42.494614",
+      "date_checked": "2026-02-19"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-02-19T02:48:17.077650",
-      "date_checked": "2026-02-19",
-      "error": "API error 500"
+      "last_updated": "2026-02-19T22:26:42.495784",
+      "date_checked": "2026-02-19"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-02-19T02:48:17.291933",
-      "date_checked": "2026-02-19",
-      "error": "API error 500"
+      "last_updated": "2026-02-19T22:26:42.496628",
+      "date_checked": "2026-02-19"
     },
     "CN": {
-      "is_holiday": false,
-      "holiday_names": [],
-      "last_updated": "2026-02-19T02:48:17.535117",
-      "date_checked": "2026-02-19",
-      "error": "API error 500"
+      "is_holiday": true,
+      "holiday_names": [
+        "Chinese New Year (Spring Festival)"
+      ],
+      "last_updated": "2026-02-19T22:26:42.497757",
+      "date_checked": "2026-02-19"
     }
   }
 }
