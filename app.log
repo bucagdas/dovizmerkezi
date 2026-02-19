@@ -13131,3 +13131,13 @@ Service Unavailable
 2026-02-19 08:00:27,376 - INFO - Bugün GB'de resmi tatil günü değil (cache).
 2026-02-19 08:00:27,377 - INFO - Bugün US'de resmi tatil günü değil (cache).
 2026-02-19 08:00:28,372 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/london/london.webp
+2026-02-19 13:30:25,452 - INFO - Script başlatıldı.
+2026-02-19 13:30:25,465 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-19 13:30:25,848 - INFO - API yanıtı başarılı şekilde alındı.
+2026-02-19 13:30:25,848 - INFO - API yanıtında tüm gerekli anahtarlar bulundu.
+2026-02-19 13:30:25,849 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-19 13:30:25,849 - INFO - Bugün CN'de resmi tatil günü değil (cache).
+2026-02-19 13:30:25,849 - INFO - Bugün TR'de resmi tatil günü değil (cache).
+2026-02-19 13:30:25,850 - INFO - Bugün GB'de resmi tatil günü değil (cache).
+2026-02-19 13:30:25,850 - INFO - Bugün US'de resmi tatil günü değil (cache).
+2026-02-19 13:30:26,841 - INFO - Tweet başarıyla gönderildi. Kullanılan resim: ./images/newyork/newyork.webp
