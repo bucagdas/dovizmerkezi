@@ -1,32 +1,30 @@
 {
-  "cache_date": "2026-02-19",
-  "last_updated": "2026-02-19T22:26:42.405274",
+  "cache_date": "2026-02-20",
+  "last_updated": "2026-02-20T21:30:54.871971",
   "countries": {
     "TR": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-02-19T22:26:42.494614",
-      "date_checked": "2026-02-19"
+      "last_updated": "2026-02-20T21:30:54.976694",
+      "date_checked": "2026-02-20"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-02-19T22:26:42.495784",
-      "date_checked": "2026-02-19"
+      "last_updated": "2026-02-20T21:30:54.977888",
+      "date_checked": "2026-02-20"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-02-19T22:26:42.496628",
-      "date_checked": "2026-02-19"
+      "last_updated": "2026-02-20T21:30:54.978784",
+      "date_checked": "2026-02-20"
     },
     "CN": {
-      "is_holiday": true,
-      "holiday_names": [
-        "Chinese New Year (Spring Festival)"
-      ],
-      "last_updated": "2026-02-19T22:26:42.497757",
-      "date_checked": "2026-02-19"
+      "is_holiday": false,
+      "holiday_names": [],
+      "last_updated": "2026-02-20T21:30:54.979934",
+      "date_checked": "2026-02-20"
     }
   }
 }
