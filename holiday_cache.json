@@ -1,32 +1,32 @@
 {
-  "cache_date": "2026-03-20",
-  "last_updated": "2026-03-20T21:35:35.512038",
+  "cache_date": "2026-03-21",
+  "last_updated": "2026-03-21T21:30:36.287780",
   "countries": {
     "TR": {
       "is_holiday": true,
       "holiday_names": [
         "Eid al-Fitr"
       ],
-      "last_updated": "2026-03-20T21:35:35.600103",
-      "date_checked": "2026-03-20"
+      "last_updated": "2026-03-21T21:30:36.359922",
+      "date_checked": "2026-03-21"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-03-20T21:35:35.601144",
-      "date_checked": "2026-03-20"
+      "last_updated": "2026-03-21T21:30:36.360877",
+      "date_checked": "2026-03-21"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-03-20T21:35:35.601953",
-      "date_checked": "2026-03-20"
+      "last_updated": "2026-03-21T21:30:36.361601",
+      "date_checked": "2026-03-21"
     },
     "CN": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-03-20T21:35:35.603030",
-      "date_checked": "2026-03-20"
+      "last_updated": "2026-03-21T21:30:36.362590",
+      "date_checked": "2026-03-21"
     }
   }
 }
