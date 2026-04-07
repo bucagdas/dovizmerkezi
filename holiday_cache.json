@@ -1,32 +1,30 @@
 {
-  "cache_date": "2026-04-06",
-  "last_updated": "2026-04-06T21:41:52.801135",
+  "cache_date": "2026-04-07",
+  "last_updated": "2026-04-07T21:49:00.155813",
   "countries": {
     "TR": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-04-06T21:41:52.888724",
-      "date_checked": "2026-04-06"
+      "last_updated": "2026-04-07T21:49:00.242339",
+      "date_checked": "2026-04-07"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-04-06T21:41:52.889882",
-      "date_checked": "2026-04-06"
+      "last_updated": "2026-04-07T21:49:00.243529",
+      "date_checked": "2026-04-07"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-04-06T21:41:52.890754",
-      "date_checked": "2026-04-06"
+      "last_updated": "2026-04-07T21:49:00.244418",
+      "date_checked": "2026-04-07"
     },
     "CN": {
-      "is_holiday": true,
-      "holiday_names": [
-        "Tomb-Sweeping Day (observed)"
-      ],
-      "last_updated": "2026-04-06T21:41:52.891880",
-      "date_checked": "2026-04-06"
+      "is_holiday": false,
+      "holiday_names": [],
+      "last_updated": "2026-04-07T21:49:00.245557",
+      "date_checked": "2026-04-07"
     }
   }
 }
