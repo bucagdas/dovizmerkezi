@@ -1,30 +1,30 @@
 {
-  "cache_date": "2026-04-12",
-  "last_updated": "2026-04-12T21:40:21.513011",
+  "cache_date": "2026-04-13",
+  "last_updated": "2026-04-13T21:54:32.336486",
   "countries": {
     "TR": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-04-12T21:40:21.593048",
-      "date_checked": "2026-04-12"
+      "last_updated": "2026-04-13T21:54:32.407541",
+      "date_checked": "2026-04-13"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-04-12T21:40:21.594133",
-      "date_checked": "2026-04-12"
+      "last_updated": "2026-04-13T21:54:32.408537",
+      "date_checked": "2026-04-13"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-04-12T21:40:21.594950",
-      "date_checked": "2026-04-12"
+      "last_updated": "2026-04-13T21:54:32.409298",
+      "date_checked": "2026-04-13"
     },
     "CN": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-04-12T21:40:21.596059",
-      "date_checked": "2026-04-12"
+      "last_updated": "2026-04-13T21:54:32.410324",
+      "date_checked": "2026-04-13"
     }
   }
 }
