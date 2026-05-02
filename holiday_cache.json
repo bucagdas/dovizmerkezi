@@ -1,34 +1,32 @@
 {
-  "cache_date": "2026-05-01",
-  "last_updated": "2026-05-01T21:57:15.612182",
+  "cache_date": "2026-05-02",
+  "last_updated": "2026-05-02T21:49:48.100824",
   "countries": {
     "TR": {
-      "is_holiday": true,
-      "holiday_names": [
-        "Labour and Solidarity Day"
-      ],
-      "last_updated": "2026-05-01T21:57:15.693125",
-      "date_checked": "2026-05-01"
+      "is_holiday": false,
+      "holiday_names": [],
+      "last_updated": "2026-05-02T21:49:48.173743",
+      "date_checked": "2026-05-02"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-05-01T21:57:15.694203",
-      "date_checked": "2026-05-01"
+      "last_updated": "2026-05-02T21:49:48.174697",
+      "date_checked": "2026-05-02"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-05-01T21:57:15.695022",
-      "date_checked": "2026-05-01"
+      "last_updated": "2026-05-02T21:49:48.175411",
+      "date_checked": "2026-05-02"
     },
     "CN": {
       "is_holiday": true,
       "holiday_names": [
         "Labor Day"
       ],
-      "last_updated": "2026-05-01T21:57:15.696082",
-      "date_checked": "2026-05-01"
+      "last_updated": "2026-05-02T21:49:48.176397",
+      "date_checked": "2026-05-02"
     }
   }
 }
