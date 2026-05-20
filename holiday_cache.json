@@ -1,32 +1,30 @@
 {
-  "cache_date": "2026-05-19",
-  "last_updated": "2026-05-19T22:19:12.922506",
+  "cache_date": "2026-05-20",
+  "last_updated": "2026-05-20T22:25:21.082767",
   "countries": {
     "TR": {
-      "is_holiday": true,
-      "holiday_names": [
-        "Commemoration of Atatürk, Youth and Sports Day"
-      ],
-      "last_updated": "2026-05-19T22:19:13.011495",
-      "date_checked": "2026-05-19"
+      "is_holiday": false,
+      "holiday_names": [],
+      "last_updated": "2026-05-20T22:25:21.164213",
+      "date_checked": "2026-05-20"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-05-19T22:19:13.012613",
-      "date_checked": "2026-05-19"
+      "last_updated": "2026-05-20T22:25:21.165286",
+      "date_checked": "2026-05-20"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-05-19T22:19:13.013436",
-      "date_checked": "2026-05-19"
+      "last_updated": "2026-05-20T22:25:21.166100",
+      "date_checked": "2026-05-20"
     },
     "CN": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-05-19T22:19:13.014557",
-      "date_checked": "2026-05-19"
+      "last_updated": "2026-05-20T22:25:21.167170",
+      "date_checked": "2026-05-20"
     }
   }
 }
