@@ -1,32 +1,32 @@
 {
-  "cache_date": "2026-05-27",
-  "last_updated": "2026-05-27T22:44:02.055643",
+  "cache_date": "2026-05-28",
+  "last_updated": "2026-05-28T22:42:13.537758",
   "countries": {
     "TR": {
       "is_holiday": true,
       "holiday_names": [
         "Eid al-Adha"
       ],
-      "last_updated": "2026-05-27T22:44:02.139393",
-      "date_checked": "2026-05-27"
+      "last_updated": "2026-05-28T22:42:13.639658",
+      "date_checked": "2026-05-28"
     },
     "US": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-05-27T22:44:02.140523",
-      "date_checked": "2026-05-27"
+      "last_updated": "2026-05-28T22:42:13.640888",
+      "date_checked": "2026-05-28"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-05-27T22:44:02.141377",
-      "date_checked": "2026-05-27"
+      "last_updated": "2026-05-28T22:42:13.641840",
+      "date_checked": "2026-05-28"
     },
     "CN": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-05-27T22:44:02.142526",
-      "date_checked": "2026-05-27"
+      "last_updated": "2026-05-28T22:42:13.643035",
+      "date_checked": "2026-05-28"
     }
   }
 }
