@@ -1,30 +1,34 @@
 {
-  "cache_date": "2026-06-18",
-  "last_updated": "2026-06-18T22:57:45.217509",
+  "cache_date": "2026-06-19",
+  "last_updated": "2026-06-19T22:08:14.765790",
   "countries": {
     "TR": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-06-18T22:57:45.307426",
-      "date_checked": "2026-06-18"
+      "last_updated": "2026-06-19T22:08:14.851751",
+      "date_checked": "2026-06-19"
     },
     "US": {
-      "is_holiday": false,
-      "holiday_names": [],
-      "last_updated": "2026-06-18T22:57:45.308629",
-      "date_checked": "2026-06-18"
+      "is_holiday": true,
+      "holiday_names": [
+        "Juneteenth National Independence Day"
+      ],
+      "last_updated": "2026-06-19T22:08:14.852899",
+      "date_checked": "2026-06-19"
     },
     "GB": {
       "is_holiday": false,
       "holiday_names": [],
-      "last_updated": "2026-06-18T22:57:45.309514",
-      "date_checked": "2026-06-18"
+      "last_updated": "2026-06-19T22:08:14.853815",
+      "date_checked": "2026-06-19"
     },
     "CN": {
-      "is_holiday": false,
-      "holiday_names": [],
-      "last_updated": "2026-06-18T22:57:45.310729",
-      "date_checked": "2026-06-18"
+      "is_holiday": true,
+      "holiday_names": [
+        "Dragon Boat Festival"
+      ],
+      "last_updated": "2026-06-19T22:08:14.855004",
+      "date_checked": "2026-06-19"
     }
   }
 }
