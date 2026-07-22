@@ -2,6 +2,15 @@ name: Tweet Workflow
 
 on:
   workflow_dispatch:
+    inputs:
+      event:
+        description: 'Borsa olayı (ör. london_open). Boş bırakılırsa özel mesaj/görsel uygulanmaz.'
+        required: false
+        default: ''
+      sched:
+        description: 'Planlanan UTC saati HH:MM (tweet metnindeki saati göstermek için).'
+        required: false
+        default: ''
 
 jobs:
   tweet:
@@ -27,6 +36,8 @@ jobs:
       - name: Run Script
         run: python dovizmerkezi.py
         env:
+          MARKET_EVENT: ${{ github.event.inputs.event }}
+          SCHED_TIME: ${{ github.event.inputs.sched }}
           CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
           CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -46,6 +57,11 @@ jobs:
           git add -A
           timestamp=$(date '+%Y-%m-%d %H:%M:%S')
           git commit -m "Update Data ${timestamp}" || exit 0
-          git push
+          # Aynı UTC dakikada birden çok borsa olayı olabildiğinden (ör. 07:00'de
+          # Türkiye açılışı + Şangay kapanışı) eşzamanlı push'lar çakışabilir;
+          # rebase ederek birkaç kez dene.
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && break || sleep 4
+          done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
