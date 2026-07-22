@@ -193,13 +193,10 @@ def process_data(data, current_local_time, api, client):
     special_info = EVENTS.get(event_key)
 
     if special_info:
+        # Tatil/hafta sonu kapısı artık main()'de ilgili borsanın kendi saat
+        # dilimine göre yapılıyor; buraya ulaşıldıysa borsa gerçekten açık/kapanış
+        # anında demektir, o yüzden ek "(Pazar Kapalı)" notu eklemiyoruz.
         special_message, image_folder, market = special_info
-        market_status = get_market_status(market)
-        if market_status['is_holiday']:
-            holiday_info = ', '.join(market_status['holiday_names'][:2])
-            special_message += f" (Resmi tatil: {holiday_info} - pazar kapalı)"
-        elif not market_status['is_open']:
-            special_message += f" (Pazar {market_status['message']})"
     else:
         special_message = None
         image_folder = DEFAULT_IMAGES_FOLDER
@@ -253,15 +250,31 @@ def main():
     else:
         current_local_time = current_time.strftime('%H:%M')
 
-    is_turkey_holiday, turkey_holiday_names = is_country_holiday('TR')
-
-    if weekday >= 5:
-        logging.info("Hafta sonu olduğu için tweet gönderilmiyor.")
-        return
-
-    if is_turkey_holiday:
-        logging.info(f"Türkiye'de resmi tatil günü ({', '.join(turkey_holiday_names)}) olduğu için tweet gönderilmiyor.")
-        return
+    # Tatil/hafta sonu kapısı olayın AİT OLDUĞU borsanın kendi saat dilimine göre.
+    event_key = os.environ.get('MARKET_EVENT', '').strip()
+    if event_key:
+        # Böylece: (1) TR resmi tatili yabancı borsa olaylarını (NY/Londra)
+        # atlamaz; (2) İstanbul gece-yarısı sınırı (ör. Cuma NY kapanışı =
+        # Cumartesi 00:00 TR) olayları yanlışlıkla hafta sonu sayıp atlamaz.
+        info = EVENTS.get(event_key)
+        if info:
+            market = info[2]
+            status = get_market_status(market)
+            if status['is_holiday']:
+                logging.info(f"{market} bugün resmi tatil ({', '.join(status['holiday_names'][:2])}), tweet atlanıyor.")
+                return
+            if status['message'] == 'Hafta sonu':
+                logging.info(f"{market} için hafta sonu, tweet atlanıyor.")
+                return
+    else:
+        # Genel/manuel tweet (olay yok): Türkiye takvimine göre kapı.
+        if weekday >= 5:
+            logging.info("Hafta sonu olduğu için tweet gönderilmiyor.")
+            return
+        is_turkey_holiday, turkey_holiday_names = is_country_holiday('TR')
+        if is_turkey_holiday:
+            logging.info(f"Türkiye'de resmi tatil günü ({', '.join(turkey_holiday_names)}) olduğu için tweet gönderilmiyor.")
+            return
 
     api, client = get_twitter_clients()
 
