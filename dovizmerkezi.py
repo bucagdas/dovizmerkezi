@@ -9,16 +9,19 @@ from utils import get_twitter_clients, fetch_exchange_rates, setup_logging
 setup_logging()
 logging.info("Script başlatıldı.")
 
-# Özel saatler ve karşılık gelen mesaj/görsel klasörü
-special_times = {
-    "01:30": ("Şangay borsa açılışı", "./images/shanghai/", "shanghai"),
-    "07:00": ("Türkiye borsa açılışı", "./images/turkiye/", "turkiye"),
-    "07:49": ("Şangay borsa kapanışı", "./images/shanghai/", "shanghai"),
-    "08:00": ("Londra borsa açılışı", "./images/london/", "london"),
-    "13:30": ("New York borsa açılışı", "./images/newyork/", "newyork"),
-    "15:00": ("Türkiye borsa kapanışı", "./images/turkiye/", "turkiye"),
-    "16:30": ("Londra borsa kapanışı", "./images/london/", "london"),
-    "20:00": ("New York borsa kapanışı", "./images/newyork/", "newyork"),
+# Borsa olayları: event anahtarı -> (mesaj, görsel klasörü, market kodu)
+# Tetikleme artık sabit UTC saatlere değil, Cloudflare worker'ın DST-duyarlı
+# olarak gönderdiği anlamsal event'e dayanıyor (MARKET_EVENT ortam değişkeni).
+# Böylece yaz/kış saati kaymaları ve çalışma-zamanı gecikmesi sorunu çözülür.
+EVENTS = {
+    "shanghai_open":  ("Şangay borsa açılışı",    "./images/shanghai/", "shanghai"),
+    "shanghai_close": ("Şangay borsa kapanışı",   "./images/shanghai/", "shanghai"),
+    "turkiye_open":   ("Türkiye borsa açılışı",   "./images/turkiye/",  "turkiye"),
+    "turkiye_close":  ("Türkiye borsa kapanışı",  "./images/turkiye/",  "turkiye"),
+    "london_open":    ("Londra borsa açılışı",    "./images/london/",   "london"),
+    "london_close":   ("Londra borsa kapanışı",   "./images/london/",   "london"),
+    "newyork_open":   ("New York borsa açılışı",  "./images/newyork/",  "newyork"),
+    "newyork_close":  ("New York borsa kapanışı", "./images/newyork/",  "newyork"),
 }
 
 DEFAULT_IMAGES_FOLDER = "./images/"
@@ -185,8 +188,9 @@ def process_data(data, current_local_time, api, client):
     xau_to_usd = eur_to_usd / eur_to_xau
     xag_to_usd = eur_to_usd / eur_to_xag
 
-    current_utc_time = datetime.utcnow().strftime('%H:%M')
-    special_info = special_times.get(current_utc_time)
+    # Hangi borsa olayı? Worker DST-duyarlı olarak gönderiyor (ör. "london_open").
+    event_key = os.environ.get('MARKET_EVENT', '').strip()
+    special_info = EVENTS.get(event_key)
 
     if special_info:
         special_message, image_folder, market = special_info
@@ -231,9 +235,23 @@ def process_data(data, current_local_time, api, client):
 
 
 def main():
-    current_time = datetime.now(pytz.timezone('Europe/Istanbul'))
-    current_local_time = current_time.strftime('%H:%M')
+    tz_ist = pytz.timezone('Europe/Istanbul')
+    current_time = datetime.now(tz_ist)
     weekday = current_time.weekday()
+
+    # Gösterilecek saat: worker planlanmış UTC saatini (SCHED_TIME) gönderdiyse
+    # onu İstanbul saatine çevir (çalışma gecikmesinden bağımsız, ör. 10:00).
+    # Yoksa gerçek çalışma saatini kullan.
+    sched_utc = os.environ.get('SCHED_TIME', '').strip()
+    if sched_utc:
+        try:
+            hh, mm = map(int, sched_utc.split(':'))
+            utc_dt = datetime.now(pytz.utc).replace(hour=hh, minute=mm, second=0, microsecond=0)
+            current_local_time = utc_dt.astimezone(tz_ist).strftime('%H:%M')
+        except Exception:
+            current_local_time = current_time.strftime('%H:%M')
+    else:
+        current_local_time = current_time.strftime('%H:%M')
 
     is_turkey_holiday, turkey_holiday_names = is_country_holiday('TR')
 
