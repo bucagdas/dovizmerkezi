@@ -3,7 +3,7 @@ from datetime import datetime
 from pytz import timezone
 import logging
 
-from utils import get_twitter_clients, is_weekend_or_holiday, fetch_exchange_rates, setup_logging
+from utils import get_twitter_clients, is_weekend_or_holiday, fetch_exchange_rates, setup_logging, get_random_media
 
 setup_logging()
 logging.info("Script başlatıldı.")
@@ -93,7 +93,7 @@ def main():
         tweet_content = create_tweet_content(data)
         if tweet_content:
             api, client = get_twitter_clients()
-            specific_media_path = "./images/asgari/default.mp4"
+            specific_media_path = get_random_media("./images/asgari/")
             send_tweet(tweet_content, api, client, specific_media_path)
     else:
         logging.error("Veriler alınamadı, işlem iptal edildi.")

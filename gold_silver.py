@@ -2,7 +2,7 @@ from datetime import datetime
 import pytz
 import logging
 
-from utils import get_twitter_clients, fetch_exchange_rates, setup_logging
+from utils import get_twitter_clients, fetch_exchange_rates, setup_logging, get_random_media
 
 setup_logging()
 logging.info("Altın ve Gümüş Fiyat Scripti başlatıldı.")
@@ -29,10 +29,14 @@ def process_data(data, current_local_time):
 
 def send_tweet(message, api, client):
     try:
-        image_path = './images/gold_silver/gold_silver.mp4'
-        media_id = api.media_upload(filename=image_path).media_id_string
-        client.create_tweet(text=message, media_ids=[media_id])
-        logging.info("Altın ve gümüş fiyat tweeti başarıyla gönderildi.")
+        image_path = get_random_media('./images/gold_silver/')
+        if image_path:
+            media_id = api.media_upload(filename=image_path).media_id_string
+            client.create_tweet(text=message, media_ids=[media_id])
+            logging.info(f"Altın ve gümüş fiyat tweeti gönderildi. Medya: {image_path}")
+        else:
+            client.create_tweet(text=message)
+            logging.warning("Medya bulunamadı, altın/gümüş tweeti yalnızca metin gönderildi.")
     except Exception as e:
         logging.error(f"Tweet gönderimi sırasında hata oluştu: {e}")
 
