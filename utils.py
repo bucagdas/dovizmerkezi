@@ -18,12 +18,39 @@ LAST_KEY_FILE = 'last_used_key.txt'
 
 
 def setup_logging():
+    # Hem bot.log dosyasına hem de stdout'a yaz — böylece GitHub Actions
+    # loglarında tweet metni, kullanılan görsel ve hatalar görünür olur.
     logging.basicConfig(
-        filename='bot.log',
-        filemode='a',
         level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s'
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler('bot.log', mode='a', encoding='utf-8'),
+            logging.StreamHandler(),
+        ],
+        force=True,
     )
+
+
+def get_random_media(folder, default_folder="./images/"):
+    """Belirtilen klasörden rastgele bir medya (görsel/video) yolu döner.
+    Klasör boşsa/erişilemezse default klasöre düşer. Sabit dosya adına
+    bağlı kalmaz — böylece klasördeki dosyalar değişse de çalışır."""
+    exts = ('.png', '.jpg', '.jpeg', '.webp', '.mp4')
+    try:
+        files = [os.path.join(folder, f) for f in os.listdir(folder)
+                 if f.lower().endswith(exts)]
+        if files:
+            return choice(files)
+        if folder != default_folder:
+            logging.warning(f"{folder} klasöründe medya yok, default klasöre geçiliyor.")
+            return get_random_media(default_folder, default_folder)
+        logging.error("Hiçbir klasörde medya bulunamadı.")
+        return None
+    except Exception as e:
+        logging.error(f"{folder} klasörüne erişilirken hata: {e}")
+        if folder != default_folder:
+            return get_random_media(default_folder, default_folder)
+        return None
 
 
 def fetch_exchange_rates(symbols):
