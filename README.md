@@ -2,7 +2,7 @@
 
 Otomatik Twitter/X botu. Döviz kurları, altın-gümüş fiyatları, asgari ücret karşılaştırması ve küresel borsa açılış/kapanışlarını paylaşır.
 
-[![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue?style=flat-square)](https://github.com/sarusadgac/dovizmerkezi/actions)
+[![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue?style=flat-square)](https://github.com/bucagdas/dovizmerkezi/actions)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-green?style=flat-square)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
@@ -34,7 +34,12 @@ BEARER_TOKEN
 EXCHANGE_RATES_API_KEY_1
 EXCHANGE_RATES_API_KEY_2
 EXCHANGE_RATES_API_KEY_3
+EXCHANGE_RATES_API_KEY_4
 ```
+
+> Borsa olaylarını tetikleyen Cloudflare Worker'ın da `workflow` yetkili bir
+> GitHub token'ına ihtiyacı vardır; bu token Cloudflare'de şifreli secret
+> (`GITHUB_TOKEN`) olarak saklanır, repoda değil.
 
 > `CALENDARIFIC_API_KEY` artık gerekli değil. Tatil bilgisi `holidays` kütüphanesi ile offline hesaplanıyor.
 
@@ -42,29 +47,32 @@ EXCHANGE_RATES_API_KEY_3
 
 | Dosya | Görev | Zamanlama |
 |---|---|---|
-| `main.yml` | Döviz kuru tweet'leri | Manuel |
+| `main.yml` | Borsa açılış/kapanış tweet'leri | Cloudflare Worker (DST-duyarlı) + manuel |
 | `secondary.yml` | Altın-gümüş fiyatları | Her Salı 12:00 TR |
 | `third.yml` | Asgari ücret karşılaştırması | Pzt/Çrş/Cum 08:30 TR |
 | `holiday-cache.yml` | Tatil cache güncellemesi | Her gece 00:00 TR |
 
 `main.yml` hafta sonu ve Türkiye resmi tatillerinde otomatik olarak tweet atmaz.
 
-## Borsa Saatleri (UTC)
+## Borsa Olayları (DST-duyarlı tetikleme)
 
-| Saat | Olay |
-|---|---|
-| 01:30 | Şangay açılış |
-| 07:00 | İstanbul açılış |
-| 07:49 | Şangay kapanış |
-| 08:00 | Londra açılış |
-| 13:30 | New York açılış |
-| 15:00 | İstanbul kapanış |
-| 16:30 | Londra kapanış |
-| 20:00 | New York kapanış |
+Tetikleme sabit UTC saatlere değil, bir **Cloudflare Worker**'ın her borsanın
+**yerel saatini** (`Intl`) kontrol ederek gönderdiği anlamsal olaya dayanır
+(`london_open` vb.). Worker olayı `main.yml`'e `workflow_dispatch` ile iletir;
+script `MARKET_EVENT` ortam değişkeniyle doğru mesaj ve görsel klasörünü seçer.
+Böylece Londra/New York'un yaz-kış saati (DST) kaymaları ve çalışma-zamanı
+gecikmesi otomatik doğru işlenir; sabit UTC saatlere bağlı kalınmaz.
+
+| Borsa | Açılış (yerel) | Kapanış (yerel) | Saat dilimi |
+|---|---|---|---|
+| Şangay | 09:30 | 15:00 | Asia/Shanghai (DST yok) |
+| İstanbul | 10:00 | 18:00 | Europe/Istanbul (DST yok) |
+| Londra | 08:00 | 16:30 | Europe/London (DST) |
+| New York | 09:30 | 16:00 | America/New_York (DST) |
 
 ## API Anahtarı Yönetimi
 
-3 adet ExchangeRates API anahtarı döngüsel kullanılır. Son kullanılan anahtar `last_used_key.txt` dosyasına kaydedilir, bir sonraki çalışmada farklı anahtar seçilir.
+4 adet ExchangeRates API anahtarı döngüsel kullanılır. Son kullanılan anahtar `last_used_key.txt` dosyasına kaydedilir, bir sonraki çalışmada farklı anahtar seçilir.
 
 ## Proje Yapısı
 
@@ -94,4 +102,4 @@ dovizmerkezi/
 
 ## Lisans
 
-[MIT](LICENSE) — [@sarusadgac](https://github.com/sarusadgac)
+[MIT](LICENSE) — [@bucagdas](https://github.com/bucagdas)
