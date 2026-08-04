@@ -174,7 +174,7 @@ def tweet(message, image_folder, api, client):
         logging.error(f"Tweet gönderimi sırasında hata oluştu: {e}")
 
 
-def process_data(data, current_local_time, api, client):
+def process_data(data, current_local_time, api, client, valid_events):
     eur_to_usd = data["rates"]["USD"]
     eur_to_try = data["rates"]["TRY"]
     eur_to_xau = data["rates"]["XAU"]
@@ -188,15 +188,20 @@ def process_data(data, current_local_time, api, client):
     xau_to_usd = eur_to_usd / eur_to_xau
     xag_to_usd = eur_to_usd / eur_to_xag
 
-    # Hangi borsa olayı? Worker DST-duyarlı olarak gönderiyor (ör. "london_open").
-    event_key = os.environ.get('MARKET_EVENT', '').strip()
-    special_info = EVENTS.get(event_key)
-
-    if special_info:
-        # Tatil/hafta sonu kapısı artık main()'de ilgili borsanın kendi saat
-        # dilimine göre yapılıyor; buraya ulaşıldıysa borsa gerçekten açık/kapanış
-        # anında demektir, o yüzden ek "(Pazar Kapalı)" notu eklemiyoruz.
-        special_message, image_folder, market = special_info
+    # Tatil/hafta sonu kapısı main()'de olay bazında yapılıyor; buraya gelen
+    # valid_events listesi yalnızca gerçekten açık/kapanış anındaki borsaları içerir.
+    # Aynı UTC dakikaya birden çok olay denk gelirse (yaz döneminde 07:00 UTC'de
+    # Türkiye açılışı + Şangay kapanışı + Londra açılışı) hepsi TEK tweet'te
+    # birleştirilir — üç ayrı tweet takipçiye spam gibi görünüyordu.
+    if valid_events:
+        messages = [EVENTS[k][0] for k in valid_events]
+        if len(messages) == 1:
+            special_message = messages[0]
+        else:
+            special_message = ", ".join(messages[:-1]) + " ve " + messages[-1]
+        # Görsel: Türkiye olayı varsa onun klasörü (hedef kitle TR), yoksa ilk olayınki.
+        img_key = next((k for k in valid_events if EVENTS[k][2] == 'turkiye'), valid_events[0])
+        image_folder = EVENTS[img_key][1]
     else:
         special_message = None
         image_folder = DEFAULT_IMAGES_FOLDER
@@ -251,21 +256,34 @@ def main():
         current_local_time = current_time.strftime('%H:%M')
 
     # Tatil/hafta sonu kapısı olayın AİT OLDUĞU borsanın kendi saat dilimine göre.
-    event_key = os.environ.get('MARKET_EVENT', '').strip()
-    if event_key:
+    # MARKET_EVENT virgülle ayrılmış birden çok olay içerebilir (worker aynı UTC
+    # dakikadaki olayları tek dispatch'te birleştirir, ör.
+    # "shanghai_close,turkiye_open,london_open") — her olay ayrı ayrı elenir,
+    # geçenler tek tweet'te birleştirilir.
+    raw_events = os.environ.get('MARKET_EVENT', '').strip()
+    event_keys = [e.strip() for e in raw_events.split(',') if e.strip()]
+    valid_events = []
+    if event_keys:
         # Böylece: (1) TR resmi tatili yabancı borsa olaylarını (NY/Londra)
         # atlamaz; (2) İstanbul gece-yarısı sınırı (ör. Cuma NY kapanışı =
         # Cumartesi 00:00 TR) olayları yanlışlıkla hafta sonu sayıp atlamaz.
-        info = EVENTS.get(event_key)
-        if info:
+        for event_key in event_keys:
+            info = EVENTS.get(event_key)
+            if not info:
+                logging.warning(f"Bilinmeyen borsa olayı: {event_key}, yok sayılıyor.")
+                continue
             market = info[2]
             status = get_market_status(market)
             if status['is_holiday']:
-                logging.info(f"{market} bugün resmi tatil ({', '.join(status['holiday_names'][:2])}), tweet atlanıyor.")
-                return
+                logging.info(f"{market} bugün resmi tatil ({', '.join(status['holiday_names'][:2])}), bu olay atlanıyor.")
+                continue
             if status['message'] == 'Hafta sonu':
-                logging.info(f"{market} için hafta sonu, tweet atlanıyor.")
-                return
+                logging.info(f"{market} için hafta sonu, bu olay atlanıyor.")
+                continue
+            valid_events.append(event_key)
+        if not valid_events:
+            logging.info("Tüm borsa olayları tatil/hafta sonu nedeniyle elendi, tweet gönderilmiyor.")
+            return
     else:
         # Genel/manuel tweet (olay yok): Türkiye takvimine göre kapı.
         if weekday >= 5:
@@ -281,7 +299,7 @@ def main():
     data = fetch_exchange_rates("USD,TRY,XAU,XAG,GBP")
     if data and "rates" in data and all(key in data["rates"] for key in ["USD", "TRY", "XAU", "XAG", "GBP"]):
         logging.info("API yanıtı alındı, veriler işleniyor.")
-        process_data(data, current_local_time, api, client)
+        process_data(data, current_local_time, api, client, valid_events)
     else:
         logging.error("Veriler alınamadı veya beklenen anahtarlar bulunamadı.")
 

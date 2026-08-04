@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       event:
-        description: 'Borsa olayı (ör. london_open). Boş bırakılırsa özel mesaj/görsel uygulanmaz.'
+        description: 'Borsa olayı/olayları, virgülle (ör. london_open veya turkiye_open,shanghai_close). Boş bırakılırsa özel mesaj/görsel uygulanmaz.'
         required: false
         default: ''
       sched:
