@@ -3,10 +3,8 @@ import holidays
 from datetime import datetime, date
 import logging
 
-# Loglama yapılandırması
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Ülke kodu -> holidays kütüphanesi ülke kodu eşleştirmesi
 COUNTRY_MAP = {
     'TR': ('TR', 'Turkey'),
     'US': ('US', 'United States'),

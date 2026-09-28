@@ -18,7 +18,7 @@ LAST_KEY_FILE = 'last_used_key.txt'
 
 
 def setup_logging():
-    # Hem bot.log dosyasına hem de stdout'a yaz — böylece GitHub Actions
+    # Hem bot.log dosyasına hem de stdout'a yazar; böylece GitHub Actions
     # loglarında tweet metni, kullanılan görsel ve hatalar görünür olur.
     logging.basicConfig(
         level=logging.INFO,
@@ -34,7 +34,7 @@ def setup_logging():
 def get_random_media(folder, default_folder="./images/"):
     """Belirtilen klasörden rastgele bir medya (görsel/video) yolu döner.
     Klasör boşsa/erişilemezse default klasöre düşer. Sabit dosya adına
-    bağlı kalmaz — böylece klasördeki dosyalar değişse de çalışır."""
+    bağlı kalmaz; böylece klasördeki dosyalar değişse de çalışır."""
     exts = ('.png', '.jpg', '.jpeg', '.webp', '.mp4')
     try:
         files = [os.path.join(folder, f) for f in os.listdir(folder)
@@ -125,7 +125,7 @@ def get_twitter_clients():
 
 def is_weekend_or_holiday(country_code='TR', check_date=None):
     """Verilen tarih hafta sonu veya resmi tatil mi kontrol eder.
-    
+
     Returns:
         (bool, str|None): (tatil mi, tatil adı veya 'Hafta sonu' veya None)
     """

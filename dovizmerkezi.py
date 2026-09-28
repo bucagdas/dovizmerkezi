@@ -27,7 +27,6 @@ EVENTS = {
 DEFAULT_IMAGES_FOLDER = "./images/"
 
 def load_holiday_cache():
-    """Holiday cache dosyasını okur."""
     try:
         with open('holiday_cache.json', 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -39,32 +38,29 @@ def load_holiday_cache():
         return None
 
 def is_country_holiday(country_code, check_date=None):
-    """Belirtilen ülkede bugün tatil günü mü kontrol eder."""
     if check_date is None:
         check_date = date.today()
-    
-    # Önce cache'den kontrol et
+
     cache_data = load_holiday_cache()
     if cache_data:
-        # Cache tarihini kontrol et
         cache_date = cache_data.get('cache_date')
         if cache_date == check_date.isoformat():
             country_data = cache_data.get('countries', {}).get(country_code)
             if country_data:
                 is_holiday = country_data.get('is_holiday', False)
                 holiday_names = country_data.get('holiday_names', [])
-                
+
                 if is_holiday:
                     logging.info(f"Bugün {country_code}'de resmi tatil (cache): {', '.join(holiday_names)}")
                 else:
                     logging.info(f"Bugün {country_code}'de resmi tatil günü değil (cache).")
-                
+
                 return is_holiday, holiday_names
             else:
                 logging.warning(f"{country_code} için cache verisi bulunamadı.")
         else:
             logging.warning(f"Cache verisi eski (cache: {cache_date}, bugün: {check_date.isoformat()})")
-    
+
     # Cache yoksa veya eski ise offline holidays kütüphanesiyle hesapla
     logging.info(f"{country_code} için offline tatil hesaplaması yapılıyor...")
     try:
@@ -85,8 +81,7 @@ def get_market_status(market_name, check_time=None):
     """Belirli bir borsanın açık olup olmadığını kontrol eder."""
     if check_time is None:
         check_time = datetime.now(pytz.timezone('Europe/Istanbul'))
-    
-    # Pazar saat dilimleri ve çalışma saatleri
+
     market_config = {
         'shanghai': {
             'timezone': 'Asia/Shanghai',
@@ -94,7 +89,7 @@ def get_market_status(market_name, check_time=None):
             'country_code': 'CN'
         },
         'turkiye': {
-            'timezone': 'Europe/Istanbul', 
+            'timezone': 'Europe/Istanbul',
             'hours': [(10, 0, 18, 10)],
             'country_code': 'TR'
         },
@@ -109,36 +104,33 @@ def get_market_status(market_name, check_time=None):
             'country_code': 'US'
         }
     }
-    
+
     if market_name not in market_config:
         return {'is_open': False, 'is_holiday': False, 'message': 'Bilinmeyen pazar', 'holiday_names': []}
-    
+
     config = market_config[market_name]
     market_tz = pytz.timezone(config['timezone'])
     market_time = check_time.astimezone(market_tz)
-    
-    # Hafta sonu kontrolü
+
     if market_time.weekday() >= 5:
         return {'is_open': False, 'is_holiday': False, 'message': 'Hafta sonu', 'holiday_names': []}
-    
-    # Tatil kontrolü
+
     is_holiday, holiday_names = is_country_holiday(config['country_code'], market_time.date())
-    
+
     if is_holiday:
         return {'is_open': False, 'is_holiday': True, 'message': 'Resmi tatil', 'holiday_names': holiday_names}
-    
-    # Saat kontrolü
+
     current_minutes = market_time.hour * 60 + market_time.minute
     is_open = False
-    
+
     for start_h, start_m, end_h, end_m in config['hours']:
         start_minutes = start_h * 60 + start_m
         end_minutes = end_h * 60 + end_m
-        
+
         if start_minutes <= current_minutes <= end_minutes:
             is_open = True
             break
-    
+
     status_msg = 'Açık' if is_open else 'Kapalı'
     return {'is_open': is_open, 'is_holiday': is_holiday, 'message': status_msg, 'holiday_names': holiday_names}
 

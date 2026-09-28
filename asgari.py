@@ -8,17 +8,12 @@ from utils import get_twitter_clients, is_weekend_or_holiday, fetch_exchange_rat
 setup_logging()
 logging.info("Script başlatıldı.")
 
-
-# Hedef TL Miktarı
 TARGET_TL = 28075.50
 
-# Simülasyon modu
 TEST_MODE = False
 
-# Gram ons çevirim oranları
 GRAM_PER_OUNCE = 31.1035
 
-# Belirli bir dosyayı seçme fonksiyonu
 def get_specific_media(file_path):
     if os.path.exists(file_path) and file_path.endswith(('.png', '.jpg', '.jpeg', '.webp', '.mp4')):
         return file_path
@@ -26,7 +21,6 @@ def get_specific_media(file_path):
         logging.error(f"Belirtilen dosya bulunamadı veya geçerli bir medya formatında değil: {file_path}")
         return None
 
-# Tweet içeriğini oluşturma fonksiyonu
 def create_tweet_content(data):
     try:
         current_local_time = datetime.now(timezone('Europe/Istanbul')).strftime('%H:%M')
@@ -36,7 +30,6 @@ def create_tweet_content(data):
         eur_to_xau = data['rates']['XAU']
         eur_to_xag = data['rates']['XAG']
 
-        # TL'yi farklı değerlere çevir
         usd_amount = TARGET_TL / (eur_to_try / eur_to_usd)
         gbp_amount = TARGET_TL / (eur_to_try / eur_to_gbp)
         xau_ounce = TARGET_TL / (eur_to_try / eur_to_xau)
@@ -44,7 +37,6 @@ def create_tweet_content(data):
         xau_gram = xau_ounce * GRAM_PER_OUNCE
         xag_gram = xag_ounce * GRAM_PER_OUNCE
 
-        # Tweet metni oluştur
         tweet_content = (f"📊 Saat {current_local_time} itibarıyla asgari ücret yani {TARGET_TL} TL ile alabilecekleriniz:\n"
                          f"💵 {usd_amount:.2f} USD\n"
                          f"💶 {TARGET_TL / eur_to_try:.2f} EUR\n"
@@ -57,8 +49,6 @@ def create_tweet_content(data):
         logging.error(f"Tweet içeriği oluşturulurken hata: {e}")
         return None
 
-
-# Tweet gönderme fonksiyonu
 def send_tweet(content, api, client, specific_media_path=None):
     if TEST_MODE:
         print("Simülasyon Modu: Gönderilecek Tweet İçeriği:")
@@ -80,8 +70,6 @@ def send_tweet(content, api, client, specific_media_path=None):
         except Exception as e:
             logging.error(f"Tweet gönderilirken hata oluştu: {e}")
 
-
-# Ana çalışma akışı
 def main():
     is_off, reason = is_weekend_or_holiday('TR')
     if is_off:

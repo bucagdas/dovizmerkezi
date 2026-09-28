@@ -1,5 +1,7 @@
 # DövizMerkezi - Finansal Twitter Botu
 
+*[English](README.en.md)*
+
 Otomatik Twitter/X botu. Döviz kurları, altın-gümüş fiyatları, asgari ücret karşılaştırması ve küresel borsa açılış/kapanışlarını paylaşır.
 
 [![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue?style=flat-square)](https://github.com/bucagdas/dovizmerkezi/actions)
@@ -11,7 +13,7 @@ Otomatik Twitter/X botu. Döviz kurları, altın-gümüş fiyatları, asgari üc
 - **Döviz Kurları**: USD, EUR, GBP / TL
 - **Değerli Madenler**: Altın (XAU), Gümüş (XAG)
 - **Asgari Ücret Karşılaştırması**: 28.075,50 TL ile alınabilecek miktar
-- **Borsa Takibi**: Şangay, İstanbul, Londra, New York — açılış/kapanış bildirimleri
+- **Borsa Takibi**: Şangay, İstanbul, Londra, New York için açılış/kapanış bildirimleri
 - **Tatil Kontrolü**: TR, US, GB, CN için offline tatil tespiti (`holidays` kütüphanesi, API gerektirmez)
 - **Görsel**: Her borsa ve içerik türü için ayrı medya klasörü
 
@@ -100,29 +102,10 @@ dovizmerkezi/
 └── README.md
 ```
 
-## X API / Kimlik Doğrulama (Pay Per Use)
-
-> Bu bölüm **özel/private** repo içindir. **Anahtar değerleri burada tutulmaz** —
-> yalnızca yapı belgelenir.
-
-X, eski **developer.x.com Free tier**'ını kaldırdı (v2 uç noktalarına genel erişim yok).
-DövizMerkezi bu yüzden **`console.x.com` (Pay Per Use)** platformunda çalışır:
-
-- **Hesap:** `console.x.com` account `1746913296043692032` (Pay Per Use, ücretsiz kredi ile başladı).
-- **App:** `DovizMerkezi` (app id `28294060`), Read + Write.
-- **Kime atıyor:** Tweet'ler app sahibinin (@dovizmerkezi) OAuth 1.0a token'ıyla atılır;
-  bu token doğrudan Developer Console'daki "Keys & Tokens" bölümünden üretilir (3-bacaklı
-  OAuth gerekmez, çünkü app sahibi zaten @dovizmerkezi'dir).
-- **Fatura:** Kullanım Pay Per Use kredisinden düşer; ödeme yöntemi ekli değilse
-  Auto-Recharge kapalıdır (kredi biterse durur, sürpriz ücret çıkmaz).
-
-> **Not:** Aynı Pay Per Use hesabı, **trendmerkezi** botunun app'ini (`TrendMerkezi` /
-> `33229852`) de barındırır; trendmerkezi @trendmerkezi'ye 3-bacaklı OAuth token'ıyla
-> atar ama kotayı **bu hesabın** kredisinden harcar. İki bot tek cüzdan.
-
-`CONSUMER_KEY` / `CONSUMER_SECRET` / `ACCESS_TOKEN` / `ACCESS_TOKEN_SECRET` /
-`BEARER_TOKEN` bu app'ten üretilip GitHub Actions secret'ları olarak saklanır.
-
 ## Lisans
 
-[MIT](LICENSE) — [@bucagdas](https://github.com/bucagdas)
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
+
+## Yazar
+
+[bucagdas](https://github.com/bucagdas)
