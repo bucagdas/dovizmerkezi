@@ -1,0 +1,10 @@
+# Log dosyaları
+*.log
+
+# Runtime state dosyaları
+last_used_key.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
