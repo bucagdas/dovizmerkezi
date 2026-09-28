@@ -184,7 +184,7 @@ def process_data(data, current_local_time, api, client, valid_events):
     # valid_events listesi yalnızca gerçekten açık/kapanış anındaki borsaları içerir.
     # Aynı UTC dakikaya birden çok olay denk gelirse (yaz döneminde 07:00 UTC'de
     # Türkiye açılışı + Şangay kapanışı + Londra açılışı) hepsi TEK tweet'te
-    # birleştirilir — üç ayrı tweet takipçiye spam gibi görünüyordu.
+    # birleştirilir; üç ayrı tweet takipçiye spam gibi görünüyordu.
     if valid_events:
         messages = [EVENTS[k][0] for k in valid_events]
         if len(messages) == 1:
@@ -250,7 +250,7 @@ def main():
     # Tatil/hafta sonu kapısı olayın AİT OLDUĞU borsanın kendi saat dilimine göre.
     # MARKET_EVENT virgülle ayrılmış birden çok olay içerebilir (worker aynı UTC
     # dakikadaki olayları tek dispatch'te birleştirir, ör.
-    # "shanghai_close,turkiye_open,london_open") — her olay ayrı ayrı elenir,
+    # "shanghai_close,turkiye_open,london_open"); her olay ayrı ayrı elenir,
     # geçenler tek tweet'te birleştirilir.
     raw_events = os.environ.get('MARKET_EVENT', '').strip()
     event_keys = [e.strip() for e in raw_events.split(',') if e.strip()]
